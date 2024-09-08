@@ -17,3 +17,13 @@ Here are some potential data bases:
 1. Make a list of teams and conferences from standings.
 
 2. Scrape the league schedule and put data in a tidy format (e.g. get dates assigned, pull out teams not on the team list, have columns of "home_team", "away_team", "date", "score", "ot_or_not", etc.). See 234 notes for a review of `rvest`.
+
+
+## Update: 08SEP2024
+
+Data set for teams + conference complete.
+
+Having trouble scraping. Used the same exact setup from the DATA/STAT 234 course notes, error codes and R issues galore. I will push the document I'm working in to you, It decribes the issue in more detail.
+
+
+

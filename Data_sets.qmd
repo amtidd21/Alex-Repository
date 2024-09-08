@@ -1,0 +1,34 @@
+---
+title: "Data Sets"
+author: "Alex Tidd"
+format: html
+---
+
+##Data sets for SYE (Teams+Conference) and my attempt at sraping and tidying.
+
+```{r}
+library(tidyverse)
+library(rvest)
+library(here)
+```
+
+
+```{r}
+NCAA_teams <- read_csv("NCAA_teams.csv")
+##NCAA Team and conference data set. Teams are encoded exactly as source has them.
+```
+
+
+```{r}
+View(NCAA_teams)
+```
+
+Data scraping:
+```{r}
+##For some reason, R will only store my url as an object if it is named "url". Furthermore, the read_html() code has an issue and I'm not that great at scraping to troubleshoot it. Lastly, my url will not appear in my global environment. Will need some help with this.
+url <- https:www.collegehockeynews.com/stats/
+tab <- read_html(url) |>
+  html_nodes("table")
+```
+
+
