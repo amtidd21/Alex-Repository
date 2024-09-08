@@ -23,7 +23,10 @@ Here are some potential data bases:
 
 Data set for teams + conference complete.
 
-Having trouble scraping. Used the same exact setup from the DATA/STAT 234 course notes, error codes and R issues galore. I will push the document I'm working in to you, It decribes the issue in more detail.
+Having trouble scraping. Used the same exact setup from the DATA/STAT 234 course notes, error codes and R issues galore. I will push the document I'm working in to you, It describes the issue in more detail.
 
+Second Update from 08SEP2024:
+
+Resolved my scraping issue. Will start on tidying. Will need your help to start me in the right direction. The table is extremely "untidy"
 
 

@@ -25,10 +25,20 @@ View(NCAA_teams)
 
 Data scraping:
 ```{r}
-##For some reason, R will only store my url as an object if it is named "url". Furthermore, the read_html() code has an issue and I'm not that great at scraping to troubleshoot it. Lastly, my url will not appear in my global environment. Will need some help with this.
-url <- https:www.collegehockeynews.com/stats/
-tab <- read_html(url) |>
+url_hockey <- "https://www.collegehockeynews.com/schedules/?season=20232024"
+tab_hockey <- read_html(url_hockey) |>
   html_nodes("table")
 ```
 
+```{r}
+test1 <- tab_hockey[[1]] |> html_table()
+test1
+stats_dirty <-test1
+view(stats_dirty)
+```
+
+Tidying the data set:
+```{r}
+##This is possibly the ugliest format for a table. Will need help getting started with scraping
+```
 
