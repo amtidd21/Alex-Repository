@@ -46,7 +46,6 @@ schedule_new <- stats_filled_cleaner |> select(date, conference, X1, X2, X3, X4,
   filter(game_type != "Exhibition") |>
   mutate(away_score = as.double(away_score)) |>
   mutate(home_score = as.double(home_score)) |>
-  filter(away_score != "") |>
   mutate(neutral_site = case_when(location_marker == "vs." ~ 1,
                                   location_marker == "at" ~ 0)) |>
   mutate(neutral_site = as.logical(neutral_site)) |>
@@ -54,10 +53,19 @@ schedule_new <- stats_filled_cleaner |> select(date, conference, X1, X2, X3, X4,
   mutate(overtime = case_when(overtime == "" ~ 0,
                               overtime == "ot" ~ 1,
                               overtime == "2ot" ~ 1)) |>
-  mutate(overtime = as.logical(overtime))
+  mutate(overtime = as.logical(overtime)) |>
+  filter(!is.na(overtime))|>
+  mutate(score_diff = home_score - away_score) |>
+  mutate(outcome = 
+           case_when(score_diff == 0 ~ "0.5",
+                     score_diff > 0 ~ "1",
+                     score_diff < 0 ~ "0")) |>
+  mutate(outcome = as.double(outcome))
   
 return(schedule_new)
 }
+
+## Took out the line which filters out incomplete scores in order to get future seasons
 ```
 
 ```{r}

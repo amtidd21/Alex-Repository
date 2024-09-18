@@ -1,0 +1,69 @@
+---
+title: "ELO Code for Hockey"
+author: "Alex Tidd"
+format: html
+---
+
+## Using Hope Donoghue's thesis: "Comparing Rating Methods in
+NCAA Division III Women’s Soccer", as a template for an ELO ranking function. I will be able to create an ELO ranking model for men's division 1 hockey.
+
+```{r}
+library(elo)
+library(dplyr)
+library(tidyverse)
+library(cowplot)
+library(ggrepel)
+schedule2324
+```
+
+```{r}
+##Using Ron Yurko's method to creating elo ratings for NCAA, will act as skeleton as k values and scaling factors are not optimized
+
+hockey_exp_scores_rough <- function(team_rating_rough, opp_team_rating_rough) {
+   1/(1 + 10^((opp_team_rating_rough-team_rating_rough)/400))
+}
+
+hockey_new_rating_rough <- function(team_rating_rough, observed_score_rough, expected_score_rough, update_factor_rough = 20) {team_rating_rough + update_factor_rough * (observed_score_rough - expected_score_rough)
+}
+
+elo_ratings_rough <- tibble(team = unique(schedule2324$home_team),
+                            elo_rating = 1500,
+                            date = "2023-10-07")
+
+for(game_i_rough in 1:nrow(schedule2324)) {
+  home_team_rough <- schedule2324$home_team[game_i_rough]
+  away_team_rough <- schedule2324$away_team[game_i_rough]
+  
+  observed_home_score_rough <- schedule2324$outcome[game_i_rough]
+  observed_away_score_rough <- 1-abs(schedule2324$outcome[game_i_rough])
+  game_date_rough <- schedule2324$date[game_i_rough]
+  
+  ##Problem with the filter()
+  home_rating_rough <- elo_ratings_rough |>
+    filter(team == home_team) |>
+    arrange(desc(date)) |>
+    slice(1) |>
+    pull(elo_rating)
+  ##Problem with the filter
+  away_rating_rough <- elo_ratings_rough |>
+    filter(team == away_team) |>
+    arrange(desc(date)) |>
+    slice(1) |>
+    pull(elo_rating)
+  
+new_home_rating_rough <- hockey_new_rating_rough(team_rating_rough = home_rating_rough, observed_score_rough = observed_home_score_rough, expected_score_rough = hockey_exp_scores_rough(home_rating_rough, away_rating_rough))
+  
+new_away_rating_rough <- hockey_new_rating_rough(team_rating_rough = away_rating_rough, observed_score_rough = observed_away_score_rough, expected_score_rough = hockey_exp_scores_rough(away_rating_rough, home_rating_rough))
+
+updated_ratings_rough <- tibble(team = c(home_team, away_team),
+                                elo_rating = c(new_home_rating_rough, new_away_rating_rough),
+date = rep(date, "2023-10-08"))
+
+elo_ratings_rough <- elo_ratings_rough |>
+  bind_rows(updated_ratings_rough)
+}
+```
+
+
+
+

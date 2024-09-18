@@ -1,5 +1,9 @@
 ## Task List
 
+##Sept 19 update:
+
+looked through hope's thesis and her model to make her elo seemed pretty complicated. So the I went to the article the Dr. Lock sent me and it had a very user-friendly elo code that I could base mine off of! Wrote the code almost exactly as the lesson showed and almost got it to run. Also, tweaked my dataframe and function to make an "outcome" and "score differential" variable.
+
 ### For September 19
 
 1. Filter out missing overtime scores.
