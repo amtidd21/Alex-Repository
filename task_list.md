@@ -1,5 +1,13 @@
 ## Task List
 
+## For September 26
+
+1. Get code working out of the loop.
+
+2. Loop through the days (input is current elo ratings for everyone, output is updated elo ratings after that day).
+
+    * write a function that takes a set of ELO ratings and a day. Output is a new set of ELO ratings.
+
 ##Sept 19 update:
 
 looked through hope's thesis and her model to make her elo seemed pretty complicated. So the I went to the article the Dr. Lock sent me and it had a very user-friendly elo code that I could base mine off of! Wrote the code almost exactly as the lesson showed and almost got it to run. Also, tweaked my dataframe and function to make an "outcome" and "score differential" variable.
