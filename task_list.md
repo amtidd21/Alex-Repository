@@ -1,5 +1,17 @@
 ## Task List
 
+## For October 3
+
+1. Take the following
+
+    * data frame with team names and starting ELO ratings
+    * data frame with a schedule (home team, away team, whether or not the home team wins) and a result
+    * k variable
+
+and turn it into:
+
+    * a data frame with the team names and their updated ELO ratings.
+
 ## For September 26
 
 1. Get code working out of the loop.
