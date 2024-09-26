@@ -13,57 +13,66 @@ library(dplyr)
 library(tidyverse)
 library(cowplot)
 library(ggrepel)
-schedule2324
+```
+
+```{r}
+schedule2324 <- read.csv("~/Desktop/SYE2024/schedule2324.csv")
+```
+
+```{r}
+hockey_exp_scores <- function(team_rating, opp_team_rating) {
+   1/(1 + 10^((opp_team_rating-team_rating)/400))
+}
+
+hockey_new_rating <- function(team_rating, observed_score, expected_score, update_factor = 20) {team_rating + update_factor * (observed_score - expected_score)
+}
+
+
 ```
 
 ```{r}
 ##Using Ron Yurko's method to creating elo ratings for NCAA, will act as skeleton as k values and scaling factors are not optimized
 
-hockey_exp_scores_rough <- function(team_rating_rough, opp_team_rating_rough) {
-   1/(1 + 10^((opp_team_rating_rough-team_rating_rough)/400))
-}
-
-hockey_new_rating_rough <- function(team_rating_rough, observed_score_rough, expected_score_rough, update_factor_rough = 20) {team_rating_rough + update_factor_rough * (observed_score_rough - expected_score_rough)
-}
-
-elo_ratings_rough <- tibble(team = unique(schedule2324$home_team),
+elo_ratings <- tibble(team = unique(schedule2324$home_team),
                             elo_rating = 1500,
-                            date = "2023-10-07")
+                            day = "2023-10-07")
 
-for(game_i_rough in 1:nrow(schedule2324)) {
-  home_team_rough <- schedule2324$home_team[game_i_rough]
-  away_team_rough <- schedule2324$away_team[game_i_rough]
+for(game_i in 1:nrow(schedule2324)) {
+  home_team <- schedule2324$home_team[game_i]
+  away_team <- schedule2324$away_team[game_i]
   
-  observed_home_score_rough <- schedule2324$outcome[game_i_rough]
-  observed_away_score_rough <- 1-abs(schedule2324$outcome[game_i_rough])
-  game_date_rough <- schedule2324$date[game_i_rough]
+  observed_home_score <- schedule2324$outcome[game_i]
+  observed_away_score <- 1-abs(schedule2324$outcome[game_i])
+  game_date <- schedule2324$date[game_i]
   
   ##Problem with the filter()
-  home_rating_rough <- elo_ratings_rough |>
+  home_rating <- elo_ratings |>
     filter(team == home_team) |>
     arrange(desc(date)) |>
     slice(1) |>
     pull(elo_rating)
   ##Problem with the filter
-  away_rating_rough <- elo_ratings_rough |>
+  away_rating <- elo_ratings |>
     filter(team == away_team) |>
     arrange(desc(date)) |>
     slice(1) |>
     pull(elo_rating)
   
-new_home_rating_rough <- hockey_new_rating_rough(team_rating_rough = home_rating_rough, observed_score_rough = observed_home_score_rough, expected_score_rough = hockey_exp_scores_rough(home_rating_rough, away_rating_rough))
+new_home_rating <- hockey_new_ratingh(team_rating = home_rating, observed_score = observed_home_score, expected_score = hockey_exp_scores(home_rating, away_rating))
   
-new_away_rating_rough <- hockey_new_rating_rough(team_rating_rough = away_rating_rough, observed_score_rough = observed_away_score_rough, expected_score_rough = hockey_exp_scores_rough(away_rating_rough, home_rating_rough))
+new_away_rating <- hockey_new_rating(team_rating = away_rating, observed_score = observed_away_score, expected_score= hockey_exp_scores(away_rating, home_rating))
 
-updated_ratings_rough <- tibble(team = c(home_team, away_team),
-                                elo_rating = c(new_home_rating_rough, new_away_rating_rough),
+updated_ratings <- tibble(team = c(home_team, away_team),
+                                elo_rating = c(new_home_rating, new_away_rating),
 date = rep(date, "2023-10-08"))
 
-elo_ratings_rough <- elo_ratings_rough |>
-  bind_rows(updated_ratings_rough)
+elo_ratings <- elo_ratings |>
+  bind_rows(updated_ratings)
 }
 ```
 
 
-
+```{r}
+elo_ratings
+```
 
