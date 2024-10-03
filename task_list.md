@@ -1,5 +1,11 @@
 ## Task List
 
+## For October 10
+
+1. Add to the working ELO code an additional update iteration (through using joining).
+
+2. Short write-up on one ELO update.
+
 ## 03OCT2024 UPDATE:
 
 Was able top get Elo ratings for all teams that played on October 7 2023.
