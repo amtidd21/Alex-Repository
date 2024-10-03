@@ -1,5 +1,14 @@
 ## Task List
 
+## 03OCT2024 UPDATE:
+
+Was able top get Elo ratings for all teams that played on October 7 2023.
+Is it the best way to do it? No.
+Does it work for this specific task at hand? I believe so!
+Sadly, not all the teams played on that specific day, and some teams played twice.
+Since we wanted to get the score for a specific date, not all the teams are there.
+But can easily repeat the process for the next days and so forth!
+
 ## For October 3
 
 1. Take the following

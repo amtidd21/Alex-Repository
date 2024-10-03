@@ -1,0 +1,57 @@
+---
+title: "Non-Looped Elo"
+author: "Alex Tidd"
+format: html
+---
+
+```{r}
+library(elo)
+library(dplyr)
+library(tidyverse)
+library(cowplot)
+library(ggrepel)
+library(lubridate)
+```
+
+```{r}
+schedule2324 <- read.csv("~/Desktop/SYE2024/schedule2324.csv")
+```
+
+```{r}
+schedule2324 <- schedule2324 |>
+  mutate(date = ymd(date))
+```
+
+```{r}
+elo_ratings_initial <- tibble(home_team = schedule2324$home_team,
+                              away_team = schedule2324$away_team,
+                            elo_rating_home = 1500,
+                            elo_rating_away = 1500,
+                            outcome_home = schedule2324$outcome,
+                            date = schedule2324$date)
+```
+
+```{r}
+k = 20
+elo_ratings_initial <- elo_ratings_initial |> 
+  filter(date == min(date)) |>
+  mutate(outcome_away = abs(outcome_home - 1)) |> 
+  mutate(exp_home = 1/(1 + 10^((elo_rating_away - elo_rating_home)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((elo_rating_home - elo_rating_away)/400))) |>
+  mutate(elo_new_home = elo_rating_home + k*(outcome_home - exp_home)) |>
+  mutate(elo_new_away = elo_rating_away + k*(outcome_away - exp_away))
+```
+
+```{r}
+ratings_update_home <- tibble(team = elo_ratings_initial$home_team,
+                              rating = elo_ratings_initial$elo_new_home)
+ratings_updated_away <- tibble(team = elo_ratings_initial$away_team,
+                              rating = elo_ratings_initial$elo_new_away)
+```
+
+```{r}
+ratings_updated_07OCT <- bind_rows(ratings_update_home, ratings_updated_away) |>
+  arrange(desc(rating))
+##Huzzah
+```
+
