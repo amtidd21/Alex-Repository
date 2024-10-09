@@ -1,0 +1,123 @@
+---
+title: "elo_joining"
+author: "Alex Tidd"
+format: html
+---
+
+```{r}
+library(elo)
+library(dplyr)
+library(tidyverse)
+library(cowplot)
+library(ggrepel)
+library(lubridate)
+```
+
+```{r}
+schedule2324 <- read.csv("~/Desktop/SYE2024/schedule2324.csv")
+```
+
+```{r}
+schedule2324 <- schedule2324 |>
+  mutate(date = ymd(date))
+```
+
+```{r}
+elo_ratings_initial <- tibble(home_team = schedule2324$home_team,
+                              away_team = schedule2324$away_team,
+                            elo_rating_home = 1500,
+                            elo_rating_away = 1500,
+                            outcome_home = schedule2324$outcome,
+                            game_date = schedule2324$date)
+```
+
+```{r}
+elo_ratings_initial_hna <- elo_ratings_initial |>
+  mutate(elo_rating_home =  if_else(game_date == "2023-10-07",
+                                        true = 1500,
+                                        false = NA))
+elo_ratings_initial_ana <- elo_ratings_initial_hna |>
+  mutate(elo_rating_away =  if_else(game_date == "2023-10-07",
+                                        true = 1500,
+                                        false = NA))
+```
+
+```{r}
+k = 20
+elo_ratings_initial_1 <- elo_ratings_initial_ana |> 
+  mutate(outcome_away = abs(outcome_home - 1)) |> 
+  mutate(exp_home = 1/(1 + 10^((elo_rating_away - elo_rating_home)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((elo_rating_home - elo_rating_away)/400))) |>
+  mutate(elo_new_home = elo_rating_home + k*(outcome_home - exp_home)) |>
+  mutate(elo_new_away = elo_rating_away + k*(outcome_away - exp_away))
+```
+
+
+```{r}
+elo_ratings_initial_2 <- elo_ratings_initial_1 |>
+  select(home_team, away_team, game_date, elo_new_home, elo_new_away)
+```
+
+```{r}
+elo_ratings_initial_3 <- elo_ratings_initial_1 |>
+  mutate(elo_rating_home_1 = 
+           if_else(elo_new_home == is.na(elo_new_home),
+                   true = elo_rating_home,
+                   false = elo_new_home))
+```
+
+```{r}
+k = 20
+elo_ratings_test <- elo_ratings_initial |> 
+  mutate(outcome_away = abs(outcome_home - 1)) |> 
+  mutate(exp_home = if_else(game_date == "2023-10-07",
+                            true = 1/(1 + 10^((elo_rating_away - elo_rating_home)/400)),
+                            false = NA)) |>
+  mutate(exp_away = if_else(game_date == "2023-10-07",
+                            true = 1/(1 + 10^((elo_rating_home - elo_rating_away)/400)),
+                            false = NA)) |>
+  mutate(elo_new_home = elo_rating_home + k*(outcome_home - exp_home)) |>
+  mutate(elo_new_away = elo_rating_away + k*(outcome_away - exp_away))
+```
+
+```{r}
+elo_ratings_test_update <- elo_ratings_test |>
+  mutate(elo_rating_home_1 = 
+           if_else(elo_new_home == is.na(elo_new_home),
+                   true = elo_rating_home,
+                   false = elo_new_home))
+```
+
+```{r}
+k = 20
+elo_ratings_test_alternative <- elo_ratings_initial |> 
+  mutate(outcome_away = abs(outcome_home - 1)) |> 
+  mutate(exp_home = if_else(game_date == "2023-10-07",
+                            true = 1/(1 + 10^((elo_rating_away - elo_rating_home)/400)),
+                            false = NA)) |>
+  mutate(exp_away = if_else(game_date == "2023-10-07",
+                            true = 1/(1 + 10^((elo_rating_home - elo_rating_away)/400)),
+                            false = NA)) |>
+  mutate(elo_new_home = if_else(game_date == "2023-10-07",
+                                true = elo_rating_home + 20*(outcome_home - exp_home),
+                                false = elo_rating_home)) |>
+  mutate(elo_new_away = if_else(game_date == "2023-10-07",
+                                true = elo_rating_away + 20*(outcome_away - exp_away),
+                                false = elo_rating_away))
+```
+
+```{r}
+ratings_update_home <- tibble(team = elo_ratings_test_alternative$home_team,
+                              rating = elo_ratings_test_alternative$elo_new_home) |>
+  arrange(desc(rating))
+ratings_updated_away <- tibble(team = elo_ratings_test_alternative$away_team,
+                              rating = elo_ratings_test_alternative$elo_new_away) |>
+  arrange(desc(rating))
+```
+
+```{r}
+ratings_updated_07OCT24 <- bind_rows(ratings_update_home, ratings_updated_away) |>
+  arrange(desc(rating))
+```
+
+
