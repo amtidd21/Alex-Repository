@@ -1,0 +1,96 @@
+---
+title: "Higham_Joining"
+author: "Alex Tidd"
+format: html
+---
+
+```{r}
+library(elo)
+library(dplyr)
+library(tidyverse)
+library(cowplot)
+library(ggrepel)
+library(lubridate)
+```
+
+```{r}
+NCAA_teams <- read_csv("NCAA_teams.csv")
+schedule2324 <- read.csv("~/Desktop/SYE2024/schedule2324.csv")
+```
+
+```{r}
+schedule2324 <- schedule2324 |>
+  mutate(date = ymd(date))
+```
+
+```{r}
+elo_ratings_initial <- tibble(home_team = schedule2324$home_team,
+                              away_team = schedule2324$away_team,
+                            elo_rating_home = NA,
+                            elo_rating_away = NA,
+                            outcome_home = schedule2324$outcome,
+                            game_date = schedule2324$date) |>
+  mutate(outcome_away = abs(outcome_home - 1))
+```
+
+
+```{r}
+elo_main <- NCAA_teams |>
+  mutate(rating = 1500) |>
+  select(Team, rating)
+```
+
+```{r}
+left_join_home <- left_join(elo_main, elo_ratings_initial, by = join_by(Team == home_team))
+```
+
+```{r}
+left_joined_ratings <- left_join(elo_main, left_join_home, by = join_by(Team == away_team))
+```
+
+```{r}
+#Going the other way to see if we wanted to keep the opposite frame
+right_join_home <- right_join(elo_main, elo_ratings_initial, by = join_by(Team == home_team))
+
+right_joined_ratings <- right_join(elo_main, left_join_home, by = join_by(Team == away_team))
+```
+
+```{r}
+elo_ratings_start <- right_joined_ratings |>
+  mutate(elo_rating_home = rating.x) |>
+  mutate(elo_rating_away = rating.y) |>
+  mutate(home_team = Team) |>
+  mutate(away_team = Team.y) |>
+  select(-rating.x, -rating.y, -Team, -Team.y) |>
+  select(game_date, home_team, elo_rating_home, away_team, elo_rating_away, everything())
+```
+
+```{r}
+elo_ratings_test_alternative <- elo_ratings_start |> 
+  mutate(exp_home = 1/(1 + 10^((elo_rating_away - elo_rating_home)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((elo_rating_home - elo_rating_away)/400))) |>
+  mutate(elo_new_home = elo_rating_home + 20*(outcome_home - exp_home)) |>
+  mutate(elo_new_away = elo_rating_away + 20*(outcome_away - exp_away)) |>
+  filter(game_date == "2023-10-07")
+```
+
+```{r}
+home_df <- elo_ratings_test_alternative |>
+  select(home_team, elo_new_home) |>
+  rename(team = home_team, elo_updated = elo_new_home)
+away_df <- elo_ratings_test_alternative |>
+  select(away_team, elo_new_away) |>
+   rename(team = away_team, elo_updated = elo_new_away)
+OCT07_Ratings <- bind_rows(home_df, away_df) |>
+  arrange(desc(elo_updated))
+```
+
+```{r}
+elo_main_update <- left_join(OCT07_Ratings, elo_main, by = join_by(elo_updated == rating)) |>
+  filter(is.na(Team))
+```
+
+```{r}
+lo_main_update <- left_join(elo_main, OCT07_Ratings, by = join_by(rating == elo_updated))
+```
+
