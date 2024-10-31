@@ -1,5 +1,13 @@
 ## Task List
 
+## For November 7.
+
+1. Put code into a function with three inputs: schedule, set_of_ratings, date and one output: set_of_ratings. As you're writing, think about whether you need the initial data set, or, if you can sub in elo_main instead).
+
+2. Write code to loop through the function for a given set of dates (`unique(elo_ratings_initial$date`).
+
+3. rename `elo_ratings_initial` to `elo_schedule` and `elo_main` to `elo_ratings`.
+
 ## For October 10
 
 1. Add to the working ELO code an additional update iteration (through using joining).
