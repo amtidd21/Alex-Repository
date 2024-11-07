@@ -1,6 +1,10 @@
 ## Task List
 
-## For November 7.
+## For November 14
+
+1. Write code to loop through the function for a given set of dates (`unique(elo_ratings_initial$date`).
+
+## For November 7
 
 1. Put code into a function with three inputs: schedule, set_of_ratings, date and one output: set_of_ratings. As you're writing, think about whether you need the initial data set, or, if you can sub in elo_main instead).
 
