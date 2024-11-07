@@ -1,0 +1,31 @@
+---
+title: "Schedule sandbox"
+format: html
+---
+
+```{r}
+library(here)
+library(mosaic)
+sched <- read_csv("schedule2324.csv")
+```
+
+```{r}
+daysched <- sched |>
+  filter(date == "2023-10-07") |>
+  select(-c(11, 12))
+```
+
+```{r}
+ratings <- read_csv("NCAA_teams.csv") |>
+  mutate(rating = 1500) |>
+  select(Team, rating)
+```
+
+```{r}
+junk <- left_join(daysched, ratings, by = join_by(away_team == Team))
+```
+
+```{r}
+
+```
+
