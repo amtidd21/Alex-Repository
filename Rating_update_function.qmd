@@ -84,12 +84,18 @@ write.csv(schedule, "schedule2324.csv", row.names = FALSE)
 ```
 
 ```{r}
+schedule
+```
+
+```{r}
 ##Function to get updated ratings
 
 update_rankings <- function(season, game_date, ratings){
   elo_ratings_update <- season |> filter(date == game_date) |>
-  left_join(season, ratings, by = join_by(away_team == Team)) |>
-  left_join(season, ratings, by = join_by(home_team == Team)) |>
+  left_join(ratings, by = join_by(away_team == Team)) |>
+  rename(away_elo = rating) |>  
+  left_join(ratings, by = join_by(home_team == Team)) |>
+    rename(home_elo = rating) |>
   mutate(outcome_away = abs(outcome - 1)) |> 
   mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
   mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
@@ -105,14 +111,15 @@ return(ratings)
 ```
 
 ```{r}
-try_OCT7 <- update_rankings(season = "schedule", game_date = "2023-10-07", ratings = "rankings")
+try_OCT7 <- update_rankings(season = schedule, game_date = "2023-10-07", ratings = rankings)
+try_OCT8 <- update_rankings(season = schedule, game_date = "2023-10-08", ratings = try_OCT7)
 ```
 
 ```{r}
 ##Writing a for loop for the above function
 dates_vec <- unique(schedule$date)
-
-for (i in 1:n(dates_vec)) {
+dates_vec[17]
+for (i in 1:length(dates_vec)) {
   
 }
 ```
