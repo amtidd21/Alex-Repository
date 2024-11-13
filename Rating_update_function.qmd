@@ -84,7 +84,7 @@ write.csv(schedule, "schedule2324.csv", row.names = FALSE)
 ```
 
 ```{r}
-schedule
+schedule <- schedule2324
 ```
 
 ```{r}
@@ -111,15 +111,20 @@ return(ratings)
 ```
 
 ```{r}
-try_OCT7 <- update_rankings(season = schedule, game_date = "2023-10-07", ratings = rankings)
+try_vec <- update_rankings(season = schedule, game_date = dates_vec[17], ratings = rankings)
 try_OCT8 <- update_rankings(season = schedule, game_date = "2023-10-08", ratings = try_OCT7)
 ```
 
 ```{r}
 ##Writing a for loop for the above function
+##Reason for error in 13th date: D3 vs D1 game, St. Anselm not in ratings function
+##Reason for error in 27th date: D3 vs D1 game, Anna Maria not in ratings function
+##Reason for error in 34th date: D3 vs D1 game, St. Anselm not in ratings function
+##Reason for error in 76th date: D3 vs D1 game, Assumption not in ratings function
 dates_vec <- unique(schedule$date)
-dates_vec[17]
-for (i in 1:length(dates_vec)) {
+dates_vec[76]
+for (i in 1:13) {
+ rankings <- update_rankings(season = schedule, game_date = dates_vec[i], ratings = rankings)
   
 }
 ```
