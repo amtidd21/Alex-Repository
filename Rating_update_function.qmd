@@ -74,17 +74,16 @@ schedule_new <- stats_filled_cleaner |> select(date, conference, X1, X2, X3, X4,
            case_when(score_diff == 0 ~ "0.5",
                      score_diff > 0 ~ "1",
                      score_diff < 0 ~ "0")) |>
-  mutate(outcome = as.double(outcome))
+  mutate(outcome = as.double(outcome)) |>
+  filter(game_type != "Non-Conference v. D3")
   
 return(schedule_new)
 }
-
-schedule <- scrape_men("20232024")
-write.csv(schedule, "schedule2324.csv", row.names = FALSE)
 ```
 
 ```{r}
-schedule <- schedule2324
+schedule <- scrape_men("20232024")
+write.csv(schedule, "schedule2324.csv", row.names = FALSE)
 ```
 
 ```{r}
@@ -111,7 +110,7 @@ return(ratings)
 ```
 
 ```{r}
-try_vec <- update_rankings(season = schedule, game_date = dates_vec[17], ratings = rankings)
+try_OCT7 <- update_rankings(season = schedule, game_date = "2023-10-07", ratings = rankings)
 try_OCT8 <- update_rankings(season = schedule, game_date = "2023-10-08", ratings = try_OCT7)
 ```
 
@@ -123,9 +122,9 @@ try_OCT8 <- update_rankings(season = schedule, game_date = "2023-10-08", ratings
 ##Reason for error in 76th date: D3 vs D1 game, Assumption not in ratings function
 dates_vec <- unique(schedule$date)
 dates_vec[76]
-for (i in 1:13) {
+for (i in 1:length(schedule)) {
  rankings <- update_rankings(season = schedule, game_date = dates_vec[i], ratings = rankings)
   
 }
+##Fixed the errors by filtering out "Non-Conference vs. D3" Gametype in the scraping function
 ```
-
