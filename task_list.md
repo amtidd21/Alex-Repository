@@ -1,5 +1,16 @@
 ## Task List
 
+## For November 21
+
+1. Fix scraping function.
+
+2. Pull data from new season.
+
+3. For the new season, update the loop so that it only runs through up to a certain date.
+
+4. Turn loop into a function: inputs are start date and end date as well as season and ratings and output should still be updating rating.
+
+
 ## For November 14
 
 1. Write code to loop through the function for a given set of dates (`unique(elo_ratings_initial$date`).
