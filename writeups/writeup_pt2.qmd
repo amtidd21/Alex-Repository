@@ -1,0 +1,11 @@
+---
+title: "Write Up Pt 2"
+author: "Alex Tidd"
+format: html
+---
+
+To gain a baseline approach to Elo ratings in a hockey context, the baseline "bare-bones" Elo function is used. In this function, k value is at 20, and the denominator of "expected outcome" is inputed the same as Elo for chess ratings. No other facctors besides outcome are used to calculate this rating, nor are any of the values "optimzed" for NCAA Hockey.
+
+To run this function, all that is required is to input your "season" as the schedule dataframe, in "game_date" you put in the date you want updated rankings for, in "ratings" you input the ratings file you are using (ie: a two column file with team name and rating), and a numeric value for "k". This will return a 2-columned data frame with teams and their updated rankings.
+
+The next task will be to manipulate this baseline Elo function to incorporate factors such as goal differential, high-scoring-low-diffeential/high-differential games, home-ice advantage, and overtime wins, as well as optimize k value and intital ratings. The end goal will to be create an expected outcome prediction model to be tested against actual game outcome.
