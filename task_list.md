@@ -1,5 +1,14 @@
 ## Task List
 
+<<<<<<< HEAD
+=======
+## For December 12
+
+1. Comment current functions.
+
+2. Put loop into a function with current schedule and end date as arguments.
+
+>>>>>>> 6f61d54aab88f5185ad016b0ad7b5cd082f6a1d5
 ## For November 21
 
 1. Fix scraping function.

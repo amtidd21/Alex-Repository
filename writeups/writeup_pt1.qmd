@@ -1,0 +1,16 @@
+---
+title: "Elo Write Up"
+author: "Alex Tidd"
+format: html
+---
+
+Elo ratings are a rating system predominantly used in chess.The rating takes into consideration strength of opponent, outcome of match, and recentness of match. In chess, everyone starts with an initial rating. From there the rating will increase, decrease, or remain constant based on the outcome of the match and the strength of opponent. This concept will be carried over to Men's NCAA D1 Hockey.
+
+
+The Elo rating is calculated using an expected game outcome, actual game outcome (win = 1, tie = 0.5, loss = 0), and difference in pre-game Elo rating. Expected outcome is calculated by: 1/(1 + 10^((elo_rating_away - elo_rating_home)/400)), (if finding away expected outcome, you merely swap the the Elo ratings in the denominator). This calculation uses the Elo ratings of the previous match of each team. Currently the constant of 400 is being used as a placeholder until that constant can be optimized for this unique project.
+
+
+Next, using that expected outcome, one can find the new Elo ratings for each team by using the equation: elo_new_home = elo_rating_home + 20*(outcome_home - exp_home). Once again, to find for the away team, you simply swap each value for the respective away value. In this case we have 20 as our correcting constant k. This k value is once again a place holder until we are able to optimize it for this project.
+
+
+After finding these new Elo ratings, one can continuously plug them into the expected outcome equation and updated Elo equation to find each teams updated Elo rating. The main focus of this project is to optimize our placeholder constants, factor in home ice advantage, overtime, and high-scoring vs low-scoring games. Once this is completed, a prediction model can be made to predict outcomes of future games.

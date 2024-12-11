@@ -100,7 +100,7 @@ scrape_men <- function(season = "20232024"){
 }
 
 ##Load in Schedule
-schedule <- scrape_men("20242025")
+schedule <- scrape_men("20232024")
 
 ##Function to update rankings
 update_rankings <- function(season, game_date, ratings, k = 20){
@@ -131,26 +131,35 @@ update_rankings <- function(season, game_date, ratings, k = 20){
 }
 
 ##loop to get updated weekly ratings
-dates_vec <- unique(Current_sched$date)
+## creating a vector for unique dates in a schedule dataframe
+dates_vec <- unique(schedule$date)
+## defining what new_rankings is going to be
 new_rankings = rankings
+## Creating a for loop with the update_rankings function to update rankings up to a specified date
 for (i in dates_vec) {
-  new_rankings <- update_rankings(season = Current_sched, game_date = i, ratings = new_rankings, k = 100)
+  new_rankings <- update_rankings(season = schedule, game_date = i, ratings = new_rankings, k = 100)
   
 }
 
+# season = schedule
+# end_date = "2024-01-07"
+# ratings = rankings
+# k = 100
 
-Current_sched <- schedule |>
-  filter(date <= "2024-12-02")
-
-## Iteration of update function, using a date filter
+## Iteration of update function, using a date filter. Old loop can't deal with NA Values
 update_rankings_iter <- function(season, end_date, ratings, k){
   season_cut <- season |> 
+    ## Filter by a specified end date to deal with NA values (gmaes that have yet to be played)
     filter(date <= ymd(end_date))
+  ## Creating a vector for unique dates in a season
   dates_vector <- unique(season_cut$date)
+  ## Defining our rankings within the function
+  new_rankings <- ratings
+  ## Creating a for loop for the function to generate new ratings with the updtae_rankings function
   for (i in dates_vector) {
-    new_rankings <- update_rankings(season = season_cut, end_date = i, ratings = new_rankings, k = 100)
-    return(new_rankings)
+    new_rankings <- update_rankings(season = season_cut, game_date = i, ratings = new_rankings, k = k)
   }
+  return(new_rankings)
 }
 
-update_rankings_iter(season = schedule, end_date = "2024-01-05", ratings = rankings, k = 100)
+update_rankings_iter(season = schedule, end_date = "2024-02-07", ratings = rankings, k = 100)
