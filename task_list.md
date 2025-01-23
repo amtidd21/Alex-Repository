@@ -1,5 +1,13 @@
 ## Task List
 
+## For January 30
+
+1. Figure out what the issue is with the Denver college team.
+
+2. Read a couple of papers on incorporating predictors into the ELO model.
+
+3. If there is an issue with the Denver team, try to fix it! If it's hard to diagnose, should subset the data to only include match-ups between 4 unique teams.
+
 <<<<<<< HEAD
 =======
 ## For December 12
