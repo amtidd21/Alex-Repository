@@ -26,7 +26,7 @@ scrape_men <- function(season = "20232024"){
     html_nodes("table")
   
   ## The website likes to switch which table it uses. If function doesn't work try changing which table number you select
-  stats_dirty <- tab_hockey[[2]] |> html_table()
+  stats_dirty <- tab_hockey[[1]] |> html_table()
   
   ## Creating regex for date, and conference to make date and conference columns in dataframe
   regex_date <- "October|November|December|January|February|March|April"
@@ -162,4 +162,4 @@ update_rankings_iter <- function(season, end_date, ratings, k){
   return(new_rankings)
 }
 
-update_rankings_iter(season = schedule, end_date = "2024-02-07", ratings = rankings, k = 100)
+try_rankings = update_rankings_iter(season = schedule, end_date = "2024-03-23", ratings = X22Rankings, k = 100)
