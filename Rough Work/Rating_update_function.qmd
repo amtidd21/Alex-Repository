@@ -32,7 +32,7 @@ scrape_men <- function(season = "20232024"){
 tab_hockey <- read_html(url_hockey) |>
   html_nodes("table")
 
-stats_dirty <- tab_hockey[[1]] |> html_table()
+stats_dirty <- tab_hockey[[2]] |> html_table()
 
 regex_date <- "October|November|December|January|February|March|April"
 regex_conference <- "Atlantic Hockey|Big Ten|CCHA|ECAC|Hockey East|NCHC|Ind|Exhibition|Non-Conference"
@@ -45,6 +45,7 @@ stats_filled <-stats_regex |> fill(date, .direction = "down") |>
   fill(conference, .direction = "down") |> select(date, conference, everything())
 stats_filled_cleaner <- stats_filled |> filter(!str_detect(X1, regex_date) &
                          !str_detect(X1, regex_conference))
+print(head(stats_filled_cleaner))
 
 schedule_new <- stats_filled_cleaner |> select(date, conference, X1, X2, X3, X4, X5, X6) |>
   slice(-1 , -2) |> rename(game_type = conference, away_team = X1, away_score = X2, location_marker = X3, home_team = X4, home_score = X5, overtime = X6) |> 
@@ -83,13 +84,13 @@ return(schedule_new)
 
 ```{r}
 schedule <- scrape_men("20232024")
-write.csv(schedule, "schedule2324.csv", row.names = FALSE)
+##write.csv(schedule, "schedule2324.csv", row.names = FALSE)
 ```
 
 ```{r}
 ##Function to get updated ratings
 
-update_rankings <- function(season, game_date, ratings){
+update_rankings <- function(season, game_date, ratings, k = 20){
   elo_ratings_update <- season |> filter(date == game_date) |>
   left_join(ratings, by = join_by(away_team == Team)) |>
   rename(away_elo = rating) |>  
@@ -98,8 +99,8 @@ update_rankings <- function(season, game_date, ratings){
   mutate(outcome_away = abs(outcome - 1)) |> 
   mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
   mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
-  mutate(elo_new_home = home_elo + 20*(outcome - exp_home)) |>
-  mutate(elo_new_away = away_elo + 20*(outcome_away - exp_away))
+  mutate(elo_new_home = home_elo + k*(outcome - exp_home)) |>
+  mutate(elo_new_away = away_elo + k*(outcome_away - exp_away))
 
   ratings$rating = replace(ratings$rating, ratings$Team %in% elo_ratings_update$home_team, elo_ratings_update$elo_new_home)
 
@@ -121,9 +122,10 @@ try_OCT8 <- update_rankings(season = schedule, game_date = "2023-10-08", ratings
 ##Reason for error in 34th date: D3 vs D1 game, St. Anselm not in ratings function
 ##Reason for error in 76th date: D3 vs D1 game, Assumption not in ratings function
 dates_vec <- unique(schedule$date)
+new_rankings = rankings
 dates_vec[76]
-for (i in 1:length(schedule)) {
- rankings <- update_rankings(season = schedule, game_date = dates_vec[i], ratings = rankings)
+for (i in dates_vec) {
+ new_rankings <- update_rankings(season = schedule, game_date = i, ratings = new_rankings, k = 100)
   
 }
 ##Fixed the errors by filtering out "Non-Conference vs. D3" Gametype in the scraping function

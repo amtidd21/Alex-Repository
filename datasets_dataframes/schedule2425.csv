@@ -1,0 +1,1090 @@
+"date","game_type","away_team","away_score","home_team","home_score","overtime","neutral_site","score_diff","outcome"
+2024-10-04,"Non-Conference","Michigan State",2,"Lake Superior",1,TRUE,FALSE,-1,0
+2024-10-04,"Non-Conference","Minnesota State",5,"Michigan",2,FALSE,FALSE,-3,0
+2024-10-04,"Non-Conference","Arizona State",8,"Air Force",1,FALSE,FALSE,-7,0
+2024-10-04,"Non-Conference","Bowling Green",2,"Mercyhurst",1,FALSE,FALSE,-1,0
+2024-10-04,"Non-Conference","Colgate",2,"Connecticut",4,FALSE,FALSE,2,1
+2024-10-04,"Non-Conference","Miami",3,"Ferris State",3,TRUE,FALSE,0,0.5
+2024-10-05,"Non-Conference","Michigan State",5,"Lake Superior",1,FALSE,FALSE,-4,0
+2024-10-05,"Non-Conference","Bemidji State",4,"Minnesota-Duluth",3,TRUE,FALSE,-1,0
+2024-10-05,"Non-Conference","Minnesota State",1,"Michigan",4,FALSE,FALSE,3,1
+2024-10-05,"Non-Conference","Denver",6,"Alaska-Anchorage",2,FALSE,FALSE,-4,0
+2024-10-05,"Non-Conference","Canisius",1,"Clarkson",2,FALSE,FALSE,1,1
+2024-10-05,"Non-Conference","RIT",2,"St. Lawrence",3,TRUE,FALSE,1,1
+2024-10-05,"Non-Conference","American Int'l",0,"Maine",6,FALSE,FALSE,6,1
+2024-10-05,"Non-Conference","Massachusetts",5,"Bentley",4,FALSE,FALSE,-1,0
+2024-10-05,"Non-Conference","Holy Cross",2,"Boston University",5,FALSE,FALSE,3,1
+2024-10-05,"Non-Conference","Bowling Green",5,"Mercyhurst",4,TRUE,FALSE,-1,0
+2024-10-05,"Non-Conference","Arizona State",3,"Air Force",4,TRUE,FALSE,1,1
+2024-10-05,"Non-Conference","Penn State",4,"Alaska",3,TRUE,FALSE,-1,0
+2024-10-05,"Non-Conference","Colgate",2,"Connecticut",6,FALSE,FALSE,4,1
+2024-10-05,"Non-Conference","Miami",4,"Ferris State",4,TRUE,FALSE,0,0.5
+2024-10-06,"Non-Conference","RIT",3,"Clarkson",2,FALSE,FALSE,-1,0
+2024-10-06,"Non-Conference","Canisius",2,"St. Lawrence",5,FALSE,FALSE,3,1
+2024-10-06,"Non-Conference","Army",3,"Union",4,TRUE,FALSE,1,1
+2024-10-06,"Non-Conference","Stonehill",3,"Merrimack",2,TRUE,FALSE,-1,0
+2024-10-06,"Non-Conference","Denver",4,"Alaska-Anchorage",1,FALSE,FALSE,-3,0
+2024-10-06,"Non-Conference","St. Cloud State",1,"St. Thomas",0,FALSE,FALSE,-1,0
+2024-10-06,"Non-Conference","Penn State",5,"Alaska",0,FALSE,FALSE,-5,0
+2024-10-11,"Non-Conference","Michigan",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Boston College",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Ferris State",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Vermont",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Sacred Heart",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Lindenwood",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Northern Michigan",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Union",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Rensselaer",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","American Int'l",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Niagara",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Notre Dame",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Connecticut",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Alaska-Anchorage",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Merrimack",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Long Island",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Alaska",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Minnesota-Duluth",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Bemidji State",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2024-10-11,"Non-Conference","Omaha",NA,"Massachusetts",NA,FALSE,TRUE,NA,NA
+2024-10-11,"Non-Conference","Minnesota",NA,"Air Force",NA,FALSE,TRUE,NA,NA
+2024-10-11,"Atlantic Hockey","RIT",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Atlantic Hockey","Massachusetts",NA,"Minn./Air Force",NA,FALSE,TRUE,NA,NA
+2024-10-12,"Atlantic Hockey","Air Force",NA,"UNO/UMass",NA,FALSE,TRUE,NA,NA
+2024-10-12,"Atlantic Hockey","Minnesota",NA,"UMass/UNO",NA,FALSE,TRUE,NA,NA
+2024-10-12,"Non-Conference","Holy Cross",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Sacred Heart",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Michigan",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Rensselaer",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","American Int'l",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Boston College",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Lindenwood",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Vermont",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Northern Michigan",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Minnesota-Duluth",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Long Island",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Merrimack",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","St. Cloud State",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Alaska",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Providence",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Penn State",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Niagara",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Stonehill",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Union",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Notre Dame",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Western Michigan",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Bentley",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Non-Conference","Alaska-Anchorage",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2024-10-12,"Atlantic Hockey","RIT",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-10-17,"Non-Conference","Robert Morris",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2024-10-17,"Non-Conference","Bowling Green",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Hockey East","New Hampshire",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Hockey East","Connecticut",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Big Ten","Ohio State",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Northeastern",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Minnesota",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Niagara",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","American Int'l",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Quinnipiac",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Long Island",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Ferris State",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Mercyhurst",NA,"Union",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Arizona State",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Sacred Heart",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","St. Cloud State",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Lindenwood",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Alaska",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","North Dakota",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Stonehill",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Augustana",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Alaska-Anchorage",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2024-10-18,"Non-Conference","Colgate",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Arizona State",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Mercyhurst",NA,"Union",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Niagara",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Minnesota",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Northeastern",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Colgate",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Alaska",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Alaska-Anchorage",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Stonehill",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","North Dakota",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Miami",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Massachusetts",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Long Island",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Ferris State",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","St. Cloud State",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Bowling Green",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Augustana",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Quinnipiac",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Non-Conference","Clarkson",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Big Ten","Ohio State",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2024-10-19,"Atlantic Hockey","Army",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2024-10-20,"Non-Conference","Lindenwood",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2024-10-20,"Atlantic Hockey","Army",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2024-10-22,"Atlantic Hockey","Mercyhurst",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Atlantic Hockey","Air Force",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Atlantic Hockey","Bentley",NA,"Army",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Atlantic Hockey","Niagara",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Atlantic Hockey","Holy Cross",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Stonehill",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Clarkson",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Bowling Green",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Colorado College",NA,"Alaska-Anchorage",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","St. Lawrence",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","New Hampshire",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Michigan State",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Augustana",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Wisconsin",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Lindenwood",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Colgate",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Long Island",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Boston University",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Omaha",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","Arizona State",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Non-Conference","St. Thomas",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2024-10-25,"ECAC","Union",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Hockey East","Connecticut",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Hockey East","Maine",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2024-10-25,"Hockey East","Providence",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2024-10-25,"CCHA","Bemidji State",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","St. Lawrence",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Lindenwood",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","New Hampshire",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Stonehill",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Augustana",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Colgate",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Colorado College",NA,"Alaska-Anchorage",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Wisconsin",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Long Island",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Omaha",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Boston University",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Arizona State",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Clarkson",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Western Michigan",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Michigan State",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Ohio State",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Non-Conference","Minnesota",NA,"St. Thomas",NA,FALSE,TRUE,NA,NA
+2024-10-26,"Atlantic Hockey","Air Force",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Atlantic Hockey","Bentley",NA,"Army",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Atlantic Hockey","Robert Morris",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Atlantic Hockey","Holy Cross",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Hockey East","Massachusetts",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Hockey East","Providence",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Hockey East","Maine",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2024-10-26,"Hockey East","Mass.-Lowell",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2024-10-26,"CCHA","Bemidji State",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2024-10-26,"ECAC","Rensselaer",NA,"Union",NA,FALSE,FALSE,NA,NA
+2024-10-30,"Atlantic Hockey","RIT",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2024-10-31,"Atlantic Hockey","Army",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Atlantic Hockey","Mercyhurst",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Atlantic Hockey","Army",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Atlantic Hockey","Sacred Heart",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Big Ten","Penn State",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Big Ten","Wisconsin",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2024-11-01,"ECAC","Dartmouth",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Hockey East","New Hampshire",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Hockey East","Merrimack",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Non-Conference","Lake Superior",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Non-Conference","Air Force",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Non-Conference","North Dakota",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Non-Conference","Michigan",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Non-Conference","Denver",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Non-Conference","St. Lawrence",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Non-Conference","Lindenwood",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Non-Conference","Alaska",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Non-Conference","Mass.-Lowell",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Non-Conference","Rensselaer",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2024-11-01,"Non-Conference","Boston College",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2024-11-01,"CCHA","Ferris State",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2024-11-01,"CCHA","Michigan Tech",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2024-11-01,"CCHA","Minnesota State",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2024-11-01,"CCHA","Augustana",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Big Ten","Penn State",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Big Ten","Wisconsin",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Non-Conference","Massachusetts",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Non-Conference","Lake Superior",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Non-Conference","Boston College",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Non-Conference","Lindenwood",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Non-Conference","Quinnipiac",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Non-Conference","Michigan",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Non-Conference","North Dakota",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Non-Conference","Alaska",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Non-Conference","Denver",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Non-Conference","Colorado College",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Non-Conference","Rensselaer",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Hockey East","Providence",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Hockey East","Vermont",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Hockey East","Merrimack",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2024-11-02,"CCHA","Minnesota State",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2024-11-02,"CCHA","Northern Michigan",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2024-11-02,"CCHA","Augustana",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2024-11-02,"CCHA","Ferris State",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Atlantic Hockey","Bentley",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2024-11-02,"Atlantic Hockey","Niagara",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-11-03,"Hockey East","Vermont",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2024-11-03,"Non-Conference","Stonehill",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2024-11-04,"Atlantic Hockey","Robert Morris",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-11-07,"Atlantic Hockey","American Int'l",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Big Ten","Ohio State",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Big Ten","Minnesota",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Big Ten","Notre Dame",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Atlantic Hockey","Sacred Heart",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Atlantic Hockey","Niagara",NA,"Army",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Atlantic Hockey","RIT",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Atlantic Hockey","American Int'l",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Atlantic Hockey","Canisius",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2024-11-08,"ECAC","Harvard",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2024-11-08,"ECAC","Dartmouth",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2024-11-08,"ECAC","Yale",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2024-11-08,"ECAC","Brown",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Hockey East","Massachusetts",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Hockey East","Maine",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Hockey East","Mass.-Lowell",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Hockey East","Northeastern",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Hockey East","Connecticut",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2024-11-08,"NCHC","Western Michigan",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2024-11-08,"NCHC","Arizona State",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2024-11-08,"NCHC","North Dakota",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2024-11-08,"NCHC","Miami",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Non-Conference","Alaska",NA,"Union",NA,FALSE,FALSE,NA,NA
+2024-11-08,"Non-Conference","Lindenwood",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2024-11-08,"CCHA","Minnesota State",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2024-11-08,"CCHA","Lake Superior",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2024-11-08,"CCHA","Bemidji State",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2024-11-08,"CCHA","Michigan Tech",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Big Ten","Ohio State",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Big Ten","Minnesota",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Big Ten","Notre Dame",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Hockey East","Merrimack",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Hockey East","Boston University",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Hockey East","Massachusetts",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Hockey East","Providence",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Atlantic Hockey","RIT",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Atlantic Hockey","Niagara",NA,"Army",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Atlantic Hockey","Sacred Heart",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Non-Conference","Alaska",NA,"Union",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Non-Conference","Lindenwood",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Non-Conference","Long Island",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2024-11-09,"Non-Conference","Stonehill",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2024-11-09,"NCHC","Arizona State",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2024-11-09,"NCHC","North Dakota",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2024-11-09,"NCHC","Miami",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2024-11-09,"NCHC","Western Michigan",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2024-11-09,"CCHA","St. Thomas",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-11-09,"CCHA","Lake Superior",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2024-11-09,"CCHA","Michigan Tech",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2024-11-09,"CCHA","Bemidji State",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2024-11-09,"ECAC","Harvard",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2024-11-09,"ECAC","Brown",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2024-11-09,"ECAC","Yale",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2024-11-09,"ECAC","Dartmouth",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2024-11-10,"Hockey East","Maine",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2024-11-10,"Atlantic Hockey","Canisius",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2024-11-12,"Non-Conference","Merrimack",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2024-11-14,"Non-Conference","Bemidji State",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2024-11-14,"Hockey East","Providence",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2024-11-15,"NCHC","Omaha",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2024-11-15,"NCHC","Colorado College",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2024-11-15,"NCHC","Minnesota-Duluth",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2024-11-15,"NCHC","Denver",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Big Ten","Wisconsin",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Big Ten","Notre Dame",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Atlantic Hockey","American Int'l",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Atlantic Hockey","Robert Morris",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Atlantic Hockey","Holy Cross",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Atlantic Hockey","Army",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Atlantic Hockey","Mercyhurst",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2024-11-15,"ECAC","Colgate",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2024-11-15,"ECAC","Princeton",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2024-11-15,"ECAC","Clarkson",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2024-11-15,"ECAC","St. Lawrence",NA,"Union",NA,FALSE,FALSE,NA,NA
+2024-11-15,"ECAC","Cornell",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2024-11-15,"ECAC","Quinnipiac",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Hockey East","Boston University",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Hockey East","Boston College",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Hockey East","Mass.-Lowell",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Hockey East","Northeastern",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Non-Conference","Long Island",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Non-Conference","Alaska",NA,"Alaska-Anchorage",NA,FALSE,FALSE,NA,NA
+2024-11-15,"Non-Conference","Ohio State",NA,"Lindenwood",NA,FALSE,FALSE,NA,NA
+2024-11-15,"CCHA","Bowling Green",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2024-11-15,"CCHA","Ferris State",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2024-11-15,"CCHA","Northern Michigan",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-11-16,"ECAC","Quinnipiac",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2024-11-16,"ECAC","Clarkson",NA,"Union",NA,FALSE,FALSE,NA,NA
+2024-11-16,"ECAC","Colgate",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2024-11-16,"ECAC","Princeton",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2024-11-16,"ECAC","St. Lawrence",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2024-11-16,"ECAC","Cornell",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Hockey East","Massachusetts",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Hockey East","Mass.-Lowell",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Hockey East","New Hampshire",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Hockey East","Boston University",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2024-11-16,"NCHC","Omaha",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2024-11-16,"NCHC","Colorado College",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2024-11-16,"NCHC","Denver",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2024-11-16,"NCHC","Minnesota-Duluth",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Big Ten","Wisconsin",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Big Ten","Notre Dame",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Non-Conference","Ohio State",NA,"Lindenwood",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Non-Conference","Long Island",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Non-Conference","Alaska",NA,"Alaska-Anchorage",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Non-Conference","Minnesota",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Atlantic Hockey","Robert Morris",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Atlantic Hockey","Holy Cross",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Atlantic Hockey","American Int'l",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Atlantic Hockey","Army",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2024-11-16,"Atlantic Hockey","Mercyhurst",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2024-11-16,"CCHA","Ferris State",NA,"Lake Superior",NA,FALSE,TRUE,NA,NA
+2024-11-16,"CCHA","Northern Michigan",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-11-16,"CCHA","Bowling Green",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2024-11-19,"Hockey East","Boston College",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2024-11-19,"Non-Conference","Stonehill",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Big Ten","Michigan",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Big Ten","Minnesota",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Atlantic Hockey","Air Force",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Atlantic Hockey","Holy Cross",NA,"Army",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Atlantic Hockey","Canisius",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Atlantic Hockey","RIT",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2024-11-22,"ECAC","Quinnipiac",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2024-11-22,"ECAC","Yale",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2024-11-22,"ECAC","Princeton",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2024-11-22,"ECAC","Brown",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Hockey East","Merrimack",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Hockey East","Northeastern",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Hockey East","Maine",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Hockey East","Connecticut",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2024-11-22,"NCHC","Western Michigan",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2024-11-22,"NCHC","St. Cloud State",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2024-11-22,"NCHC","Arizona State",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2024-11-22,"NCHC","Miami",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Non-Conference","Harvard",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Non-Conference","Robert Morris",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2024-11-22,"Non-Conference","Stonehill",NA,"Lindenwood",NA,FALSE,FALSE,NA,NA
+2024-11-22,"CCHA","Minnesota State",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2024-11-22,"CCHA","St. Thomas",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2024-11-22,"CCHA","Augustana",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Big Ten","Michigan",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Big Ten","Minnesota",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Non-Conference","Long Island",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Non-Conference","Stonehill",NA,"Lindenwood",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Non-Conference","Robert Morris",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Non-Conference","Lake Superior",NA,"Alaska-Anchorage",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Atlantic Hockey","Air Force",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Atlantic Hockey","Canisius",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Atlantic Hockey","Niagara",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Atlantic Hockey","RIT",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2024-11-23,"ECAC","Yale",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2024-11-23,"ECAC","Princeton",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2024-11-23,"ECAC","Brown",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2024-11-23,"ECAC","Quinnipiac",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2024-11-23,"NCHC","Western Michigan",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2024-11-23,"NCHC","Arizona State",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2024-11-23,"NCHC","St. Cloud State",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2024-11-23,"NCHC","Miami",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Hockey East","Connecticut",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2024-11-23,"Hockey East","Boston College",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2024-11-23,"CCHA","St. Thomas",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2024-11-23,"CCHA","Minnesota State",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2024-11-23,"CCHA","Augustana",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2024-11-24,"Atlantic Hockey","Niagara",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2024-11-24,"Hockey East","Vermont",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2024-11-24,"Non-Conference","Lake Superior",NA,"Alaska-Anchorage",NA,FALSE,FALSE,NA,NA
+2024-11-26,"Non-Conference","Army",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2024-11-26,"Non-Conference","Colgate",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2024-11-27,"Non-Conference","Colgate",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","Alaska",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","Army",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","Alaska-Anchorage",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","Dartmouth",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","Ohio State",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","Michigan",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","Union",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","RIT",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","Air Force",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","Lindenwood",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","North Dakota",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","Yale",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Non-Conference","Merrimack",NA,"Boston University",NA,FALSE,TRUE,NA,NA
+2024-11-29,"Non-Conference","Harvard",NA,"Notre Dame",NA,FALSE,TRUE,NA,NA
+2024-11-29,"Non-Conference","St. Lawrence",NA,"Mass.-Lowell",NA,FALSE,TRUE,NA,NA
+2024-11-29,"Non-Conference","Clarkson",NA,"Providence",NA,FALSE,TRUE,NA,NA
+2024-11-29,"Atlantic Hockey","American Int'l",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2024-11-29,"Atlantic Hockey","Sacred Heart",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2024-11-29,"CCHA","Lake Superior",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2024-11-29,"CCHA","Michigan Tech",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2024-11-29,"CCHA","Northern Michigan",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2024-11-30,"CCHA","Notre Dame/Harvard",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2024-11-30,"CCHA","Merrimack/BU",NA,"Notre Dame",NA,FALSE,TRUE,NA,NA
+2024-11-30,"CCHA","Harvard",NA,"BU/Merrimack",NA,FALSE,TRUE,NA,NA
+2024-11-30,"Non-Conference","Alaska",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2024-11-30,"Non-Conference","Maine",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2024-11-30,"Non-Conference","Ohio State",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2024-11-30,"Non-Conference","Air Force",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2024-11-30,"Non-Conference","RIT",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2024-11-30,"Non-Conference","Bemidji State",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2024-11-30,"Non-Conference","Alaska-Anchorage",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2024-11-30,"Non-Conference","Union",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2024-11-30,"Non-Conference","Western Michigan",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2024-11-30,"Non-Conference","Yale",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2024-11-30,"Non-Conference","Quinnipiac",NA,"Cornell",NA,FALSE,TRUE,NA,NA
+2024-11-30,"Non-Conference","Providence",NA,"St. Lawrence",NA,FALSE,TRUE,NA,NA
+2024-11-30,"Non-Conference","Clarkson",NA,"Mass.-Lowell",NA,FALSE,TRUE,NA,NA
+2024-11-30,"Atlantic Hockey","American Int'l",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2024-11-30,"Atlantic Hockey","Sacred Heart",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2024-11-30,"CCHA","Northern Michigan",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2024-11-30,"CCHA","Lake Superior",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2024-11-30,"CCHA","Michigan Tech",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2024-12-01,"Non-Conference","Bentley",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2024-12-01,"Non-Conference","Maine",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2024-12-01,"Non-Conference","Dartmouth",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2024-12-01,"Non-Conference","Lindenwood",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2024-12-03,"Atlantic Hockey","Army",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2024-12-03,"Atlantic Hockey","Canisius",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2024-12-04,"Hockey East","Connecticut",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2024-12-04,"Non-Conference","Alaska-Anchorage",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Big Ten","Michigan",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Big Ten","Michigan State",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Big Ten","Penn State",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Atlantic Hockey","Holy Cross",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Atlantic Hockey","Sacred Heart",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Atlantic Hockey","Bentley",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Atlantic Hockey","Robert Morris",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Atlantic Hockey","Niagara",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2024-12-06,"NCHC","Minnesota-Duluth",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2024-12-06,"NCHC","Denver",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2024-12-06,"NCHC","North Dakota",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2024-12-06,"NCHC","Omaha",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2024-12-06,"ECAC","Colgate",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2024-12-06,"ECAC","Rensselaer",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2024-12-06,"ECAC","Union",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2024-12-06,"ECAC","St. Lawrence",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2024-12-06,"ECAC","Clarkson",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Hockey East","New Hampshire",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Hockey East","Boston College",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Non-Conference","Colorado College",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Non-Conference","Alaska-Anchorage",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Non-Conference","Long Island",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2024-12-06,"Non-Conference","Augustana",NA,"Alaska",NA,FALSE,FALSE,NA,NA
+2024-12-06,"CCHA","Ferris State",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2024-12-06,"CCHA","Bemidji State",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2024-12-06,"CCHA","Bowling Green",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-12-06,"CCHA","St. Thomas",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Big Ten","Michigan State",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Big Ten","Penn State",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Big Ten","Michigan",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Non-Conference","Colorado College",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Non-Conference","Long Island",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Non-Conference","Stonehill",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Non-Conference","Brown",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Non-Conference","Alaska-Anchorage",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Non-Conference","Augustana",NA,"Alaska",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Atlantic Hockey","Holy Cross",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Atlantic Hockey","Sacred Heart",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Atlantic Hockey","Bentley",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Atlantic Hockey","Robert Morris",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Atlantic Hockey","Niagara",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2024-12-07,"ECAC","Union",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2024-12-07,"ECAC","St. Lawrence",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2024-12-07,"ECAC","Cornell",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2024-12-07,"ECAC","Rensselaer",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2024-12-07,"ECAC","Clarkson",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2024-12-07,"NCHC","Minnesota-Duluth",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2024-12-07,"NCHC","Denver",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2024-12-07,"NCHC","Omaha",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2024-12-07,"NCHC","North Dakota",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2024-12-07,"Hockey East","Massachusetts",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2024-12-07,"CCHA","Bowling Green",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-12-07,"CCHA","Ferris State",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2024-12-07,"CCHA","Bemidji State",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2024-12-07,"CCHA","St. Thomas",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2024-12-08,"Non-Conference","Stonehill",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2024-12-09,"Hockey East","Mass.-Lowell",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2024-12-11,"Hockey East","Boston University",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2024-12-12,"Non-Conference","Augustana",NA,"Alaska-Anchorage",NA,FALSE,FALSE,NA,NA
+2024-12-12,"Non-Conference","Penn State",NA,"Army",NA,FALSE,TRUE,NA,NA
+2024-12-13,"Big Ten","Wisconsin",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2024-12-13,"Big Ten","Notre Dame",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2024-12-13,"Big Ten","Michigan State",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2024-12-13,"Non-Conference","Augustana",NA,"Alaska-Anchorage",NA,FALSE,FALSE,NA,NA
+2024-12-13,"Non-Conference","Vermont",NA,"Union",NA,FALSE,FALSE,NA,NA
+2024-12-13,"Non-Conference","New Hampshire",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2024-12-13,"Non-Conference","Lindenwood",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2024-12-13,"Non-Conference","Stonehill",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2024-12-13,"NCHC","Denver",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2024-12-13,"NCHC","St. Cloud State",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2024-12-13,"CCHA","Northern Michigan",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2024-12-13,"CCHA","Michigan Tech",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2024-12-13,"CCHA","Lake Superior",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-12-14,"Big Ten","Wisconsin",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2024-12-14,"Big Ten","Notre Dame",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2024-12-14,"Big Ten","Michigan State",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2024-12-14,"Atlantic Hockey","Robert Morris",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2024-12-14,"Non-Conference","Vermont",NA,"Union",NA,FALSE,FALSE,NA,NA
+2024-12-14,"Non-Conference","Rensselaer",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-12-14,"Non-Conference","Lindenwood",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2024-12-14,"Non-Conference","Stonehill",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2024-12-14,"Hockey East","Northeastern",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2024-12-14,"CCHA","Michigan Tech",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2024-12-14,"CCHA","Lake Superior",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2024-12-14,"CCHA","Northern Michigan",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2024-12-14,"NCHC","St. Cloud State",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2024-12-14,"NCHC","Colorado College",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2024-12-15,"Atlantic Hockey","Robert Morris",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2024-12-15,"Non-Conference","Rensselaer",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2024-12-27,"Non-Conference","TBD",NA,"TBD",NA,FALSE,TRUE,NA,NA
+2024-12-28,"Non-Conference","Northeastern",NA,"Providence",NA,FALSE,TRUE,NA,NA
+2024-12-28,"Atlantic Hockey","Sacred Heart",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2024-12-28,"Atlantic Hockey","Connecticut",NA,"Alaska",NA,FALSE,TRUE,NA,NA
+2024-12-28,"Atlantic Hockey","Ferris State",NA,"Wisconsin",NA,FALSE,TRUE,NA,NA
+2024-12-28,"Non-Conference","New Hampshire",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2024-12-28,"Non-Conference","Princeton",NA,"Army",NA,FALSE,FALSE,NA,NA
+2024-12-28,"Non-Conference","Alaska-Anchorage",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2024-12-29,"Non-Conference","Ferris State",NA,"Connecticut/UAF",NA,FALSE,TRUE,NA,NA
+2024-12-29,"Non-Conference","TBD",NA,"Connecticut",NA,FALSE,TRUE,NA,NA
+2024-12-29,"Non-Conference","TBD",NA,"TBD",NA,FALSE,TRUE,NA,NA
+2024-12-29,"Non-Conference","Connecticut/UAF",NA,"Wisconsin",NA,FALSE,TRUE,NA,NA
+2024-12-29,"Non-Conference","TBD",NA,"Dartmouth",NA,FALSE,TRUE,NA,NA
+2024-12-29,"Non-Conference","TBD",NA,"Providence",NA,FALSE,TRUE,NA,NA
+2024-12-29,"Non-Conference","Long Island",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2024-12-29,"Non-Conference","RIT",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2024-12-29,"Non-Conference","St. Thomas",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2024-12-29,"Non-Conference","Boston University",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2024-12-29,"Non-Conference","Bentley",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2024-12-29,"Non-Conference","American Int'l",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2024-12-29,"Non-Conference","Vermont",NA,"Army",NA,FALSE,FALSE,NA,NA
+2024-12-29,"Non-Conference","Michigan Tech",NA,"Western Michigan",NA,FALSE,TRUE,NA,NA
+2024-12-29,"Non-Conference","Michigan State",NA,"Northern Michigan",NA,FALSE,TRUE,NA,NA
+2024-12-30,"Non-Conference","MTU/WMU",NA,"Northern Michigan",NA,FALSE,TRUE,NA,NA
+2024-12-30,"Non-Conference","Michigan Tech",NA,"NMU/MSU",NA,FALSE,TRUE,NA,NA
+2024-12-30,"Non-Conference","Western Michigan",NA,"Mich. St/NMU",NA,FALSE,TRUE,NA,NA
+2024-12-31,"Non-Conference","Holy Cross",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2024-12-31,"Non-Conference","Minnesota-Duluth",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2025-01-01,"ECAC","Quinnipiac",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2025-01-02,"Big Ten","Wisconsin",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Big Ten","Holy Cross",NA,"Omaha",NA,FALSE,TRUE,NA,NA
+2025-01-03,"Big Ten","Michigan Tech",NA,"Mass.-Lowell",NA,FALSE,TRUE,NA,NA
+2025-01-03,"Non-Conference","Mercyhurst",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Non-Conference","Denver",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Non-Conference","Merrimack",NA,"Army",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Non-Conference","American Int'l",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Non-Conference","Augustana",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Non-Conference","New Hampshire",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Non-Conference","Alaska-Anchorage",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Non-Conference","Alaska",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Non-Conference","St. Thomas",NA,"Lindenwood",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Non-Conference v. D3","Assumption",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Non-Conference v. D3","Cornell",NA,"Massachusetts",NA,FALSE,TRUE,NA,NA
+2025-01-03,"Non-Conference v. D3","Robert Morris",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Big Ten","Michigan",NA,"Ohio State",NA,FALSE,TRUE,NA,NA
+2025-01-03,"Big Ten","Notre Dame",NA,"Penn State",NA,FALSE,TRUE,NA,NA
+2025-01-03,"Atlantic Hockey","Bentley",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2025-01-03,"Atlantic Hockey","Air Force",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2025-01-03,"ECAC","Rensselaer",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2025-01-03,"ECAC","Union",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2025-01-03,"CCHA","Bowling Green",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2025-01-04,"CCHA","Michigan Tech",NA,"Holy Cross/UNO",NA,FALSE,TRUE,NA,NA
+2025-01-04,"CCHA","Mass.-Lowell/MTU",NA,"Holy Cross",NA,FALSE,TRUE,NA,NA
+2025-01-04,"CCHA","Omaha",NA,"Mass.-Lowell/MTU",NA,FALSE,TRUE,NA,NA
+2025-01-04,"CCHA","UNO/Holy Cross",NA,"Mass.-Lowell",NA,FALSE,TRUE,NA,NA
+2025-01-04,"CCHA","Cornell/UMass",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2025-01-04,"CCHA","Massachusetts",NA,"ASU/RMU",NA,FALSE,TRUE,NA,NA
+2025-01-04,"CCHA","Robert Morris",NA,"UMass/Cornell",NA,FALSE,TRUE,NA,NA
+2025-01-04,"Non-Conference","Mercyhurst",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Non-Conference","Northeastern",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Non-Conference","New Hampshire",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Non-Conference","Augustana",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Non-Conference","St. Thomas",NA,"Lindenwood",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Non-Conference","Alaska-Anchorage",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Non-Conference","Alaska",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Non-Conference","Denver",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Non-Conference","Connecticut",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Non-Conference","St. Lawrence",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Atlantic Hockey","Air Force",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Atlantic Hockey","Bentley",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2025-01-04,"ECAC","Rensselaer",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2025-01-04,"ECAC","Union",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2025-01-04,"CCHA","Bowling Green",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2025-01-04,"Big Ten","Michigan State",NA,"Wisconsin",NA,FALSE,TRUE,NA,NA
+2025-01-04,"Non-Conference v. D3","St. Anselm",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2025-01-05,"Big Ten","Ohio State",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2025-01-05,"Big Ten","Penn State",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2025-01-05,"Non-Conference","Dartmouth",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2025-01-06,"Non-Conference","Stonehill",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2025-01-07,"Atlantic Hockey","Army",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2025-01-07,"Non-Conference","Providence",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Big Ten","Michigan State",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Big Ten","Minnesota",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Big Ten","Michigan",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Non-Conference","Alaska-Anchorage",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Non-Conference","Long Island",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Non-Conference","Lindenwood",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Non-Conference","Cornell",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Atlantic Hockey","RIT",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Atlantic Hockey","Mercyhurst",NA,"Army",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Atlantic Hockey","Robert Morris",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Atlantic Hockey","Bentley",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2025-01-10,"ECAC","Rensselaer",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2025-01-10,"ECAC","Quinnipiac",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2025-01-10,"ECAC","Brown",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2025-01-10,"ECAC","Union",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2025-01-10,"ECAC","Yale",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Hockey East","Connecticut",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Hockey East","Vermont",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Hockey East","Merrimack",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Hockey East","Massachusetts",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2025-01-10,"Hockey East","Maine",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2025-01-10,"NCHC","North Dakota",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2025-01-10,"NCHC","St. Cloud State",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2025-01-10,"NCHC","Miami",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2025-01-10,"NCHC","Colorado College",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2025-01-10,"CCHA","Minnesota State",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2025-01-10,"CCHA","Ferris State",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2025-01-10,"CCHA","Lake Superior",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2025-01-10,"CCHA","Bemidji State",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Atlantic Hockey","Robert Morris",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Atlantic Hockey","Mercyhurst",NA,"Army",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Atlantic Hockey","Bentley",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Atlantic Hockey","RIT",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Big Ten","Michigan State",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Big Ten","Minnesota",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Big Ten","Michigan",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Hockey East","New Hampshire",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Hockey East","Vermont",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Hockey East","Maine",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Hockey East","Northeastern",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Hockey East","Boston College",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Non-Conference","Long Island",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Non-Conference","Cornell",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Non-Conference","Lindenwood",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2025-01-11,"Non-Conference","Alaska-Anchorage",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2025-01-11,"NCHC","North Dakota",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2025-01-11,"NCHC","St. Cloud State",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2025-01-11,"NCHC","Miami",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2025-01-11,"NCHC","Colorado College",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2025-01-11,"CCHA","Lake Superior",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2025-01-11,"CCHA","Minnesota State",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2025-01-11,"CCHA","Ferris State",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2025-01-11,"CCHA","Bemidji State",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2025-01-11,"ECAC","Princeton",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2025-01-11,"ECAC","Union",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2025-01-11,"ECAC","Rensselaer",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2025-01-11,"ECAC","Brown",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2025-01-11,"ECAC","Yale",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2025-01-14,"Atlantic Hockey","Canisius",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2025-01-14,"Non-Conference","Harvard",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Big Ten","Notre Dame",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Big Ten","Michigan State",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Non-Conference","Canisius",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Non-Conference","Long Island",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Non-Conference","Lindenwood",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Atlantic Hockey","Holy Cross",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Atlantic Hockey","Niagara",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Atlantic Hockey","American Int'l",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Atlantic Hockey","Air Force",NA,"Army",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Atlantic Hockey","RIT",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2025-01-17,"ECAC","Clarkson",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2025-01-17,"ECAC","Colgate",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2025-01-17,"ECAC","Cornell",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2025-01-17,"ECAC","Harvard",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2025-01-17,"ECAC","St. Lawrence",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2025-01-17,"ECAC","Dartmouth",NA,"Union",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Hockey East","Boston University",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Hockey East","Connecticut",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Hockey East","Northeastern",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Hockey East","Massachusetts",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2025-01-17,"Hockey East","Providence",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2025-01-17,"NCHC","Minnesota-Duluth",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2025-01-17,"NCHC","Omaha",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2025-01-17,"NCHC","Western Michigan",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2025-01-17,"NCHC","Arizona State",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2025-01-17,"CCHA","Michigan Tech",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2025-01-17,"CCHA","Bowling Green",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2025-01-17,"CCHA","Northern Michigan",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2025-01-17,"CCHA","St. Thomas",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Hockey East","Northeastern",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Hockey East","Merrimack",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Hockey East","Boston College",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Hockey East","Connecticut",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Hockey East","New Hampshire",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Big Ten","Notre Dame",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Big Ten","Michigan",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Non-Conference","Long Island",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Non-Conference","Canisius",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Non-Conference","Stonehill",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Non-Conference","Lindenwood",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Non-Conference","Alaska",NA,"Alaska-Anchorage",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Atlantic Hockey","Air Force",NA,"Army",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Atlantic Hockey","Holy Cross",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Atlantic Hockey","American Int'l",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Atlantic Hockey","RIT",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2025-01-18,"Atlantic Hockey","Mercyhurst",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2025-01-18,"ECAC","Clarkson",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2025-01-18,"ECAC","Harvard",NA,"Union",NA,FALSE,FALSE,NA,NA
+2025-01-18,"ECAC","St. Lawrence",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2025-01-18,"ECAC","Cornell",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2025-01-18,"ECAC","Dartmouth",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2025-01-18,"ECAC","Colgate",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2025-01-18,"NCHC","Minnesota-Duluth",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2025-01-18,"NCHC","Arizona State",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2025-01-18,"NCHC","Western Michigan",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2025-01-18,"NCHC","Omaha",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2025-01-18,"CCHA","Michigan Tech",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2025-01-18,"CCHA","Northern Michigan",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2025-01-18,"CCHA","St. Thomas",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2025-01-18,"CCHA","Bowling Green",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2025-01-21,"Atlantic Hockey","Bentley",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2025-01-21,"Non-Conference","Brown",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2025-01-21,"Non-Conference v. D3","St. Anselm",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Big Ten","Minnesota",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Big Ten","Michigan",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Big Ten","Ohio State",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Atlantic Hockey","Canisius",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Atlantic Hockey","Holy Cross",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Atlantic Hockey","Army",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Atlantic Hockey","Niagara",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Atlantic Hockey","Quinnipiac",NA,"Connecticut",NA,FALSE,TRUE,NA,NA
+2025-01-24,"Atlantic Hockey","Yale",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2025-01-24,"ECAC","Dartmouth",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2025-01-24,"ECAC","Harvard",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2025-01-24,"ECAC","Clarkson",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Hockey East","Vermont",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Hockey East","Boston College",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Hockey East","Providence",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2025-01-24,"NCHC","Miami",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2025-01-24,"NCHC","Colorado College",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2025-01-24,"NCHC","St. Cloud State",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2025-01-24,"NCHC","Denver",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Non-Conference","Alaska",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2025-01-24,"Non-Conference","Lindenwood",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2025-01-24,"CCHA","Minnesota State",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2025-01-24,"CCHA","Northern Michigan",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2025-01-24,"CCHA","Augustana",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Big Ten","Michigan",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Big Ten","Ohio State",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Big Ten","Minnesota",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Big Ten","Quinnipiac",NA,"Sacred Heart/Yale",NA,FALSE,TRUE,NA,NA
+2025-01-25,"Big Ten","TBD",NA,"Connecticut",NA,FALSE,TRUE,NA,NA
+2025-01-25,"Big Ten","UConn/Quinnipiac",NA,"Sacred Heart",NA,FALSE,TRUE,NA,NA
+2025-01-25,"Big Ten","TBD",NA,"TBD",NA,FALSE,TRUE,NA,NA
+2025-01-25,"Hockey East","Mass.-Lowell",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Hockey East","Boston University",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Hockey East","Vermont",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Hockey East","Merrimack",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Atlantic Hockey","Army",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Atlantic Hockey","Canisius",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Atlantic Hockey","Holy Cross",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Atlantic Hockey","Niagara",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2025-01-25,"NCHC","Colorado College",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2025-01-25,"NCHC","Miami",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2025-01-25,"NCHC","Denver",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2025-01-25,"NCHC","St. Cloud State",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Non-Conference","Rensselaer",NA,"Union",NA,FALSE,TRUE,NA,NA
+2025-01-25,"Non-Conference","Alaska",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Non-Conference","Lindenwood",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2025-01-25,"Non-Conference","Bentley",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2025-01-25,"CCHA","Bemidji State",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2025-01-25,"CCHA","Minnesota State",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2025-01-25,"CCHA","Michigan Tech",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2025-01-25,"CCHA","Augustana",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2025-01-25,"ECAC","Dartmouth",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2025-01-25,"ECAC","Harvard",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2025-01-25,"ECAC","St. Lawrence",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2025-01-26,"Non-Conference","Stonehill",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2025-01-26,"Non-Conference","Bentley",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2025-01-26,"CCHA","Bemidji State",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2025-01-30,"Big Ten","Michigan State",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2025-01-31,"ECAC","Quinnipiac",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2025-01-31,"ECAC","Brown",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2025-01-31,"ECAC","Cornell",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2025-01-31,"ECAC","Yale",NA,"Union",NA,FALSE,FALSE,NA,NA
+2025-01-31,"ECAC","Colgate",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2025-01-31,"ECAC","Princeton",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2025-01-31,"NCHC","Western Michigan",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2025-01-31,"NCHC","Omaha",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2025-01-31,"NCHC","Arizona State",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2025-01-31,"NCHC","North Dakota",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Big Ten","Michigan State",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Big Ten","Penn State",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Big Ten","Wisconsin",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Non-Conference","Stonehill",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Non-Conference","Alaska-Anchorage",NA,"Alaska",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Atlantic Hockey","Sacred Heart",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Atlantic Hockey","Mercyhurst",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Atlantic Hockey","RIT",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Hockey East","New Hampshire",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Hockey East","Mass.-Lowell",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Hockey East","Connecticut",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Hockey East","Merrimack",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2025-01-31,"Hockey East","Northeastern",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2025-01-31,"CCHA","Lake Superior",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2025-01-31,"CCHA","St. Thomas",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2025-01-31,"CCHA","Bowling Green",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2025-01-31,"CCHA","Ferris State",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2025-02-01,"NCHC","Western Michigan",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2025-02-01,"NCHC","Omaha",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2025-02-01,"NCHC","North Dakota",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2025-02-01,"NCHC","Arizona State",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2025-02-01,"Big Ten","Penn State",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2025-02-01,"Big Ten","Wisconsin",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2025-02-01,"Non-Conference","Stonehill",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2025-02-01,"Non-Conference","Alaska-Anchorage",NA,"Alaska",NA,FALSE,FALSE,NA,NA
+2025-02-01,"Hockey East","Providence",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2025-02-01,"Hockey East","Merrimack",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2025-02-01,"ECAC","Brown",NA,"Union",NA,FALSE,FALSE,NA,NA
+2025-02-01,"ECAC","Princeton",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2025-02-01,"ECAC","Colgate",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2025-02-01,"ECAC","Cornell",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2025-02-01,"ECAC","Yale",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2025-02-01,"Atlantic Hockey","Sacred Heart",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2025-02-01,"Atlantic Hockey","RIT",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2025-02-01,"Atlantic Hockey","Mercyhurst",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2025-02-01,"Atlantic Hockey","Canisius",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2025-02-01,"CCHA","Lake Superior",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2025-02-01,"CCHA","Ferris State",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2025-02-01,"CCHA","Minnesota State",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2025-02-01,"CCHA","Bowling Green",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2025-02-02,"Hockey East","Massachusetts",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2025-02-02,"Atlantic Hockey","Canisius",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2025-02-03,"Atlantic Hockey","Northeastern",NA,"Boston College",NA,FALSE,TRUE,NA,NA
+2025-02-03,"Atlantic Hockey","Harvard",NA,"Boston University",NA,FALSE,TRUE,NA,NA
+2025-02-04,"Atlantic Hockey","Army",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2025-02-06,"ECAC","Brown",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2025-02-06,"Non-Conference","Lindenwood",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Big Ten","Penn State",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Big Ten","Michigan",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Big Ten","Ohio State",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Atlantic Hockey","American Int'l",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Atlantic Hockey","Air Force",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Atlantic Hockey","Sacred Heart",NA,"Army",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Atlantic Hockey","Robert Morris",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Atlantic Hockey","Holy Cross",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2025-02-07,"ECAC","Rensselaer",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2025-02-07,"ECAC","St. Lawrence",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2025-02-07,"ECAC","Harvard",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2025-02-07,"ECAC","Union",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2025-02-07,"ECAC","Clarkson",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Hockey East","Maine",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Hockey East","Boston University",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Hockey East","Boston College",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Hockey East","Massachusetts",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Hockey East","Vermont",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2025-02-07,"NCHC","St. Cloud State",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2025-02-07,"NCHC","Denver",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2025-02-07,"NCHC","Colorado College",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2025-02-07,"NCHC","Minnesota-Duluth",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2025-02-07,"CCHA","Northern Michigan",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2025-02-07,"CCHA","Bemidji State",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2025-02-07,"CCHA","Augustana",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2025-02-07,"CCHA","St. Thomas",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2025-02-07,"Non-Conference","Lindenwood",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2025-02-08,"Hockey East","Maine",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2025-02-08,"Hockey East","Mass.-Lowell",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2025-02-08,"Hockey East","Merrimack",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2025-02-08,"Big Ten","Penn State",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2025-02-08,"Big Ten","Michigan State",NA,"Michigan",NA,FALSE,TRUE,NA,NA
+2025-02-08,"Big Ten","Ohio State",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2025-02-08,"Atlantic Hockey","Sacred Heart",NA,"Army",NA,FALSE,FALSE,NA,NA
+2025-02-08,"Atlantic Hockey","American Int'l",NA,"Mercyhurst",NA,FALSE,FALSE,NA,NA
+2025-02-08,"Atlantic Hockey","Air Force",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2025-02-08,"Atlantic Hockey","Holy Cross",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2025-02-08,"Atlantic Hockey","Robert Morris",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2025-02-08,"NCHC","Denver",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2025-02-08,"NCHC","St. Cloud State",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2025-02-08,"NCHC","Colorado College",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2025-02-08,"NCHC","Minnesota-Duluth",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2025-02-08,"CCHA","Bemidji State",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2025-02-08,"CCHA","Augustana",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2025-02-08,"CCHA","Northern Michigan",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2025-02-08,"CCHA","St. Thomas",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2025-02-08,"Non-Conference","Alaska-Anchorage",NA,"Alaska",NA,FALSE,FALSE,NA,NA
+2025-02-08,"ECAC","Clarkson",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2025-02-08,"ECAC","Union",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2025-02-08,"ECAC","Rensselaer",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2025-02-08,"ECAC","St. Lawrence",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2025-02-09,"ECAC","Yale",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2025-02-10,"ECAC","Northeastern",NA,"BU/Harvard",NA,FALSE,TRUE,NA,NA
+2025-02-10,"ECAC","Boston University",NA,"BC/NE",NA,FALSE,TRUE,NA,NA
+2025-02-10,"ECAC","BU/Harvard",NA,"Boston College",NA,FALSE,TRUE,NA,NA
+2025-02-10,"ECAC","Harvard",NA,"BC/Northeastern",NA,FALSE,TRUE,NA,NA
+2025-02-11,"Atlantic Hockey","Canisius",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2025-02-12,"Non-Conference","Alaska-Anchorage",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Big Ten","Notre Dame",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Big Ten","Minnesota",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Big Ten","Wisconsin",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Non-Conference","Alaska-Anchorage",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Non-Conference","Alaska",NA,"Lindenwood",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Atlantic Hockey","Mercyhurst",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Atlantic Hockey","Robert Morris",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Atlantic Hockey","Canisius",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Atlantic Hockey","Army",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Atlantic Hockey","American Int'l",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2025-02-14,"ECAC","Quinnipiac",NA,"Union",NA,FALSE,FALSE,NA,NA
+2025-02-14,"ECAC","Harvard",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2025-02-14,"ECAC","Colgate",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2025-02-14,"ECAC","Princeton",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2025-02-14,"ECAC","Dartmouth",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2025-02-14,"ECAC","Cornell",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Hockey East","Massachusetts",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Hockey East","New Hampshire",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Hockey East","Mass.-Lowell",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Hockey East","Boston University",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Hockey East","Vermont",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2025-02-14,"NCHC","Miami",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2025-02-14,"NCHC","North Dakota",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2025-02-14,"NCHC","Omaha",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2025-02-14,"NCHC","Arizona State",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2025-02-14,"Non-Conference v. D3","Plymouth State",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2025-02-14,"CCHA","Lake Superior",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2025-02-14,"CCHA","Michigan Tech",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Hockey East","Providence",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Hockey East","Boston College",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Hockey East","Northeastern",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Hockey East","Vermont",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Hockey East","New Hampshire",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Big Ten","Notre Dame",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Big Ten","Minnesota",NA,"Michigan",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Big Ten","Wisconsin",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Atlantic Hockey","Mercyhurst",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Atlantic Hockey","Canisius",NA,"Bentley",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Atlantic Hockey","Army",NA,"Air Force",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Atlantic Hockey","Niagara",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Atlantic Hockey","American Int'l",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Non-Conference","Alaska-Anchorage",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2025-02-15,"Non-Conference","Alaska",NA,"Lindenwood",NA,FALSE,FALSE,NA,NA
+2025-02-15,"ECAC","Harvard",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2025-02-15,"ECAC","Princeton",NA,"Union",NA,FALSE,FALSE,NA,NA
+2025-02-15,"ECAC","Colgate",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2025-02-15,"ECAC","Cornell",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2025-02-15,"ECAC","Quinnipiac",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2025-02-15,"ECAC","Dartmouth",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2025-02-15,"NCHC","North Dakota",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2025-02-15,"NCHC","Omaha",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2025-02-15,"NCHC","Miami",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2025-02-15,"NCHC","Arizona State",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2025-02-15,"CCHA","Michigan Tech",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2025-02-15,"CCHA","Lake Superior",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2025-02-18,"Atlantic Hockey","Sacred Heart",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2025-02-20,"Atlantic Hockey","Bentley",NA,"Holy Cross",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Big Ten","Penn State",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Big Ten","Ohio State",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Big Ten","Notre Dame",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2025-02-21,"CCHA","Bowling Green",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2025-02-21,"CCHA","St. Thomas",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2025-02-21,"CCHA","Ferris State",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2025-02-21,"CCHA","Minnesota State",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Atlantic Hockey","Army",NA,"American Int'l",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Atlantic Hockey","Niagara",NA,"Canisius",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Atlantic Hockey","Air Force",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Atlantic Hockey","Mercyhurst",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2025-02-21,"ECAC","Clarkson",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2025-02-21,"ECAC","Yale",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2025-02-21,"ECAC","Union",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2025-02-21,"ECAC","St. Lawrence",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2025-02-21,"ECAC","Brown",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2025-02-21,"ECAC","Rensselaer",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Hockey East","Maine",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Hockey East","Massachusetts",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Hockey East","Northeastern",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Hockey East","Boston College",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2025-02-21,"NCHC","Western Michigan",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2025-02-21,"NCHC","Denver",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2025-02-21,"NCHC","Minnesota-Duluth",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2025-02-21,"NCHC","Colorado College",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Non-Conference","Long Island",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Non-Conference","Lindenwood",NA,"Alaska-Anchorage",NA,FALSE,FALSE,NA,NA
+2025-02-21,"Non-Conference","Alaska",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Hockey East","Mass.-Lowell",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Hockey East","Boston University",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Hockey East","New Hampshire",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Hockey East","Boston College",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Big Ten","Penn State",NA,"Michigan State",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Big Ten","Ohio State",NA,"Minnesota",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Big Ten","Notre Dame",NA,"Wisconsin",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Atlantic Hockey","American Int'l",NA,"Army",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Atlantic Hockey","Mercyhurst",NA,"RIT",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Atlantic Hockey","Bentley",NA,"Sacred Heart",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Atlantic Hockey","Canisius",NA,"Niagara",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Atlantic Hockey","Air Force",NA,"Robert Morris",NA,FALSE,FALSE,NA,NA
+2025-02-22,"NCHC","Western Michigan",NA,"Arizona State",NA,FALSE,FALSE,NA,NA
+2025-02-22,"NCHC","Colorado College",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2025-02-22,"NCHC","Minnesota-Duluth",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2025-02-22,"NCHC","Denver",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Non-Conference","Long Island",NA,"Stonehill",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Non-Conference","Alaska",NA,"Augustana",NA,FALSE,FALSE,NA,NA
+2025-02-22,"Non-Conference","Lindenwood",NA,"Alaska-Anchorage",NA,FALSE,FALSE,NA,NA
+2025-02-22,"CCHA","St. Thomas",NA,"Northern Michigan",NA,FALSE,FALSE,NA,NA
+2025-02-22,"CCHA","Bowling Green",NA,"Bemidji State",NA,FALSE,FALSE,NA,NA
+2025-02-22,"CCHA","Minnesota State",NA,"Lake Superior",NA,FALSE,FALSE,NA,NA
+2025-02-22,"CCHA","Ferris State",NA,"Michigan Tech",NA,FALSE,FALSE,NA,NA
+2025-02-22,"ECAC","Rensselaer",NA,"Harvard",NA,FALSE,FALSE,NA,NA
+2025-02-22,"ECAC","Clarkson",NA,"Colgate",NA,FALSE,FALSE,NA,NA
+2025-02-22,"ECAC","Union",NA,"Dartmouth",NA,FALSE,FALSE,NA,NA
+2025-02-22,"ECAC","Yale",NA,"Princeton",NA,FALSE,FALSE,NA,NA
+2025-02-22,"ECAC","Brown",NA,"Quinnipiac",NA,FALSE,FALSE,NA,NA
+2025-02-22,"ECAC","St. Lawrence",NA,"Cornell",NA,FALSE,FALSE,NA,NA
+2025-02-25,"Hockey East","Boston University",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2025-02-27,"Big Ten","Michigan",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2025-02-27,"Hockey East","Mass.-Lowell",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2025-02-28,"Big Ten","Michigan",NA,"Ohio State",NA,FALSE,FALSE,NA,NA
+2025-02-28,"Big Ten","Minnesota",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2025-02-28,"Big Ten","Michigan State",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2025-02-28,"ECAC","Princeton",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2025-02-28,"ECAC","Cornell",NA,"Union",NA,FALSE,FALSE,NA,NA
+2025-02-28,"ECAC","Quinnipiac",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2025-02-28,"ECAC","Harvard",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2025-02-28,"ECAC","Colgate",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2025-02-28,"ECAC","Dartmouth",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2025-02-28,"Hockey East","Northeastern",NA,"Connecticut",NA,FALSE,FALSE,NA,NA
+2025-02-28,"Hockey East","New Hampshire",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2025-02-28,"Hockey East","Merrimack",NA,"Providence",NA,FALSE,FALSE,NA,NA
+2025-02-28,"Hockey East","Vermont",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2025-02-28,"NCHC","St. Cloud State",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2025-02-28,"NCHC","North Dakota",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2025-02-28,"NCHC","Arizona State",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2025-02-28,"NCHC","Miami",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2025-02-28,"CCHA","Michigan Tech",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2025-02-28,"CCHA","Lake Superior",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2025-02-28,"CCHA","Bemidji State",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2025-02-28,"CCHA","Northern Michigan",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2025-02-28,"Non-Conference","Alaska",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2025-03-01,"Hockey East","Providence",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2025-03-01,"Hockey East","Massachusetts",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2025-03-01,"Hockey East","Boston College",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2025-03-01,"Hockey East","Vermont",NA,"Maine",NA,FALSE,FALSE,NA,NA
+2025-03-01,"Hockey East","Connecticut",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2025-03-01,"Big Ten","Minnesota",NA,"Penn State",NA,FALSE,FALSE,NA,NA
+2025-03-01,"Big Ten","Michigan State",NA,"Notre Dame",NA,FALSE,FALSE,NA,NA
+2025-03-01,"ECAC","Colgate",NA,"Union",NA,FALSE,FALSE,NA,NA
+2025-03-01,"ECAC","Quinnipiac",NA,"St. Lawrence",NA,FALSE,FALSE,NA,NA
+2025-03-01,"ECAC","Cornell",NA,"Rensselaer",NA,FALSE,FALSE,NA,NA
+2025-03-01,"ECAC","Harvard",NA,"Brown",NA,FALSE,FALSE,NA,NA
+2025-03-01,"ECAC","Princeton",NA,"Clarkson",NA,FALSE,FALSE,NA,NA
+2025-03-01,"ECAC","Dartmouth",NA,"Yale",NA,FALSE,FALSE,NA,NA
+2025-03-01,"NCHC","St. Cloud State",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2025-03-01,"NCHC","North Dakota",NA,"Western Michigan",NA,FALSE,FALSE,NA,NA
+2025-03-01,"NCHC","Miami",NA,"Minnesota-Duluth",NA,FALSE,FALSE,NA,NA
+2025-03-01,"NCHC","Arizona State",NA,"Omaha",NA,FALSE,FALSE,NA,NA
+2025-03-01,"CCHA","Bemidji State",NA,"Minnesota State",NA,FALSE,FALSE,NA,NA
+2025-03-01,"CCHA","Northern Michigan",NA,"Ferris State",NA,FALSE,FALSE,NA,NA
+2025-03-01,"CCHA","Michigan Tech",NA,"St. Thomas",NA,FALSE,FALSE,NA,NA
+2025-03-01,"CCHA","Lake Superior",NA,"Bowling Green",NA,FALSE,FALSE,NA,NA
+2025-03-01,"Non-Conference","Alaska",NA,"Long Island",NA,FALSE,FALSE,NA,NA
+2025-03-06,"Hockey East","Northeastern",NA,"Merrimack",NA,FALSE,FALSE,NA,NA
+2025-03-06,"Hockey East","Providence",NA,"Boston University",NA,FALSE,FALSE,NA,NA
+2025-03-06,"Hockey East","Connecticut",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2025-03-07,"Hockey East","Maine",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2025-03-07,"Hockey East","New Hampshire",NA,"Mass.-Lowell",NA,FALSE,FALSE,NA,NA
+2025-03-07,"NCHC","Colorado College",NA,"Denver",NA,FALSE,FALSE,NA,NA
+2025-03-07,"NCHC","Western Michigan",NA,"Miami",NA,FALSE,FALSE,NA,NA
+2025-03-07,"NCHC","Omaha",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2025-03-07,"NCHC","Minnesota-Duluth",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2025-03-08,"Hockey East","Merrimack",NA,"Boston College",NA,FALSE,FALSE,NA,NA
+2025-03-08,"Hockey East","Maine",NA,"Massachusetts",NA,FALSE,FALSE,NA,NA
+2025-03-08,"Hockey East","Mass.-Lowell",NA,"New Hampshire",NA,FALSE,FALSE,NA,NA
+2025-03-08,"Hockey East","Boston University",NA,"Vermont",NA,FALSE,FALSE,NA,NA
+2025-03-08,"Hockey East","Providence",NA,"Northeastern",NA,FALSE,FALSE,NA,NA
+2025-03-08,"NCHC","Denver",NA,"Colorado College",NA,FALSE,FALSE,NA,NA
+2025-03-08,"NCHC","Minnesota-Duluth",NA,"St. Cloud State",NA,FALSE,FALSE,NA,NA
+2025-03-08,"NCHC","Omaha",NA,"North Dakota",NA,FALSE,FALSE,NA,NA
+2025-03-08,"NCHC","Western Michigan",NA,"Miami",NA,FALSE,FALSE,NA,NA

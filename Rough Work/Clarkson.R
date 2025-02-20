@@ -26,7 +26,7 @@ scrape_men <- function(season = "20232024"){
     html_nodes("table")
   
   ## The website likes to switch which table it uses. If function doesn't work try changing which table number you select
-  stats_dirty <- tab_hockey[[12]] |> html_table()
+  stats_dirty <- tab_hockey[[1]] |> html_table()
   
   ## Creating regex for date, and conference to make date and conference columns in dataframe
   regex_date <- "October|November|December|January|February|March|April"
@@ -100,12 +100,12 @@ scrape_men <- function(season = "20232024"){
 }
 
 ##Load in Schedule
-schedule <- scrape_men("20242025")
+schedule <- scrape_men("20232024")
 
-##schedule = schedule2324
+## Only Keeping DU Games
+schedule_CU <- schedule |> filter(away_team == "Clarkson" | home_team == "Clarkson")
 
 ##Function to update rankings
-##rating is the variable, ratings is the df.
 update_rankings <- function(season, game_date, ratings, k = 20){
   ## Filters schedule to a specific date
   elo_ratings_update <- season |> filter(date == game_date) |>
@@ -124,37 +124,23 @@ update_rankings <- function(season, game_date, ratings, k = 20){
     mutate(elo_new_home = home_elo + k*(outcome - exp_home)) |>
     mutate(elo_new_away = away_elo + k*(outcome_away - exp_away))
   
-  ranked_home <- left_join(ratings, elo_ratings_update, by = join_by(Team == home_team)) |>
-    relocate(elo_new_home) |>
-    mutate(rating = if_else(!is.na(elo_new_home),
-                            true = elo_new_home,
-                            false = rating)) |>
-    select(Team, rating)
-  
-  ratings <- left_join(ranked_home, elo_ratings_update, by = join_by(Team == away_team)) |>
-    relocate(elo_new_away) |>
-    mutate(rating = if_else(!is.na(elo_new_away),
-                            true = elo_new_away,
-                            false = rating)) |>
-    select(Team, rating)
-  
   ## Puts updated Elo ratings into our ratings file for home team
-  ##ratings$rating = replace(ratings$rating, ratings$Team %in% elo_ratings_update$home_team, elo_ratings_update$elo_new_home)
+  ratings$rating = replace(ratings$rating, ratings$Team %in% elo_ratings_update$home_team, elo_ratings_update$elo_new_home)
   
   ## Puts updated Elo ratings into our ratings file for away team
-  ##ratings$rating = replace(ratings$rating, ratings$Team %in% elo_ratings_update$away_team, elo_ratings_update$elo_new_away)
+  ratings$rating = replace(ratings$rating, ratings$Team %in% elo_ratings_update$away_team, elo_ratings_update$elo_new_away)
   
   return(ratings)
 }
 
 ##loop to get updated weekly ratings
 ## creating a vector for unique dates in a schedule dataframe
-dates_vec <- unique(schedule$date)
+dates_vec <- unique(schedule_CU$date)
 ## defining what new_rankings is going to be
 new_rankings = rankings
 ## Creating a for loop with the update_rankings function to update rankings up to a specified date
 for (i in dates_vec) {
-  new_rankings <- update_rankings(season = schedule, game_date = i, ratings = new_rankings, k = 100)
+  new_rankings <- update_rankings(season = schedule_CU, game_date = i, ratings = new_rankings, k = 100)
   
 }
 
@@ -179,5 +165,5 @@ update_rankings_iter <- function(season, end_date, ratings, k){
   return(new_rankings)
 }
 
-try_rankings = update_rankings_iter(season = schedule2324, end_date = "2024-04-13", ratings = X22Rankings, k = 100)
-try_rankings24 = update_rankings_iter(schedule2425, "2024-10-06", try_rankings, 100)
+try_1_CU = update_rankings_iter(season = schedule_CU, end_date = "2024-03-23", ratings = rankings, k = 100)
+

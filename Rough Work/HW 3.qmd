@@ -1,0 +1,61 @@
+---
+title: "Homework 3"
+author: "Alex Tidd"
+format: docx
+---
+
+```{r warning=FALSE, message=FALSE}
+library(ts343)
+library(forecast)
+library(mosaic)
+```
+
+1)
+
+
+
+2)
+
+
+
+3)
+
+a)
+```{r}
+r1 = 0.15
+r2 = -0.21
+r3 = -0.28
+r4 = 0.16
+r5 = -0.10
+n = 60
+```
+
+H0: p3 = 0
+Ha: p3 != 0
+
+```{r}
+r3 = -0.28
+sr3 = sqrt((1+2*((r1^2) + ((r2^2)))/60))
+(ts = r3/sr3)
+```
+ts = -2.037419. |ts| > 2 therefore the test statistic is greater than 2 times the standard deviation. Therefore reject H0.
+
+We have significant evidence that the autocorrelation at lag 3 is discernibly different from 0. p<0.05.
+
+
+b)
+H0: p1 = p2 = p3 = p4 = 0
+Ha: some pi != 0
+
+```{r}
+(lbq4 = (60*62)*(((r1^2)/(60-1)) + ((r2^2)/(60-2)) + ((r3^2)/(60-3)) + ((r4^2)/(60-4))))
+```
+LBQ at lag 4 = 11.06433
+
+```{r}
+(1-pchisq(11.06433, 4))
+```
+p = 0.02585047. Reject H0
+
+We have significant evidence (LBQ = 0.02585047, p = 0.02585047) that there is a discernible difference from 0 in the first 4 lags
+

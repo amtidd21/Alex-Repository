@@ -1,0 +1,1167 @@
+"date","game_type","away_team","away_score","home_team","home_score","overtime","neutral_site","score_diff","outcome"
+2023-10-07,"Non-Conference","Lake Superior",2,"Michigan State",5,FALSE,FALSE,3,1
+2023-10-07,"Non-Conference","Mass.-Lowell",2,"Alaska-Anchorage",3,TRUE,FALSE,1,1
+2023-10-07,"Non-Conference","Denver",7,"Alaska",3,FALSE,FALSE,-4,0
+2023-10-07,"Non-Conference","Lindenwood",1,"Air Force",4,FALSE,FALSE,3,1
+2023-10-07,"Non-Conference","Clarkson",3,"Notre Dame",1,FALSE,FALSE,-2,0
+2023-10-07,"Non-Conference","St. Thomas",5,"St. Cloud State",4,TRUE,FALSE,-1,0
+2023-10-07,"Non-Conference","RIT",3,"St. Lawrence",4,FALSE,FALSE,1,1
+2023-10-07,"Non-Conference","Connecticut",4,"Colgate",2,FALSE,FALSE,-2,0
+2023-10-07,"Non-Conference","American Int'l",3,"Massachusetts",5,FALSE,FALSE,2,1
+2023-10-07,"Non-Conference","Ohio State",4,"Mercyhurst",3,FALSE,FALSE,-1,0
+2023-10-07,"Non-Conference","Providence",4,"Michigan",2,FALSE,FALSE,-2,0
+2023-10-07,"Non-Conference","Stonehill",0,"Northeastern",7,FALSE,FALSE,7,1
+2023-10-07,"Non-Conference","Boston College",2,"Quinnipiac",1,TRUE,FALSE,-1,0
+2023-10-07,"Non-Conference","Augustana",0,"Wisconsin",4,FALSE,FALSE,4,1
+2023-10-07,"Non-Conference","Penn State",3,"Long Island",2,FALSE,FALSE,-1,0
+2023-10-07,"Non-Conference","Bowling Green",3,"Robert Morris",0,FALSE,FALSE,-3,0
+2023-10-07,"Non-Conference","Boston University",3,"Bentley",2,TRUE,FALSE,-1,0
+2023-10-07,"Non-Conference","Miami",4,"Ferris State",5,TRUE,FALSE,1,1
+2023-10-07,"Non-Conference","Michigan Tech",2,"Minnesota-Duluth",2,TRUE,FALSE,0,0.5
+2023-10-08,"Non-Conference","Union",6,"Army",0,FALSE,FALSE,-6,0
+2023-10-08,"Non-Conference","Connecticut",3,"Colgate",3,TRUE,FALSE,0,0.5
+2023-10-08,"Non-Conference","Providence",4,"Michigan",5,FALSE,FALSE,1,1
+2023-10-08,"Non-Conference","Lake Superior",2,"Michigan State",4,FALSE,FALSE,2,1
+2023-10-08,"Non-Conference","St. Cloud State",1,"St. Thomas",0,FALSE,FALSE,-1,0
+2023-10-08,"Non-Conference","Mass.-Lowell",2,"Alaska-Anchorage",1,FALSE,FALSE,-1,0
+2023-10-08,"Non-Conference","Denver",5,"Alaska",2,FALSE,FALSE,-3,0
+2023-10-08,"Non-Conference","Clarkson",0,"Notre Dame",3,FALSE,FALSE,3,1
+2023-10-08,"Non-Conference","Augustana",0,"Wisconsin",3,FALSE,FALSE,3,1
+2023-10-08,"Non-Conference","Lindenwood",4,"Air Force",3,TRUE,FALSE,-1,0
+2023-10-08,"Non-Conference","Robert Morris",3,"Bowling Green",0,FALSE,FALSE,-3,0
+2023-10-08,"Non-Conference","Miami",5,"Ferris State",2,FALSE,FALSE,-3,0
+2023-10-08,"Non-Conference","Long Island",2,"Holy Cross",5,FALSE,FALSE,3,1
+2023-10-12,"Non-Conference","Michigan State",5,"Air Force",6,FALSE,FALSE,1,1
+2023-10-12,"Non-Conference","Ferris State",4,"Western Michigan",6,FALSE,FALSE,2,1
+2023-10-12,"Non-Conference","Rensselaer",1,"Maine",4,FALSE,FALSE,3,1
+2023-10-13,"Non-Conference","Michigan State",5,"Air Force",3,FALSE,FALSE,-2,0
+2023-10-13,"Non-Conference","Penn State",4,"Clarkson",2,FALSE,FALSE,-2,0
+2023-10-13,"Non-Conference","Union",3,"Colorado College",7,FALSE,FALSE,4,1
+2023-10-13,"Non-Conference","Connecticut",1,"Holy Cross",2,FALSE,FALSE,1,1
+2023-10-13,"Non-Conference","Rensselaer",3,"Maine",6,FALSE,FALSE,3,1
+2023-10-13,"Non-Conference","Michigan",7,"Massachusetts",2,FALSE,FALSE,-5,0
+2023-10-13,"Non-Conference","Stonehill",1,"Providence",7,FALSE,FALSE,6,1
+2023-10-13,"Non-Conference","Colgate",3,"Sacred Heart",2,FALSE,FALSE,-1,0
+2023-10-13,"Non-Conference","Vermont",3,"St. Lawrence",1,FALSE,FALSE,-2,0
+2023-10-13,"Non-Conference","Merrimack",0,"Arizona State",1,TRUE,FALSE,1,1
+2023-10-13,"Non-Conference","Long Island",2,"Boston College",4,FALSE,FALSE,2,1
+2023-10-13,"Non-Conference","Army",2,"North Dakota",7,FALSE,FALSE,5,1
+2023-10-13,"Non-Conference","Lindenwood",2,"Ohio State",4,FALSE,FALSE,2,1
+2023-10-13,"Non-Conference","Wisconsin",4,"Bemidji State",3,TRUE,FALSE,-1,0
+2023-10-13,"Non-Conference","Canisius",2,"Miami",4,FALSE,FALSE,2,1
+2023-10-13,"Non-Conference","Quinnipiac",3,"American Int'l",2,TRUE,FALSE,-1,0
+2023-10-13,"Non-Conference","Western Michigan",3,"Ferris State",3,TRUE,FALSE,0,0.5
+2023-10-13,"Non-Conference","Alaska-Anchorage",1,"Lake Superior",5,FALSE,FALSE,4,1
+2023-10-13,"Non-Conference","Alaska",4,"Michigan Tech",1,FALSE,FALSE,-3,0
+2023-10-13,"Non-Conference","St. Cloud State",2,"Minnesota State",3,TRUE,FALSE,1,1
+2023-10-13,"Non-Conference","Northern Michigan",5,"Minnesota-Duluth",5,TRUE,FALSE,0,0.5
+2023-10-13,"Non-Conference","Niagara",1,"Omaha",8,FALSE,FALSE,7,1
+2023-10-13,"Non-Conference","St. Thomas",5,"Minnesota",6,TRUE,TRUE,1,1
+2023-10-13,"Hockey East","Boston University",4,"New Hampshire",6,FALSE,FALSE,2,1
+2023-10-14,"Atlantic Hockey","Robert Morris",3,"Mercyhurst",3,TRUE,FALSE,0,0.5
+2023-10-14,"Non-Conference","Long Island",7,"Stonehill",3,FALSE,FALSE,-4,0
+2023-10-14,"Non-Conference","Merrimack",2,"Arizona State",4,FALSE,FALSE,2,1
+2023-10-14,"Non-Conference","Lindenwood",2,"Ohio State",2,TRUE,FALSE,0,0.5
+2023-10-14,"Non-Conference","Union",2,"Colorado College",6,FALSE,FALSE,4,1
+2023-10-14,"Non-Conference","St. Thomas",0,"Minnesota",3,FALSE,FALSE,3,1
+2023-10-14,"Non-Conference","Army",2,"Bemidji State",3,TRUE,FALSE,1,1
+2023-10-14,"Non-Conference","Alaska-Anchorage",3,"Lake Superior",2,FALSE,FALSE,-1,0
+2023-10-14,"Non-Conference","Alaska",2,"Michigan Tech",2,TRUE,FALSE,0,0.5
+2023-10-14,"Non-Conference","St. Cloud State",1,"Minnesota State",5,FALSE,FALSE,4,1
+2023-10-14,"Non-Conference","Bowling Green",2,"Augustana",3,FALSE,FALSE,1,1
+2023-10-14,"Non-Conference","Wisconsin",0,"North Dakota",2,FALSE,FALSE,2,1
+2023-10-14,"Non-Conference","Vermont",2,"Clarkson",3,TRUE,FALSE,1,1
+2023-10-14,"Non-Conference","Holy Cross",2,"Connecticut",0,FALSE,FALSE,-2,0
+2023-10-14,"Non-Conference","Michigan",3,"Massachusetts",6,FALSE,FALSE,3,1
+2023-10-14,"Non-Conference","Bentley",2,"Northeastern",5,FALSE,FALSE,3,1
+2023-10-14,"Non-Conference","American Int'l",0,"Quinnipiac",8,FALSE,FALSE,8,1
+2023-10-14,"Non-Conference","Colgate",6,"Sacred Heart",1,FALSE,FALSE,-5,0
+2023-10-14,"Non-Conference","Penn State",4,"St. Lawrence",1,FALSE,FALSE,-3,0
+2023-10-14,"Non-Conference","Canisius",1,"Miami",4,FALSE,FALSE,3,1
+2023-10-14,"Non-Conference","Notre Dame",0,"RIT",3,FALSE,FALSE,3,1
+2023-10-14,"Non-Conference","Northern Michigan",5,"Minnesota-Duluth",8,FALSE,FALSE,3,1
+2023-10-14,"Non-Conference","Niagara",1,"Omaha",2,FALSE,FALSE,1,1
+2023-10-15,"Non-Conference","Bowling Green",1,"Augustana",4,FALSE,FALSE,3,1
+2023-10-19,"Non-Conference","Canisius",3,"Michigan State",6,FALSE,FALSE,3,1
+2023-10-20,"Big Ten","Ohio State",1,"Michigan",7,FALSE,FALSE,6,1
+2023-10-20,"Atlantic Hockey","Holy Cross",3,"Robert Morris",1,FALSE,FALSE,-2,0
+2023-10-20,"Atlantic Hockey","Sacred Heart",2,"RIT",4,FALSE,FALSE,2,1
+2023-10-20,"Non-Conference","Mass.-Lowell",4,"Colgate",2,FALSE,FALSE,-2,0
+2023-10-20,"Non-Conference","Long Island",2,"Colorado College",4,FALSE,FALSE,2,1
+2023-10-20,"Non-Conference","Clarkson",1,"Merrimack",4,FALSE,FALSE,3,1
+2023-10-20,"Non-Conference","Canisius",3,"Michigan State",4,FALSE,FALSE,1,1
+2023-10-20,"Non-Conference","Wisconsin",4,"Michigan Tech",2,FALSE,FALSE,-2,0
+2023-10-20,"Non-Conference","Quinnipiac",5,"New Hampshire",2,FALSE,FALSE,-3,0
+2023-10-20,"Non-Conference","Minnesota",4,"North Dakota",0,FALSE,FALSE,-4,0
+2023-10-20,"Non-Conference","Boston University",1,"Notre Dame",4,FALSE,FALSE,3,1
+2023-10-20,"Non-Conference","Denver",3,"Providence",4,FALSE,FALSE,1,1
+2023-10-20,"Non-Conference","Connecticut",1,"Union",4,FALSE,FALSE,3,1
+2023-10-20,"Non-Conference","American Int'l",2,"Penn State",3,FALSE,FALSE,1,1
+2023-10-20,"Non-Conference","Northern Michigan",2,"Arizona State",3,FALSE,FALSE,1,1
+2023-10-20,"Non-Conference","Rensselaer",1,"Boston College",6,FALSE,FALSE,5,1
+2023-10-20,"Non-Conference","Stonehill",0,"Bentley",2,FALSE,FALSE,2,1
+2023-10-20,"Non-Conference","Western Michigan",5,"Bowling Green",2,FALSE,FALSE,-3,0
+2023-10-20,"Non-Conference","Air Force",1,"Alaska-Anchorage",3,FALSE,FALSE,2,1
+2023-10-20,"Non-Conference","Massachusetts",6,"Minnesota State",3,FALSE,FALSE,-3,0
+2023-10-20,"Non-Conference","Bemidji State",0,"Minnesota-Duluth",4,FALSE,FALSE,4,1
+2023-10-20,"Non-Conference","Lindenwood",4,"St. Thomas",4,TRUE,FALSE,0,0.5
+2023-10-20,"Non-Conference","Alaska",1,"St. Cloud State",4,FALSE,FALSE,3,1
+2023-10-21,"Non-Conference","Connecticut",5,"Union",0,FALSE,FALSE,-5,0
+2023-10-21,"Non-Conference","Air Force",4,"Alaska-Anchorage",3,TRUE,FALSE,-1,0
+2023-10-21,"Non-Conference","Long Island",2,"Colorado College",3,FALSE,FALSE,1,1
+2023-10-21,"Non-Conference","Wisconsin",5,"Michigan Tech",2,FALSE,FALSE,-3,0
+2023-10-21,"Non-Conference","Minnesota",1,"North Dakota",2,FALSE,FALSE,1,1
+2023-10-21,"Non-Conference","Boston University",8,"Notre Dame",2,FALSE,FALSE,-6,0
+2023-10-21,"Non-Conference","Alaska",5,"St. Cloud State",2,FALSE,FALSE,-3,0
+2023-10-21,"Non-Conference","Bowling Green",2,"Western Michigan",5,FALSE,FALSE,3,1
+2023-10-21,"Non-Conference","Stonehill",1,"Bentley",4,FALSE,FALSE,3,1
+2023-10-21,"Non-Conference","Massachusetts",1,"Minnesota State",0,FALSE,FALSE,-1,0
+2023-10-21,"Non-Conference","Lindenwood",1,"St. Thomas",3,FALSE,FALSE,2,1
+2023-10-21,"Non-Conference","Minnesota-Duluth",5,"Bemidji State",4,TRUE,FALSE,-1,0
+2023-10-21,"Non-Conference","Mass.-Lowell",5,"Colgate",2,FALSE,FALSE,-3,0
+2023-10-21,"Non-Conference","Quinnipiac",4,"New Hampshire",5,TRUE,FALSE,1,1
+2023-10-21,"Non-Conference","Rensselaer",2,"Providence",4,FALSE,FALSE,2,1
+2023-10-21,"Non-Conference","American Int'l",6,"Penn State",4,FALSE,FALSE,-2,0
+2023-10-21,"Non-Conference","Northern Michigan",1,"Arizona State",5,FALSE,FALSE,4,1
+2023-10-21,"Non-Conference","Denver",4,"Boston College",3,FALSE,FALSE,-1,0
+2023-10-21,"Atlantic Hockey","Holy Cross",3,"Robert Morris",3,TRUE,FALSE,0,0.5
+2023-10-21,"Atlantic Hockey","Sacred Heart",5,"RIT",2,FALSE,FALSE,-3,0
+2023-10-21,"Atlantic Hockey","Mercyhurst",3,"Niagara",3,TRUE,FALSE,0,0.5
+2023-10-21,"Big Ten","Ohio State",2,"Michigan",2,TRUE,FALSE,0,0.5
+2023-10-22,"Non-Conference","St. Lawrence",2,"Merrimack",5,FALSE,FALSE,3,1
+2023-10-26,"Hockey East","Northeastern",1,"New Hampshire",4,FALSE,FALSE,3,1
+2023-10-26,"Non-Conference","Alaska-Anchorage",1,"Penn State",2,FALSE,FALSE,1,1
+2023-10-26,"Non-Conference","Michigan State",4,"Boston College",6,FALSE,FALSE,2,1
+2023-10-26,"Non-Conference","Mercyhurst",3,"Notre Dame",4,TRUE,FALSE,1,1
+2023-10-26,"Big Ten","Wisconsin",5,"Minnesota",2,FALSE,FALSE,-3,0
+2023-10-27,"Atlantic Hockey","Bentley",3,"Robert Morris",4,FALSE,FALSE,1,1
+2023-10-27,"Atlantic Hockey","Niagara",4,"Sacred Heart",3,TRUE,FALSE,-1,0
+2023-10-27,"Atlantic Hockey","RIT",3,"Holy Cross",2,TRUE,FALSE,-1,0
+2023-10-27,"ECAC","Harvard",1,"Dartmouth",1,TRUE,FALSE,0,0.5
+2023-10-27,"ECAC","Yale",3,"Brown",2,TRUE,FALSE,-1,0
+2023-10-27,"Hockey East","Massachusetts",2,"Boston University",5,FALSE,FALSE,3,1
+2023-10-27,"Hockey East","Vermont",1,"Providence",4,FALSE,FALSE,3,1
+2023-10-27,"Hockey East","Connecticut",2,"Mass.-Lowell",1,TRUE,FALSE,-1,0
+2023-10-27,"Non-Conference","Lake Superior",4,"Clarkson",3,TRUE,FALSE,-1,0
+2023-10-27,"Non-Conference","Minnesota-Duluth",1,"Cornell",4,FALSE,FALSE,3,1
+2023-10-27,"Non-Conference","Augustana",5,"Denver",5,TRUE,FALSE,0,0.5
+2023-10-27,"Non-Conference","Maine",2,"Quinnipiac",1,TRUE,FALSE,-1,0
+2023-10-27,"Non-Conference","Michigan Tech",2,"St. Lawrence",2,TRUE,FALSE,0,0.5
+2023-10-27,"Non-Conference","Alaska-Anchorage",6,"Penn State",5,FALSE,FALSE,-1,0
+2023-10-27,"Non-Conference","Michigan State",1,"Boston College",5,FALSE,FALSE,4,1
+2023-10-27,"Non-Conference","Lindenwood",1,"Michigan",9,FALSE,FALSE,8,1
+2023-10-27,"Non-Conference","Colorado College",6,"Air Force",2,FALSE,FALSE,-4,0
+2023-10-27,"Non-Conference","Arizona State",4,"Miami",5,TRUE,FALSE,1,1
+2023-10-27,"Non-Conference","Minnesota State",2,"North Dakota",6,FALSE,FALSE,4,1
+2023-10-27,"Non-Conference","Mercyhurst",0,"Notre Dame",5,FALSE,FALSE,5,1
+2023-10-27,"Non-Conference","Ohio State",2,"Omaha",2,TRUE,FALSE,0,0.5
+2023-10-27,"CCHA","Ferris State",2,"Northern Michigan",1,TRUE,FALSE,-1,0
+2023-10-27,"CCHA","St. Thomas",2,"Bemidji State",3,FALSE,FALSE,1,1
+2023-10-27,"Big Ten","Wisconsin",3,"Minnesota",2,FALSE,FALSE,-1,0
+2023-10-28,"Atlantic Hockey","Bentley",3,"Robert Morris",0,FALSE,FALSE,-3,0
+2023-10-28,"Atlantic Hockey","Niagara",1,"Sacred Heart",4,FALSE,FALSE,3,1
+2023-10-28,"Atlantic Hockey","RIT",3,"Holy Cross",2,FALSE,FALSE,-1,0
+2023-10-28,"Hockey East","Mass.-Lowell",1,"Connecticut",0,FALSE,FALSE,-1,0
+2023-10-28,"Hockey East","Vermont",2,"Providence",2,TRUE,FALSE,0,0.5
+2023-10-28,"Hockey East","Boston University",3,"Massachusetts",3,TRUE,FALSE,0,0.5
+2023-10-28,"Hockey East","Merrimack",4,"Northeastern",1,FALSE,FALSE,-3,0
+2023-10-28,"Non-Conference","Augustana",4,"Colorado College",3,FALSE,FALSE,-1,0
+2023-10-28,"Non-Conference","Air Force",0,"Denver",4,FALSE,FALSE,4,1
+2023-10-28,"Non-Conference","Minnesota State",2,"North Dakota",2,TRUE,FALSE,0,0.5
+2023-10-28,"Non-Conference","Minnesota-Duluth",0,"Cornell",3,FALSE,FALSE,3,1
+2023-10-28,"Non-Conference","Dartmouth",1,"New Hampshire",3,FALSE,FALSE,2,1
+2023-10-28,"Non-Conference","Maine",1,"Quinnipiac",4,FALSE,FALSE,3,1
+2023-10-28,"Non-Conference","Lake Superior",5,"St. Lawrence",2,FALSE,FALSE,-3,0
+2023-10-28,"Non-Conference","Lindenwood",1,"Michigan",10,FALSE,FALSE,9,1
+2023-10-28,"Non-Conference","Arizona State",1,"Miami",1,TRUE,FALSE,0,0.5
+2023-10-28,"Non-Conference","Michigan Tech",1,"Clarkson",3,FALSE,FALSE,2,1
+2023-10-28,"Non-Conference","Ohio State",4,"Omaha",0,FALSE,FALSE,-4,0
+2023-10-28,"CCHA","Ferris State",1,"Northern Michigan",4,FALSE,FALSE,3,1
+2023-10-28,"CCHA","St. Thomas",0,"Bemidji State",2,FALSE,FALSE,2,1
+2023-10-29,"Non-Conference","Stonehill",2,"Brown",7,FALSE,FALSE,5,1
+2023-10-30,"Non-Conference","Long Island",4,"Stonehill",2,FALSE,FALSE,-2,0
+2023-10-31,"Atlantic Hockey","Army",1,"Sacred Heart",6,FALSE,FALSE,5,1
+2023-11-02,"Atlantic Hockey","Bentley",0,"American Int'l",3,FALSE,FALSE,3,1
+2023-11-03,"ECAC","Quinnipiac",2,"Dartmouth",2,TRUE,FALSE,0,0.5
+2023-11-03,"ECAC","Colgate",2,"Brown",3,FALSE,FALSE,1,1
+2023-11-03,"ECAC","Princeton",4,"Harvard",4,TRUE,FALSE,0,0.5
+2023-11-03,"ECAC","Rensselaer",8,"Union",6,FALSE,FALSE,-2,0
+2023-11-03,"ECAC","Cornell",3,"Yale",1,FALSE,FALSE,-2,0
+2023-11-03,"Atlantic Hockey","Holy Cross",3,"Canisius",5,FALSE,FALSE,2,1
+2023-11-03,"Atlantic Hockey","Air Force",3,"Niagara",2,TRUE,FALSE,-1,0
+2023-11-03,"Atlantic Hockey","RIT",4,"Army",2,FALSE,FALSE,-2,0
+2023-11-03,"Atlantic Hockey","American Int'l",1,"Bentley",3,FALSE,FALSE,2,1
+2023-11-03,"Hockey East","Maine",2,"Merrimack",1,FALSE,FALSE,-1,0
+2023-11-03,"Hockey East","Providence",1,"New Hampshire",1,TRUE,FALSE,0,0.5
+2023-11-03,"Hockey East","Connecticut",1,"Vermont",4,FALSE,FALSE,3,1
+2023-11-03,"Hockey East","Mass.-Lowell",2,"Boston College",3,FALSE,FALSE,1,1
+2023-11-03,"Hockey East","Northeastern",1,"Massachusetts",2,TRUE,FALSE,1,1
+2023-11-03,"NCHC","Colorado College",1,"Denver",6,FALSE,FALSE,5,1
+2023-11-03,"NCHC","Western Michigan",5,"Omaha",2,FALSE,FALSE,-3,0
+2023-11-03,"NCHC","Miami",2,"St. Cloud State",3,FALSE,FALSE,1,1
+2023-11-03,"Big Ten","Michigan State",6,"Ohio State",0,FALSE,FALSE,-6,0
+2023-11-03,"Big Ten","Michigan",4,"Wisconsin",5,FALSE,FALSE,1,1
+2023-11-03,"Non-Conference","North Dakota",2,"Boston University",3,FALSE,FALSE,1,1
+2023-11-03,"Non-Conference","Minnesota-Duluth",1,"Minnesota",5,FALSE,FALSE,4,1
+2023-11-03,"Non-Conference","Stonehill",4,"Arizona State",5,TRUE,FALSE,1,1
+2023-11-03,"Non-Conference","Mercyhurst",4,"Bowling Green",3,TRUE,FALSE,-1,0
+2023-11-03,"Non-Conference","St. Lawrence",5,"Ferris State",2,FALSE,FALSE,-3,0
+2023-11-03,"Non-Conference","Augustana",4,"Michigan Tech",6,FALSE,FALSE,2,1
+2023-11-03,"Non-Conference","Alaska-Anchorage",1,"Alaska",6,FALSE,FALSE,5,1
+2023-11-03,"CCHA","Bemidji State",3,"Lake Superior",4,TRUE,FALSE,1,1
+2023-11-03,"CCHA","Northern Michigan",2,"St. Thomas",4,FALSE,FALSE,2,1
+2023-11-04,"Atlantic Hockey","RIT",5,"Army",3,FALSE,FALSE,-2,0
+2023-11-04,"Atlantic Hockey","Holy Cross",3,"Canisius",3,TRUE,FALSE,0,0.5
+2023-11-04,"Atlantic Hockey","Air Force",3,"Niagara",4,FALSE,FALSE,1,1
+2023-11-04,"Big Ten","Michigan State",6,"Ohio State",4,FALSE,FALSE,-2,0
+2023-11-04,"Big Ten","Michigan",1,"Wisconsin",2,FALSE,FALSE,1,1
+2023-11-04,"Big Ten","Notre Dame",3,"Penn State",3,TRUE,FALSE,0,0.5
+2023-11-04,"Hockey East","Connecticut",5,"Vermont",2,FALSE,FALSE,-3,0
+2023-11-04,"Hockey East","Boston College",3,"Mass.-Lowell",2,FALSE,FALSE,-1,0
+2023-11-04,"Hockey East","Maine",5,"Merrimack",4,FALSE,FALSE,-1,0
+2023-11-04,"Hockey East","New Hampshire",0,"Providence",2,FALSE,FALSE,2,1
+2023-11-04,"NCHC","Denver",5,"Colorado College",1,FALSE,FALSE,-4,0
+2023-11-04,"NCHC","Miami",0,"St. Cloud State",6,FALSE,FALSE,6,1
+2023-11-04,"NCHC","Western Michigan",2,"Omaha",3,TRUE,FALSE,1,1
+2023-11-04,"CCHA","Bemidji State",1,"Lake Superior",5,FALSE,FALSE,4,1
+2023-11-04,"CCHA","Northern Michigan",1,"St. Thomas",6,FALSE,FALSE,5,1
+2023-11-04,"Non-Conference","St. Lawrence",1,"Ferris State",2,TRUE,FALSE,1,1
+2023-11-04,"Non-Conference","Augustana",3,"Michigan Tech",4,TRUE,FALSE,1,1
+2023-11-04,"Non-Conference","North Dakota",5,"Boston University",4,TRUE,FALSE,-1,0
+2023-11-04,"Non-Conference","Minnesota",3,"Minnesota-Duluth",3,TRUE,FALSE,0,0.5
+2023-11-04,"Non-Conference","Stonehill",2,"Arizona State",3,FALSE,FALSE,1,1
+2023-11-04,"Non-Conference","Mercyhurst",2,"Bowling Green",4,FALSE,FALSE,2,1
+2023-11-04,"Non-Conference","Alaska-Anchorage",4,"Alaska",5,FALSE,FALSE,1,1
+2023-11-04,"ECAC","Cornell",7,"Brown",1,FALSE,FALSE,-6,0
+2023-11-04,"ECAC","Princeton",4,"Dartmouth",5,FALSE,FALSE,1,1
+2023-11-04,"ECAC","Quinnipiac",6,"Harvard",0,FALSE,FALSE,-6,0
+2023-11-04,"ECAC","Union",5,"Rensselaer",1,FALSE,FALSE,-4,0
+2023-11-04,"ECAC","Colgate",7,"Yale",1,FALSE,FALSE,-6,0
+2023-11-05,"Big Ten","Notre Dame",2,"Penn State",2,TRUE,FALSE,0,0.5
+2023-11-05,"Non-Conference","Sacred Heart",1,"Long Island",2,FALSE,FALSE,1,1
+2023-11-09,"Atlantic Hockey","Holy Cross",1,"American Int'l",4,FALSE,FALSE,3,1
+2023-11-10,"Big Ten","Penn State",3,"Michigan State",3,TRUE,FALSE,0,0.5
+2023-11-10,"Big Ten","Ohio State",1,"Notre Dame",4,FALSE,FALSE,3,1
+2023-11-10,"Big Ten","Minnesota",4,"Michigan",3,FALSE,FALSE,-1,0
+2023-11-10,"Non-Conference","Augustana",4,"Lindenwood",3,TRUE,FALSE,-1,0
+2023-11-10,"Non-Conference","Alaska",3,"Stonehill",1,FALSE,FALSE,-2,0
+2023-11-10,"Non-Conference","Denver",5,"Arizona State",6,TRUE,FALSE,1,1
+2023-11-10,"Non-Conference","Robert Morris",2,"Alaska-Anchorage",3,FALSE,FALSE,1,1
+2023-11-10,"Non-Conference","Long Island",2,"Omaha",3,FALSE,FALSE,1,1
+2023-11-10,"Atlantic Hockey","American Int'l",3,"Holy Cross",2,FALSE,FALSE,-1,0
+2023-11-10,"Atlantic Hockey","Canisius",1,"Sacred Heart",4,FALSE,FALSE,3,1
+2023-11-10,"Atlantic Hockey","Niagara",2,"Bentley",6,FALSE,FALSE,4,1
+2023-11-10,"Atlantic Hockey","Army",3,"Air Force",4,TRUE,FALSE,1,1
+2023-11-10,"Atlantic Hockey","Mercyhurst",2,"RIT",5,FALSE,FALSE,3,1
+2023-11-10,"ECAC","Rensselaer",4,"Clarkson",2,FALSE,FALSE,-2,0
+2023-11-10,"ECAC","Harvard",2,"Colgate",2,TRUE,FALSE,0,0.5
+2023-11-10,"ECAC","Dartmouth",2,"Cornell",2,TRUE,FALSE,0,0.5
+2023-11-10,"ECAC","Yale",4,"Princeton",5,TRUE,FALSE,1,1
+2023-11-10,"ECAC","Brown",1,"Quinnipiac",5,FALSE,FALSE,4,1
+2023-11-10,"ECAC","Union",4,"St. Lawrence",3,FALSE,FALSE,-1,0
+2023-11-10,"Hockey East","Merrimack",6,"Connecticut",3,FALSE,FALSE,-3,0
+2023-11-10,"Hockey East","Boston College",2,"Maine",4,FALSE,FALSE,2,1
+2023-11-10,"Hockey East","Vermont",1,"Massachusetts",4,FALSE,FALSE,3,1
+2023-11-10,"Hockey East","Northeastern",1,"Providence",2,TRUE,FALSE,1,1
+2023-11-10,"Hockey East","Boston University",3,"Mass.-Lowell",2,FALSE,FALSE,-1,0
+2023-11-10,"NCHC","St. Cloud State",3,"Western Michigan",2,FALSE,FALSE,-1,0
+2023-11-10,"NCHC","Colorado College",5,"Miami",1,FALSE,FALSE,-4,0
+2023-11-10,"NCHC","North Dakota",4,"Minnesota-Duluth",2,FALSE,FALSE,-2,0
+2023-11-10,"CCHA","St. Thomas",4,"Bowling Green",1,FALSE,FALSE,-3,0
+2023-11-10,"CCHA","Minnesota State",6,"Ferris State",2,FALSE,FALSE,-4,0
+2023-11-10,"CCHA","Lake Superior",4,"Northern Michigan",6,FALSE,FALSE,2,1
+2023-11-10,"CCHA","Michigan Tech",4,"Bemidji State",2,FALSE,FALSE,-2,0
+2023-11-11,"Atlantic Hockey","Niagara",1,"Bentley",2,FALSE,FALSE,1,1
+2023-11-11,"Atlantic Hockey","Army",0,"Air Force",4,FALSE,FALSE,4,1
+2023-11-11,"Atlantic Hockey","Mercyhurst",2,"RIT",0,FALSE,FALSE,-2,0
+2023-11-11,"Atlantic Hockey","Canisius",2,"Sacred Heart",3,FALSE,FALSE,1,1
+2023-11-11,"ECAC","Union",1,"Clarkson",4,FALSE,FALSE,3,1
+2023-11-11,"ECAC","Dartmouth",3,"Colgate",2,TRUE,FALSE,-1,0
+2023-11-11,"ECAC","Harvard",3,"Cornell",2,FALSE,FALSE,-1,0
+2023-11-11,"ECAC","Brown",2,"Princeton",3,TRUE,FALSE,1,1
+2023-11-11,"ECAC","Yale",2,"Quinnipiac",5,FALSE,FALSE,3,1
+2023-11-11,"ECAC","Rensselaer",3,"St. Lawrence",6,FALSE,FALSE,3,1
+2023-11-11,"Big Ten","Penn State",3,"Michigan State",5,FALSE,FALSE,2,1
+2023-11-11,"Big Ten","Ohio State",0,"Notre Dame",3,FALSE,FALSE,3,1
+2023-11-11,"Big Ten","Minnesota",2,"Michigan",2,TRUE,FALSE,0,0.5
+2023-11-11,"Non-Conference","Alaska",8,"Stonehill",1,FALSE,FALSE,-7,0
+2023-11-11,"Non-Conference","Robert Morris",2,"Alaska-Anchorage",2,TRUE,FALSE,0,0.5
+2023-11-11,"Non-Conference","Denver",8,"Arizona State",4,FALSE,FALSE,-4,0
+2023-11-11,"Non-Conference","Augustana",3,"Lindenwood",5,FALSE,FALSE,2,1
+2023-11-11,"Non-Conference","Long Island",4,"Omaha",5,TRUE,FALSE,1,1
+2023-11-11,"Hockey East","Vermont",6,"Massachusetts",2,FALSE,FALSE,-4,0
+2023-11-11,"Hockey East","Mass.-Lowell",1,"Boston University",6,FALSE,FALSE,5,1
+2023-11-11,"Hockey East","Boston College",2,"Maine",2,TRUE,FALSE,0,0.5
+2023-11-11,"Hockey East","Connecticut",4,"Merrimack",3,FALSE,FALSE,-1,0
+2023-11-11,"Hockey East","Providence",5,"Northeastern",2,FALSE,FALSE,-3,0
+2023-11-11,"NCHC","St. Cloud State",3,"Western Michigan",0,FALSE,FALSE,-3,0
+2023-11-11,"NCHC","North Dakota",2,"Minnesota-Duluth",0,FALSE,FALSE,-2,0
+2023-11-11,"NCHC","Colorado College",4,"Miami",1,FALSE,FALSE,-3,0
+2023-11-11,"CCHA","Minnesota State",3,"Ferris State",2,TRUE,FALSE,-1,0
+2023-11-11,"CCHA","Lake Superior",3,"Northern Michigan",4,TRUE,FALSE,1,1
+2023-11-11,"CCHA","Michigan Tech",4,"Bemidji State",6,FALSE,FALSE,2,1
+2023-11-11,"CCHA","St. Thomas",4,"Bowling Green",3,FALSE,FALSE,-1,0
+2023-11-15,"Hockey East","Mass.-Lowell",1,"Merrimack",1,TRUE,FALSE,0,0.5
+2023-11-16,"Hockey East","Massachusetts",3,"Providence",2,FALSE,FALSE,-1,0
+2023-11-17,"Atlantic Hockey","Bentley",0,"Holy Cross",2,FALSE,FALSE,2,1
+2023-11-17,"Atlantic Hockey","Robert Morris",2,"Niagara",6,FALSE,FALSE,4,1
+2023-11-17,"Atlantic Hockey","Canisius",6,"Army",4,FALSE,FALSE,-2,0
+2023-11-17,"ECAC","Clarkson",3,"Brown",2,TRUE,FALSE,-1,0
+2023-11-17,"ECAC","Colgate",6,"Princeton",3,FALSE,FALSE,-3,0
+2023-11-17,"ECAC","Cornell",4,"Quinnipiac",8,FALSE,FALSE,4,1
+2023-11-17,"ECAC","St. Lawrence",0,"Yale",5,FALSE,FALSE,5,1
+2023-11-17,"Hockey East","Maine",2,"Boston University",3,FALSE,FALSE,1,1
+2023-11-17,"Hockey East","New Hampshire",4,"Northeastern",2,FALSE,FALSE,-2,0
+2023-11-17,"Hockey East","Connecticut",4,"Boston College",5,TRUE,FALSE,1,1
+2023-11-17,"NCHC","Western Michigan",3,"Colorado College",1,FALSE,FALSE,-2,0
+2023-11-17,"NCHC","Omaha",4,"Denver",8,FALSE,FALSE,4,1
+2023-11-17,"NCHC","Miami",4,"North Dakota",6,FALSE,FALSE,2,1
+2023-11-17,"NCHC","Minnesota-Duluth",1,"St. Cloud State",2,FALSE,FALSE,1,1
+2023-11-17,"Big Ten","Penn State",4,"Michigan",6,FALSE,FALSE,2,1
+2023-11-17,"Big Ten","Notre Dame",4,"Minnesota",2,FALSE,FALSE,-2,0
+2023-11-17,"Big Ten","Wisconsin",2,"Michigan State",4,FALSE,FALSE,2,1
+2023-11-17,"Non-Conference","Long Island",0,"Lindenwood",3,FALSE,FALSE,3,1
+2023-11-17,"Non-Conference","Alaska-Anchorage",3,"Arizona State",4,FALSE,FALSE,1,1
+2023-11-17,"Non-Conference","Alaska",1,"Northern Michigan",3,FALSE,FALSE,2,1
+2023-11-17,"CCHA","Bowling Green",5,"Lake Superior",3,FALSE,FALSE,-2,0
+2023-11-17,"CCHA","Ferris State",3,"Michigan Tech",2,TRUE,FALSE,-1,0
+2023-11-17,"CCHA","Bemidji State",1,"Minnesota State",5,FALSE,FALSE,4,1
+2023-11-18,"Non-Conference","Long Island",6,"Lindenwood",2,FALSE,FALSE,-4,0
+2023-11-18,"Non-Conference","Alaska",1,"Northern Michigan",3,FALSE,FALSE,2,1
+2023-11-18,"Non-Conference","Vermont",1,"American Int'l",2,FALSE,FALSE,1,1
+2023-11-18,"Hockey East","Providence",1,"Massachusetts",2,TRUE,FALSE,1,1
+2023-11-18,"Hockey East","Maine",4,"Boston University",5,FALSE,FALSE,1,1
+2023-11-18,"Hockey East","Merrimack",2,"Mass.-Lowell",3,TRUE,FALSE,1,1
+2023-11-18,"Hockey East","Boston College",3,"Connecticut",0,FALSE,FALSE,-3,0
+2023-11-18,"Hockey East","Northeastern",0,"New Hampshire",4,FALSE,FALSE,4,1
+2023-11-18,"Atlantic Hockey","Holy Cross",2,"Bentley",0,FALSE,FALSE,-2,0
+2023-11-18,"Atlantic Hockey","Air Force",5,"Mercyhurst",2,FALSE,FALSE,-3,0
+2023-11-18,"Atlantic Hockey","Niagara",4,"Robert Morris",1,FALSE,FALSE,-3,0
+2023-11-18,"Atlantic Hockey","Canisius",1,"Army",2,FALSE,FALSE,1,1
+2023-11-18,"NCHC","Western Michigan",4,"Colorado College",0,FALSE,FALSE,-4,0
+2023-11-18,"NCHC","Minnesota-Duluth",5,"St. Cloud State",6,FALSE,FALSE,1,1
+2023-11-18,"NCHC","Miami",1,"North Dakota",5,FALSE,FALSE,4,1
+2023-11-18,"Big Ten","Wisconsin",2,"Michigan State",3,FALSE,FALSE,1,1
+2023-11-18,"Big Ten","Penn State",5,"Michigan",3,FALSE,FALSE,-2,0
+2023-11-18,"Big Ten","Notre Dame",1,"Minnesota",4,FALSE,FALSE,3,1
+2023-11-18,"CCHA","Bowling Green",3,"Lake Superior",4,TRUE,FALSE,1,1
+2023-11-18,"CCHA","Ferris State",2,"Michigan Tech",3,FALSE,FALSE,1,1
+2023-11-18,"CCHA","Bemidji State",7,"Minnesota State",6,FALSE,FALSE,-1,0
+2023-11-18,"ECAC","St. Lawrence",1,"Brown",2,FALSE,FALSE,1,1
+2023-11-18,"ECAC","Cornell",1,"Princeton",2,TRUE,FALSE,1,1
+2023-11-18,"ECAC","Colgate",4,"Quinnipiac",7,FALSE,FALSE,3,1
+2023-11-18,"ECAC","Clarkson",2,"Yale",1,FALSE,FALSE,-1,0
+2023-11-19,"Non-Conference","Alaska-Anchorage",0,"Arizona State",3,FALSE,FALSE,3,1
+2023-11-19,"NCHC","Omaha",4,"Denver",3,FALSE,FALSE,-1,0
+2023-11-19,"Atlantic Hockey","Air Force",1,"Mercyhurst",5,FALSE,FALSE,4,1
+2023-11-21,"Atlantic Hockey","Robert Morris",1,"Canisius",5,FALSE,FALSE,4,1
+2023-11-21,"Atlantic Hockey","Army",3,"Holy Cross",2,FALSE,FALSE,-1,0
+2023-11-21,"Atlantic Hockey","Bentley",2,"American Int'l",4,FALSE,FALSE,2,1
+2023-11-22,"Non-Conference","Quinnipiac",2,"Boston University",3,FALSE,FALSE,1,1
+2023-11-24,"Atlantic Hockey","Air Force",1,"Canisius",3,FALSE,FALSE,2,1
+2023-11-24,"Atlantic Hockey","Sacred Heart",4,"Robert Morris",2,FALSE,FALSE,-2,0
+2023-11-24,"Non-Conference","Bentley",4,"Mass.-Lowell",1,FALSE,FALSE,-3,0
+2023-11-24,"Non-Conference","Army",3,"Merrimack",7,FALSE,FALSE,4,1
+2023-11-24,"Non-Conference","Boston College",6,"Notre Dame",1,FALSE,FALSE,-5,0
+2023-11-24,"Non-Conference","Stonehill",2,"Union",5,FALSE,FALSE,3,1
+2023-11-24,"Non-Conference","Lindenwood",3,"Penn State",9,FALSE,FALSE,6,1
+2023-11-24,"Non-Conference","Massachusetts",6,"Harvard",5,FALSE,FALSE,-1,0
+2023-11-24,"Non-Conference","Princeton",3,"Ohio State",6,FALSE,FALSE,3,1
+2023-11-24,"Non-Conference","Niagara",5,"Colgate",2,FALSE,FALSE,-3,0
+2023-11-24,"Non-Conference","Yale",0,"Denver",5,FALSE,FALSE,5,1
+2023-11-24,"Non-Conference","Bemidji State",2,"North Dakota",3,TRUE,FALSE,1,1
+2023-11-24,"Non-Conference","New Hampshire",4,"RIT",5,FALSE,FALSE,1,1
+2023-11-24,"Non-Conference","St. Lawrence",1,"Western Michigan",5,FALSE,FALSE,4,1
+2023-11-24,"Non-Conference","Alaska-Anchorage",1,"Wisconsin",0,FALSE,FALSE,-1,0
+2023-11-24,"Non-Conference","Brown",3,"Holy Cross",6,FALSE,FALSE,3,1
+2023-11-24,"Non-Conference","Providence",3,"Arizona State",4,TRUE,FALSE,1,1
+2023-11-24,"Non-Conference","Mercyhurst",4,"Miami",3,TRUE,FALSE,-1,0
+2023-11-24,"Non-Conference","Augustana",1,"Omaha",2,FALSE,FALSE,1,1
+2023-11-24,"Non-Conference","Michigan",2,"St. Cloud State",0,FALSE,FALSE,-2,0
+2023-11-24,"Non-Conference","American Int'l",5,"Long Island",2,FALSE,FALSE,-3,0
+2023-11-24,"Big Ten","Michigan State",3,"Minnesota",3,TRUE,FALSE,0,0.5
+2023-11-24,"CCHA","Northern Michigan",2,"Bowling Green",6,FALSE,FALSE,4,1
+2023-11-24,"CCHA","Michigan Tech",3,"Minnesota State",2,TRUE,FALSE,-1,0
+2023-11-24,"CCHA","Lake Superior",2,"St. Thomas",4,FALSE,FALSE,2,1
+2023-11-25,"Atlantic Hockey","Air Force",2,"Canisius",2,TRUE,FALSE,0,0.5
+2023-11-25,"Atlantic Hockey","Sacred Heart",3,"Robert Morris",1,FALSE,FALSE,-2,0
+2023-11-25,"Non-Conference","Dartmouth",1,"Connecticut",6,FALSE,FALSE,5,1
+2023-11-25,"Non-Conference","Northeastern",3,"Rensselaer",3,TRUE,FALSE,0,0.5
+2023-11-25,"Non-Conference","Army",4,"Mass.-Lowell",2,FALSE,FALSE,-2,0
+2023-11-25,"Non-Conference","Bentley",3,"Merrimack",4,FALSE,FALSE,1,1
+2023-11-25,"Non-Conference","Stonehill",0,"Union",4,FALSE,FALSE,4,1
+2023-11-25,"Non-Conference","Lindenwood",1,"Penn State",7,FALSE,FALSE,6,1
+2023-11-25,"Non-Conference","New Hampshire",4,"RIT",3,TRUE,FALSE,-1,0
+2023-11-25,"Non-Conference","Princeton",3,"Ohio State",4,FALSE,FALSE,1,1
+2023-11-25,"Non-Conference","Yale",0,"Denver",9,FALSE,FALSE,9,1
+2023-11-25,"Non-Conference","Bemidji State",0,"North Dakota",5,FALSE,FALSE,5,1
+2023-11-25,"Non-Conference","Michigan",3,"St. Cloud State",3,TRUE,FALSE,0,0.5
+2023-11-25,"Non-Conference","St. Lawrence",0,"Western Michigan",4,FALSE,FALSE,4,1
+2023-11-25,"Non-Conference","Alaska-Anchorage",0,"Wisconsin",5,FALSE,FALSE,5,1
+2023-11-25,"Non-Conference","Omaha",5,"Augustana",2,FALSE,FALSE,-3,0
+2023-11-25,"Non-Conference","Niagara",1,"Colgate",2,FALSE,FALSE,1,1
+2023-11-25,"Non-Conference","Boston University",1,"Cornell",2,FALSE,TRUE,1,1
+2023-11-25,"CCHA","Michigan Tech",3,"Minnesota State",2,FALSE,FALSE,-1,0
+2023-11-25,"CCHA","Lake Superior",3,"St. Thomas",1,FALSE,FALSE,-2,0
+2023-11-25,"CCHA","Northern Michigan",2,"Bowling Green",0,FALSE,FALSE,-2,0
+2023-11-26,"Big Ten","Michigan State",5,"Minnesota",6,TRUE,FALSE,1,1
+2023-11-26,"Non-Conference","Boston College",4,"Harvard",1,FALSE,FALSE,-3,0
+2023-11-26,"Non-Conference","Providence",2,"Arizona State",1,FALSE,FALSE,-1,0
+2023-11-26,"Non-Conference","Northeastern",9,"Rensselaer",2,FALSE,FALSE,-7,0
+2023-11-26,"Non-Conference","Miami",2,"Mercyhurst",0,FALSE,FALSE,-2,0
+2023-11-28,"Atlantic Hockey","Army",1,"American Int'l",5,FALSE,FALSE,4,1
+2023-12-01,"Big Ten","Minnesota",4,"Penn State",1,FALSE,FALSE,-3,0
+2023-12-01,"Big Ten","Ohio State",0,"Wisconsin",3,FALSE,FALSE,3,1
+2023-12-01,"Big Ten","Michigan",1,"Notre Dame",6,FALSE,FALSE,5,1
+2023-12-01,"Atlantic Hockey","Mercyhurst",3,"Canisius",3,TRUE,FALSE,0,0.5
+2023-12-01,"Atlantic Hockey","Niagara",3,"Holy Cross",2,TRUE,FALSE,-1,0
+2023-12-01,"Atlantic Hockey","Bentley",2,"Air Force",3,TRUE,FALSE,1,1
+2023-12-01,"Atlantic Hockey","Robert Morris",1,"RIT",4,FALSE,FALSE,3,1
+2023-12-01,"Atlantic Hockey","Sacred Heart",5,"American Int'l",4,FALSE,FALSE,-1,0
+2023-12-01,"ECAC","Harvard",0,"Clarkson",3,FALSE,FALSE,3,1
+2023-12-01,"ECAC","Cornell",4,"Colgate",2,FALSE,FALSE,-2,0
+2023-12-01,"ECAC","Quinnipiac",5,"Rensselaer",1,FALSE,FALSE,-4,0
+2023-12-01,"ECAC","Dartmouth",1,"St. Lawrence",3,FALSE,FALSE,2,1
+2023-12-01,"ECAC","Princeton",2,"Union",7,FALSE,FALSE,5,1
+2023-12-01,"Hockey East","Mass.-Lowell",0,"Connecticut",2,FALSE,FALSE,2,1
+2023-12-01,"Hockey East","New Hampshire",2,"Maine",5,FALSE,FALSE,3,1
+2023-12-01,"Hockey East","Massachusetts",1,"Vermont",2,TRUE,FALSE,1,1
+2023-12-01,"Hockey East","Northeastern",5,"Boston College",3,FALSE,FALSE,-2,0
+2023-12-01,"Hockey East","Boston University",4,"Merrimack",1,FALSE,FALSE,-3,0
+2023-12-01,"NCHC","North Dakota",7,"Denver",5,FALSE,FALSE,-2,0
+2023-12-01,"NCHC","Omaha",2,"Minnesota-Duluth",4,FALSE,FALSE,2,1
+2023-12-01,"Non-Conference","Arizona State",2,"Colorado College",2,TRUE,FALSE,0,0.5
+2023-12-01,"Non-Conference","Lindenwood",1,"Western Michigan",3,FALSE,FALSE,2,1
+2023-12-01,"Non-Conference","Long Island",2,"Brown",2,TRUE,FALSE,0,0.5
+2023-12-01,"Non-Conference","Alaska",5,"Alaska-Anchorage",0,FALSE,FALSE,-5,0
+2023-12-01,"Non-Conference","Augustana",2,"Northern Michigan",2,TRUE,FALSE,0,0.5
+2023-12-01,"CCHA","St. Thomas",2,"Ferris State",5,FALSE,FALSE,3,1
+2023-12-01,"CCHA","Minnesota State",2,"Lake Superior",2,TRUE,FALSE,0,0.5
+2023-12-01,"CCHA","Bowling Green",2,"Michigan Tech",1,TRUE,FALSE,-1,0
+2023-12-02,"Atlantic Hockey","Niagara",1,"Holy Cross",4,FALSE,FALSE,3,1
+2023-12-02,"Atlantic Hockey","Bentley",3,"Air Force",0,FALSE,FALSE,-3,0
+2023-12-02,"Atlantic Hockey","Canisius",1,"Mercyhurst",5,FALSE,FALSE,4,1
+2023-12-02,"Atlantic Hockey","Robert Morris",2,"RIT",6,FALSE,FALSE,4,1
+2023-12-02,"Atlantic Hockey","Sacred Heart",2,"American Int'l",3,FALSE,FALSE,1,1
+2023-12-02,"ECAC","Dartmouth",2,"Clarkson",2,TRUE,FALSE,0,0.5
+2023-12-02,"ECAC","Quinnipiac",5,"Union",0,FALSE,FALSE,-5,0
+2023-12-02,"ECAC","Colgate",4,"Cornell",2,FALSE,FALSE,-2,0
+2023-12-02,"ECAC","Princeton",6,"Rensselaer",4,FALSE,FALSE,-2,0
+2023-12-02,"ECAC","Harvard",0,"St. Lawrence",2,FALSE,FALSE,2,1
+2023-12-02,"NCHC","Omaha",1,"Minnesota-Duluth",0,TRUE,FALSE,-1,0
+2023-12-02,"NCHC","North Dakota",2,"Denver",3,TRUE,FALSE,1,1
+2023-12-02,"Hockey East","Merrimack",2,"Boston University",5,FALSE,FALSE,3,1
+2023-12-02,"Hockey East","Boston College",3,"Northeastern",1,FALSE,FALSE,-2,0
+2023-12-02,"Big Ten","Michigan",2,"Notre Dame",1,FALSE,FALSE,-1,0
+2023-12-02,"Big Ten","Minnesota",3,"Penn State",6,FALSE,FALSE,3,1
+2023-12-02,"Big Ten","Ohio State",1,"Wisconsin",6,FALSE,FALSE,5,1
+2023-12-02,"Non-Conference","Arizona State",2,"Colorado College",0,FALSE,FALSE,-2,0
+2023-12-02,"Non-Conference","Lindenwood",1,"Western Michigan",5,FALSE,FALSE,4,1
+2023-12-02,"Non-Conference","Alaska",3,"Alaska-Anchorage",1,FALSE,FALSE,-2,0
+2023-12-02,"Non-Conference","Augustana",5,"Northern Michigan",3,FALSE,FALSE,-2,0
+2023-12-02,"Non-Conference","Long Island",3,"Yale",1,FALSE,FALSE,-2,0
+2023-12-02,"CCHA","St. Thomas",7,"Ferris State",1,FALSE,FALSE,-6,0
+2023-12-02,"CCHA","Minnesota State",4,"Lake Superior",3,FALSE,FALSE,-1,0
+2023-12-02,"CCHA","Bowling Green",2,"Michigan Tech",3,FALSE,FALSE,1,1
+2023-12-03,"Hockey East","Mass.-Lowell",2,"Vermont",1,FALSE,FALSE,-1,0
+2023-12-03,"Hockey East","Connecticut",3,"Maine",7,FALSE,FALSE,4,1
+2023-12-03,"Non-Conference","Brown",4,"Stonehill",1,FALSE,FALSE,-3,0
+2023-12-06,"Non-Conference","Maine",3,"Union",1,FALSE,FALSE,-2,0
+2023-12-07,"Atlantic Hockey","Niagara",1,"Robert Morris",4,FALSE,FALSE,3,1
+2023-12-08,"Atlantic Hockey","RIT",2,"American Int'l",3,TRUE,FALSE,1,1
+2023-12-08,"Atlantic Hockey","Army",4,"Mercyhurst",3,FALSE,FALSE,-1,0
+2023-12-08,"NCHC","Minnesota-Duluth",3,"Miami",3,TRUE,FALSE,0,0.5
+2023-12-08,"NCHC","Colorado College",3,"North Dakota",2,TRUE,FALSE,-1,0
+2023-12-08,"NCHC","Denver",3,"Western Michigan",7,FALSE,FALSE,4,1
+2023-12-08,"NCHC","St. Cloud State",4,"Omaha",1,FALSE,FALSE,-3,0
+2023-12-08,"Big Ten","Minnesota",5,"Ohio State",4,FALSE,FALSE,-1,0
+2023-12-08,"Big Ten","Notre Dame",2,"Michigan State",5,FALSE,FALSE,3,1
+2023-12-08,"Big Ten","Penn State",3,"Wisconsin",6,FALSE,FALSE,3,1
+2023-12-08,"Non-Conference","Stonehill",1,"Clarkson",5,FALSE,FALSE,4,1
+2023-12-08,"Non-Conference","Alaska-Anchorage",2,"Massachusetts",11,FALSE,FALSE,9,1
+2023-12-08,"Non-Conference","Union",5,"Vermont",4,FALSE,FALSE,-1,0
+2023-12-08,"Non-Conference","Merrimack",2,"Yale",5,FALSE,FALSE,3,1
+2023-12-08,"Non-Conference","Princeton",4,"Sacred Heart",0,FALSE,FALSE,-4,0
+2023-12-08,"Non-Conference","Holy Cross",2,"Mass.-Lowell",2,TRUE,FALSE,0,0.5
+2023-12-08,"Non-Conference","Dartmouth",4,"Arizona State",4,TRUE,FALSE,0,0.5
+2023-12-08,"CCHA","Ferris State",0,"Bowling Green",1,FALSE,FALSE,1,1
+2023-12-08,"CCHA","Northern Michigan",2,"Michigan Tech",4,FALSE,FALSE,2,1
+2023-12-08,"CCHA","St. Thomas",1,"Minnesota State",3,FALSE,FALSE,2,1
+2023-12-08,"CCHA","Lake Superior",1,"Bemidji State",7,FALSE,FALSE,6,1
+2023-12-09,"Atlantic Hockey","RIT",5,"American Int'l",2,FALSE,FALSE,-3,0
+2023-12-09,"Atlantic Hockey","Army",3,"Mercyhurst",4,FALSE,FALSE,1,1
+2023-12-09,"Atlantic Hockey","Robert Morris",3,"Niagara",1,FALSE,FALSE,-2,0
+2023-12-09,"Non-Conference","Rensselaer",0,"New Hampshire",1,FALSE,FALSE,1,1
+2023-12-09,"Non-Conference","Long Island",2,"Quinnipiac",4,FALSE,FALSE,2,1
+2023-12-09,"Non-Conference","Dartmouth",1,"Arizona State",1,TRUE,FALSE,0,0.5
+2023-12-09,"Non-Conference","Mass.-Lowell",2,"Holy Cross",4,FALSE,FALSE,2,1
+2023-12-09,"Non-Conference","Bentley",2,"Maine",3,FALSE,FALSE,1,1
+2023-12-09,"Non-Conference","Alaska-Anchorage",2,"Massachusetts",3,FALSE,FALSE,1,1
+2023-12-09,"Non-Conference","Union",1,"Vermont",4,FALSE,FALSE,3,1
+2023-12-09,"Non-Conference","Northeastern",4,"Brown",1,FALSE,FALSE,-3,0
+2023-12-09,"Non-Conference","Sacred Heart",2,"Princeton",2,TRUE,FALSE,0,0.5
+2023-12-09,"Hockey East","Providence",4,"Boston College",5,FALSE,FALSE,1,1
+2023-12-09,"NCHC","Colorado College",3,"North Dakota",2,TRUE,FALSE,-1,0
+2023-12-09,"NCHC","Denver",6,"Western Michigan",5,TRUE,FALSE,-1,0
+2023-12-09,"NCHC","Minnesota-Duluth",3,"Miami",1,FALSE,FALSE,-2,0
+2023-12-09,"NCHC","St. Cloud State",2,"Omaha",2,TRUE,FALSE,0,0.5
+2023-12-09,"Big Ten","Notre Dame",1,"Michigan State",2,FALSE,FALSE,1,1
+2023-12-09,"Big Ten","Penn State",1,"Wisconsin",4,FALSE,FALSE,3,1
+2023-12-09,"Big Ten","Minnesota",1,"Ohio State",1,TRUE,FALSE,0,0.5
+2023-12-09,"CCHA","Michigan Tech",1,"Northern Michigan",3,FALSE,FALSE,2,1
+2023-12-09,"CCHA","Minnesota State",1,"St. Thomas",2,FALSE,FALSE,1,1
+2023-12-09,"CCHA","Lake Superior",6,"Bemidji State",1,FALSE,FALSE,-5,0
+2023-12-09,"CCHA","Ferris State",3,"Bowling Green",4,FALSE,FALSE,1,1
+2023-12-10,"Non-Conference","Long Island",3,"Yale",5,FALSE,FALSE,2,1
+2023-12-14,"CCHA","Bowling Green",1,"Bemidji State",3,FALSE,FALSE,2,1
+2023-12-15,"Atlantic Hockey","American Int'l",2,"Canisius",3,FALSE,FALSE,1,1
+2023-12-15,"CCHA","Bowling Green",2,"Bemidji State",5,FALSE,FALSE,3,1
+2023-12-15,"Non-Conference","Augustana",2,"Alaska",5,FALSE,FALSE,3,1
+2023-12-15,"Non-Conference","Minnesota State",3,"Rensselaer",4,TRUE,FALSE,1,1
+2023-12-16,"Atlantic Hockey","American Int'l",6,"Canisius",1,FALSE,FALSE,-5,0
+2023-12-16,"CCHA","Lake Superior",5,"Ferris State",1,FALSE,FALSE,-4,0
+2023-12-16,"Non-Conference","Arizona State",4,"Robert Morris",1,FALSE,FALSE,-3,0
+2023-12-16,"Non-Conference","Vermont",3,"Long Island",2,TRUE,FALSE,-1,0
+2023-12-16,"Non-Conference","Augustana",3,"Alaska",2,TRUE,FALSE,-1,0
+2023-12-16,"Non-Conference","Minnesota State",4,"Rensselaer",2,FALSE,FALSE,-2,0
+2023-12-17,"Non-Conference","Vermont",5,"Long Island",1,FALSE,FALSE,-4,0
+2023-12-17,"Non-Conference","Arizona State",8,"Robert Morris",3,FALSE,FALSE,-5,0
+2023-12-28,"Non-Conference","Alaska",2,"Michigan Tech",3,TRUE,TRUE,1,1
+2023-12-28,"Non-Conference","Ferris State",1,"Michigan State",4,FALSE,TRUE,3,1
+2023-12-28,"Non-Conference","Minnesota-Duluth",3,"Northeastern",4,TRUE,TRUE,1,1
+2023-12-28,"Non-Conference","Air Force",0,"Wisconsin",3,FALSE,TRUE,3,1
+2023-12-29,"Non-Conference","Rensselaer",6,"Canisius",3,FALSE,FALSE,-3,0
+2023-12-29,"Non-Conference","Merrimack",5,"Brown",1,FALSE,FALSE,-4,0
+2023-12-29,"Non-Conference","Miami",1,"Niagara",4,FALSE,FALSE,3,1
+2023-12-29,"Non-Conference","St. Thomas",1,"Vermont",5,FALSE,FALSE,4,1
+2023-12-29,"Non-Conference","Boston University",6,"Yale",1,FALSE,FALSE,-5,0
+2023-12-29,"Non-Conference","New Hampshire",3,"Army",6,FALSE,FALSE,3,1
+2023-12-29,"Non-Conference","St. Cloud State",6,"Bemidji State",1,FALSE,FALSE,-5,0
+2023-12-29,"Non-Conference","Alaska",3,"Ferris State",2,FALSE,TRUE,-1,0
+2023-12-29,"Non-Conference","Michigan State",3,"Michigan Tech",3,TRUE,TRUE,0,0.5
+2023-12-29,"Non-Conference","Cornell",2,"Massachusetts",2,TRUE,TRUE,0,0.5
+2023-12-29,"Non-Conference","Arizona State",5,"Clarkson",2,FALSE,TRUE,-3,0
+2023-12-29,"Non-Conference","Minnesota-Duluth",4,"Air Force",1,FALSE,TRUE,-3,0
+2023-12-29,"Non-Conference","Northeastern",0,"Wisconsin",3,FALSE,TRUE,3,1
+2023-12-29,"Non-Conference","Maine",5,"RIT",2,FALSE,TRUE,-3,0
+2023-12-29,"Non-Conference","Lake Superior",0,"Dartmouth",4,FALSE,FALSE,4,1
+2023-12-30,"Non-Conference","Rensselaer",2,"Canisius",1,FALSE,FALSE,-1,0
+2023-12-30,"Non-Conference","American Int'l",4,"Mass.-Lowell",3,FALSE,FALSE,-1,0
+2023-12-30,"Non-Conference","Miami",3,"Niagara",0,FALSE,FALSE,-3,0
+2023-12-30,"Non-Conference","Augustana",1,"Notre Dame",5,FALSE,FALSE,4,1
+2023-12-30,"Non-Conference","Mercyhurst",3,"Ohio State",5,FALSE,FALSE,2,1
+2023-12-30,"Non-Conference","St. Thomas",1,"Vermont",4,FALSE,FALSE,3,1
+2023-12-30,"Non-Conference","Union",3,"Bentley",4,TRUE,FALSE,1,1
+2023-12-30,"Non-Conference","Providence",3,"Brown",0,FALSE,FALSE,-3,0
+2023-12-30,"Non-Conference","Holy Cross",2,"Quinnipiac",5,FALSE,FALSE,3,1
+2023-12-30,"Non-Conference","New Hampshire",6,"Sacred Heart",2,FALSE,FALSE,-4,0
+2023-12-30,"ECAC","Harvard",2,"Princeton",5,FALSE,FALSE,3,1
+2023-12-30,"ECAC","Clarkson",5,"Massachusetts",4,TRUE,TRUE,-1,0
+2023-12-30,"ECAC","Arizona State",2,"Cornell",2,TRUE,TRUE,0,0.5
+2023-12-30,"ECAC","RIT",4,"Lake Superior",2,FALSE,TRUE,-2,0
+2023-12-30,"ECAC","Maine",5,"Dartmouth",1,FALSE,FALSE,-4,0
+2023-12-31,"Non-Conference","Stonehill",2,"Merrimack",3,FALSE,FALSE,1,1
+2023-12-31,"Non-Conference","Harvard",2,"Connecticut",4,FALSE,FALSE,2,1
+2023-12-31,"Non-Conference","Bemidji State",1,"St. Cloud State",6,FALSE,FALSE,5,1
+2023-12-31,"Non-Conference","Augustana",2,"Notre Dame",3,TRUE,FALSE,1,1
+2024-01-02,"Atlantic Hockey","Bentley",5,"Army",2,FALSE,FALSE,-3,0
+2024-01-02,"Non-Conference","Merrimack",4,"Holy Cross",3,TRUE,FALSE,-1,0
+2024-01-05,"Atlantic Hockey","Holy Cross",3,"American Int'l",3,TRUE,FALSE,0,0.5
+2024-01-05,"Atlantic Hockey","Mercyhurst",7,"Sacred Heart",2,FALSE,FALSE,-5,0
+2024-01-05,"Atlantic Hockey","Air Force",3,"Bentley",1,FALSE,FALSE,-2,0
+2024-01-05,"Atlantic Hockey","Mass.-Lowell",3,"Omaha",4,TRUE,TRUE,1,1
+2024-01-05,"Atlantic Hockey","Harvard",2,"Arizona State",5,FALSE,FALSE,3,1
+2024-01-05,"ECAC","Yale",2,"Rensselaer",1,FALSE,FALSE,-1,0
+2024-01-05,"ECAC","Brown",3,"Union",2,TRUE,FALSE,-1,0
+2024-01-05,"Hockey East","Connecticut",3,"Massachusetts",3,TRUE,FALSE,0,0.5
+2024-01-05,"Big Ten","Wisconsin",2,"Notre Dame",1,FALSE,FALSE,-1,0
+2024-01-05,"Non-Conference","St. Lawrence",1,"Canisius",5,FALSE,FALSE,4,1
+2024-01-05,"Non-Conference","Niagara",2,"Denver",5,FALSE,FALSE,3,1
+2024-01-05,"Non-Conference","Colgate",1,"Maine",3,FALSE,FALSE,2,1
+2024-01-05,"Non-Conference","Princeton",2,"New Hampshire",5,FALSE,FALSE,3,1
+2024-01-05,"Non-Conference","Alaska",4,"North Dakota",6,FALSE,FALSE,2,1
+2024-01-05,"Non-Conference","Bowling Green",2,"Ohio State",6,FALSE,FALSE,4,1
+2024-01-05,"Non-Conference","Stonehill",1,"Robert Morris",8,FALSE,FALSE,7,1
+2024-01-05,"Non-Conference","Clarkson",0,"RIT",4,FALSE,FALSE,4,1
+2024-01-05,"Non-Conference","Minnesota State",3,"Augustana",3,TRUE,FALSE,0,0.5
+2024-01-05,"Non-Conference","Western Michigan",3,"Lindenwood",2,FALSE,FALSE,-1,0
+2024-01-05,"CCHA","Bemidji State",4,"Ferris State",1,FALSE,FALSE,-3,0
+2024-01-06,"Non-Conference","Western Michigan",6,"Lindenwood",1,FALSE,FALSE,-5,0
+2024-01-06,"Non-Conference","Princeton",1,"New Hampshire",3,FALSE,FALSE,2,1
+2024-01-06,"Non-Conference","Quinnipiac",3,"Northeastern",3,TRUE,FALSE,0,0.5
+2024-01-06,"Non-Conference","Stonehill",3,"Robert Morris",7,FALSE,FALSE,4,1
+2024-01-06,"Non-Conference","St. Lawrence",1,"RIT",1,TRUE,FALSE,0,0.5
+2024-01-06,"Non-Conference","Vermont",3,"Dartmouth",4,FALSE,FALSE,1,1
+2024-01-06,"Non-Conference","Niagara",1,"Denver",6,FALSE,FALSE,5,1
+2024-01-06,"Non-Conference","Alaska",2,"North Dakota",6,FALSE,FALSE,4,1
+2024-01-06,"Non-Conference","Army",6,"Penn State",7,FALSE,FALSE,1,1
+2024-01-06,"Non-Conference","Minnesota State",2,"Augustana",1,FALSE,FALSE,-1,0
+2024-01-06,"Non-Conference","Clarkson",4,"Canisius",3,FALSE,FALSE,-1,0
+2024-01-06,"Non-Conference","Colgate",4,"Maine",4,TRUE,FALSE,0,0.5
+2024-01-06,"Non-Conference","Ohio State",4,"Bowling Green",2,FALSE,FALSE,-2,0
+2024-01-06,"Atlantic Hockey","Mercyhurst",1,"Sacred Heart",2,FALSE,FALSE,1,1
+2024-01-06,"Atlantic Hockey","Air Force",7,"Bentley",3,FALSE,FALSE,-4,0
+2024-01-06,"Atlantic Hockey","American Int'l",2,"Holy Cross",6,FALSE,FALSE,4,1
+2024-01-06,"Atlantic Hockey","Harvard",4,"Mass.-Lowell",7,FALSE,TRUE,3,1
+2024-01-06,"Atlantic Hockey","Omaha",1,"Arizona State",2,TRUE,FALSE,1,1
+2024-01-06,"ECAC","Yale",4,"Union",2,FALSE,FALSE,-2,0
+2024-01-06,"ECAC","Brown",1,"Rensselaer",2,FALSE,FALSE,1,1
+2024-01-06,"Big Ten","Wisconsin",7,"Notre Dame",4,FALSE,FALSE,-3,0
+2024-01-06,"CCHA","Bemidji State",3,"Ferris State",5,FALSE,FALSE,2,1
+2024-01-07,"Non-Conference","Colorado College",6,"Minnesota",4,FALSE,FALSE,-2,0
+2024-01-08,"Non-Conference","Colorado College",2,"Minnesota",6,FALSE,FALSE,4,1
+2024-01-09,"Atlantic Hockey","Army",3,"Sacred Heart",3,TRUE,FALSE,0,0.5
+2024-01-09,"Hockey East","Northeastern",3,"Boston University",4,TRUE,FALSE,1,1
+2024-01-11,"Atlantic Hockey","Mercyhurst",1,"Canisius",4,FALSE,FALSE,3,1
+2024-01-11,"Atlantic Hockey","RIT",1,"Niagara",3,FALSE,FALSE,2,1
+2024-01-11,"CCHA","Michigan Tech",3,"St. Thomas",4,FALSE,FALSE,1,1
+2024-01-12,"Non-Conference","Cornell",3,"Arizona State",2,TRUE,FALSE,-1,0
+2024-01-12,"Non-Conference","Robert Morris",2,"Minnesota",4,FALSE,FALSE,2,1
+2024-01-12,"Non-Conference","Colgate",2,"Long Island",3,TRUE,FALSE,1,1
+2024-01-12,"Non-Conference","Stonehill",4,"Michigan",12,FALSE,FALSE,8,1
+2024-01-12,"Non-Conference","Lindenwood",0,"Wisconsin",5,FALSE,FALSE,5,1
+2024-01-12,"NCHC","Colorado College",2,"Minnesota-Duluth",3,TRUE,FALSE,1,1
+2024-01-12,"NCHC","St. Cloud State",1,"Denver",5,FALSE,FALSE,4,1
+2024-01-12,"NCHC","Western Michigan",4,"Miami",1,FALSE,FALSE,-3,0
+2024-01-12,"NCHC","Omaha",5,"North Dakota",4,TRUE,FALSE,-1,0
+2024-01-12,"Atlantic Hockey","Holy Cross",0,"Army",3,FALSE,FALSE,3,1
+2024-01-12,"Atlantic Hockey","American Int'l",2,"Air Force",6,FALSE,FALSE,4,1
+2024-01-12,"Atlantic Hockey","Sacred Heart",4,"Bentley",3,FALSE,FALSE,-1,0
+2024-01-12,"ECAC","Princeton",2,"Quinnipiac",9,FALSE,FALSE,7,1
+2024-01-12,"ECAC","St. Lawrence",3,"Rensselaer",6,FALSE,FALSE,3,1
+2024-01-12,"ECAC","Clarkson",1,"Union",5,FALSE,FALSE,4,1
+2024-01-12,"ECAC","Dartmouth",0,"Yale",5,FALSE,FALSE,5,1
+2024-01-12,"ECAC","Harvard",3,"Brown",5,FALSE,FALSE,2,1
+2024-01-12,"Hockey East","Maine",5,"Connecticut",3,FALSE,FALSE,-2,0
+2024-01-12,"Hockey East","Merrimack",3,"Massachusetts",4,FALSE,FALSE,1,1
+2024-01-12,"Hockey East","Vermont",5,"Northeastern",4,FALSE,FALSE,-1,0
+2024-01-12,"Hockey East","Providence",1,"Boston College",7,FALSE,FALSE,6,1
+2024-01-12,"Big Ten","Notre Dame",2,"Ohio State",3,FALSE,FALSE,1,1
+2024-01-12,"Big Ten","Michigan State",5,"Penn State",0,FALSE,FALSE,-5,0
+2024-01-12,"CCHA","Northern Michigan",1,"Lake Superior",5,FALSE,FALSE,4,1
+2024-01-12,"CCHA","Ferris State",2,"Minnesota State",4,FALSE,FALSE,2,1
+2024-01-13,"Non-Conference","Colgate",2,"Long Island",3,TRUE,FALSE,1,1
+2024-01-13,"Non-Conference","Cornell",4,"Arizona State",1,FALSE,FALSE,-3,0
+2024-01-13,"Non-Conference","Robert Morris",1,"Minnesota",4,FALSE,FALSE,3,1
+2024-01-13,"Non-Conference","Stonehill",1,"Michigan",7,FALSE,FALSE,6,1
+2024-01-13,"Non-Conference","Lindenwood",3,"Wisconsin",3,TRUE,FALSE,0,0.5
+2024-01-13,"Non-Conference","Alaska-Anchorage",2,"Alaska",2,TRUE,FALSE,0,0.5
+2024-01-13,"Hockey East","Maine",0,"Connecticut",2,FALSE,FALSE,2,1
+2024-01-13,"Hockey East","New Hampshire",0,"Boston University",3,FALSE,FALSE,3,1
+2024-01-13,"Hockey East","Massachusetts",1,"Merrimack",4,FALSE,FALSE,3,1
+2024-01-13,"Hockey East","Boston College",3,"Providence",4,FALSE,FALSE,1,1
+2024-01-13,"Hockey East","Vermont",1,"Northeastern",3,FALSE,FALSE,2,1
+2024-01-13,"Atlantic Hockey","Holy Cross",3,"Army",1,FALSE,FALSE,-2,0
+2024-01-13,"Atlantic Hockey","American Int'l",4,"Air Force",1,FALSE,FALSE,-3,0
+2024-01-13,"Atlantic Hockey","Bentley",3,"Sacred Heart",2,TRUE,FALSE,-1,0
+2024-01-13,"ECAC","St. Lawrence",2,"Union",2,TRUE,FALSE,0,0.5
+2024-01-13,"ECAC","Dartmouth",1,"Brown",2,FALSE,FALSE,1,1
+2024-01-13,"ECAC","Quinnipiac",3,"Princeton",1,FALSE,FALSE,-2,0
+2024-01-13,"ECAC","Clarkson",4,"Rensselaer",1,FALSE,FALSE,-3,0
+2024-01-13,"ECAC","Harvard",1,"Yale",0,FALSE,FALSE,-1,0
+2024-01-13,"Big Ten","Michigan State",7,"Penn State",3,FALSE,FALSE,-4,0
+2024-01-13,"Big Ten","Notre Dame",5,"Ohio State",2,FALSE,FALSE,-3,0
+2024-01-13,"CCHA","Michigan Tech",1,"St. Thomas",3,FALSE,FALSE,2,1
+2024-01-13,"CCHA","Northern Michigan",2,"Lake Superior",5,FALSE,FALSE,3,1
+2024-01-13,"CCHA","Ferris State",0,"Minnesota State",4,FALSE,FALSE,4,1
+2024-01-13,"NCHC","St. Cloud State",4,"Denver",4,TRUE,FALSE,0,0.5
+2024-01-13,"NCHC","Colorado College",3,"Minnesota-Duluth",2,TRUE,FALSE,-1,0
+2024-01-13,"NCHC","Omaha",1,"North Dakota",3,FALSE,FALSE,2,1
+2024-01-13,"NCHC","Western Michigan",3,"Miami",4,FALSE,FALSE,1,1
+2024-01-16,"Atlantic Hockey","Sacred Heart",3,"Army",5,FALSE,FALSE,2,1
+2024-01-16,"Atlantic Hockey","Canisius",3,"RIT",2,TRUE,FALSE,-1,0
+2024-01-19,"Non-Conference","Stonehill",2,"Long Island",8,FALSE,FALSE,6,1
+2024-01-19,"Non-Conference","Alaska-Anchorage",0,"Providence",2,FALSE,FALSE,2,1
+2024-01-19,"Non-Conference","Augustana",5,"Arizona State",4,FALSE,FALSE,-1,0
+2024-01-19,"Atlantic Hockey","Niagara",4,"Canisius",2,FALSE,FALSE,-2,0
+2024-01-19,"Atlantic Hockey","Holy Cross",1,"Sacred Heart",2,TRUE,FALSE,1,1
+2024-01-19,"Atlantic Hockey","RIT",6,"Robert Morris",3,FALSE,FALSE,-3,0
+2024-01-19,"Atlantic Hockey","Air Force",8,"Army",1,FALSE,FALSE,-7,0
+2024-01-19,"Atlantic Hockey","Mercyhurst",0,"Bentley",4,FALSE,FALSE,4,1
+2024-01-19,"ECAC","Yale",3,"Clarkson",5,FALSE,FALSE,2,1
+2024-01-19,"ECAC","Quinnipiac",1,"Colgate",2,FALSE,FALSE,1,1
+2024-01-19,"ECAC","Princeton",2,"Cornell",6,FALSE,FALSE,4,1
+2024-01-19,"ECAC","Union",5,"Dartmouth",1,FALSE,FALSE,-4,0
+2024-01-19,"ECAC","Rensselaer",3,"Harvard",6,FALSE,FALSE,3,1
+2024-01-19,"ECAC","Brown",1,"St. Lawrence",2,FALSE,FALSE,1,1
+2024-01-19,"Hockey East","New Hampshire",5,"Connecticut",0,FALSE,FALSE,-5,0
+2024-01-19,"Hockey East","Mass.-Lowell",3,"Maine",5,FALSE,FALSE,2,1
+2024-01-19,"Hockey East","Boston College",6,"Merrimack",4,FALSE,FALSE,-2,0
+2024-01-19,"Hockey East","Boston University",5,"Vermont",1,FALSE,FALSE,-4,0
+2024-01-19,"NCHC","Miami",1,"Colorado College",2,FALSE,FALSE,1,1
+2024-01-19,"NCHC","Minnesota-Duluth",6,"Western Michigan",3,FALSE,FALSE,-3,0
+2024-01-19,"NCHC","Denver",6,"Omaha",3,FALSE,FALSE,-3,0
+2024-01-19,"NCHC","North Dakota",5,"St. Cloud State",3,FALSE,FALSE,-2,0
+2024-01-19,"Big Ten","Michigan",7,"Michigan State",1,FALSE,FALSE,-6,0
+2024-01-19,"Big Ten","Ohio State",2,"Minnesota",5,FALSE,FALSE,3,1
+2024-01-19,"Big Ten","Penn State",1,"Notre Dame",4,FALSE,FALSE,3,1
+2024-01-19,"CCHA","Minnesota State",3,"Bowling Green",4,FALSE,FALSE,1,1
+2024-01-19,"CCHA","Lake Superior",3,"Ferris State",5,FALSE,FALSE,2,1
+2024-01-19,"CCHA","Bemidji State",1,"Michigan Tech",2,FALSE,FALSE,1,1
+2024-01-19,"CCHA","St. Thomas",2,"Northern Michigan",3,FALSE,FALSE,1,1
+2024-01-20,"Non-Conference","Stonehill",0,"Long Island",10,FALSE,FALSE,10,1
+2024-01-20,"Non-Conference","Alaska-Anchorage",4,"Providence",0,FALSE,FALSE,-4,0
+2024-01-20,"Non-Conference","Augustana",2,"Arizona State",3,FALSE,FALSE,1,1
+2024-01-20,"Hockey East","Massachusetts",2,"Northeastern",1,FALSE,FALSE,-1,0
+2024-01-20,"Hockey East","Mass.-Lowell",2,"Maine",7,FALSE,FALSE,5,1
+2024-01-20,"Hockey East","Boston University",5,"Vermont",2,FALSE,FALSE,-3,0
+2024-01-20,"NCHC","Miami",2,"Colorado College",4,FALSE,FALSE,2,1
+2024-01-20,"NCHC","North Dakota",3,"St. Cloud State",3,TRUE,FALSE,0,0.5
+2024-01-20,"NCHC","Minnesota-Duluth",2,"Western Michigan",5,FALSE,FALSE,3,1
+2024-01-20,"NCHC","Denver",6,"Omaha",2,FALSE,FALSE,-4,0
+2024-01-20,"Atlantic Hockey","Air Force",7,"Army",6,FALSE,FALSE,-1,0
+2024-01-20,"Atlantic Hockey","Mercyhurst",4,"Bentley",8,FALSE,FALSE,4,1
+2024-01-20,"Atlantic Hockey","RIT",7,"Robert Morris",1,FALSE,FALSE,-6,0
+2024-01-20,"Atlantic Hockey","Sacred Heart",2,"Holy Cross",5,FALSE,FALSE,3,1
+2024-01-20,"Atlantic Hockey","Canisius",4,"Niagara",6,FALSE,FALSE,2,1
+2024-01-20,"Big Ten","Penn State",3,"Notre Dame",6,FALSE,FALSE,3,1
+2024-01-20,"Big Ten","Michigan State",7,"Michigan",5,FALSE,FALSE,-2,0
+2024-01-20,"Big Ten","Ohio State",3,"Minnesota",6,FALSE,FALSE,3,1
+2024-01-20,"CCHA","Ferris State",3,"Lake Superior",2,TRUE,FALSE,-1,0
+2024-01-20,"CCHA","Bemidji State",2,"Michigan Tech",2,TRUE,FALSE,0,0.5
+2024-01-20,"CCHA","St. Thomas",3,"Northern Michigan",1,FALSE,FALSE,-2,0
+2024-01-20,"CCHA","Minnesota State",4,"Bowling Green",1,FALSE,FALSE,-3,0
+2024-01-20,"ECAC","Brown",3,"Clarkson",2,TRUE,FALSE,-1,0
+2024-01-20,"ECAC","Princeton",3,"Colgate",6,FALSE,FALSE,3,1
+2024-01-20,"ECAC","Quinnipiac",2,"Cornell",3,TRUE,FALSE,1,1
+2024-01-20,"ECAC","Rensselaer",2,"Dartmouth",6,FALSE,FALSE,4,1
+2024-01-20,"ECAC","Union",5,"Harvard",4,TRUE,FALSE,-1,0
+2024-01-20,"ECAC","Yale",2,"St. Lawrence",4,FALSE,FALSE,2,1
+2024-01-21,"Hockey East","Merrimack",2,"Boston College",6,FALSE,FALSE,4,1
+2024-01-21,"Hockey East","Connecticut",2,"New Hampshire",1,FALSE,FALSE,-1,0
+2024-01-26,"Atlantic Hockey","Robert Morris",2,"American Int'l",0,FALSE,FALSE,-2,0
+2024-01-26,"Atlantic Hockey","Holy Cross",5,"Mercyhurst",2,FALSE,FALSE,-3,0
+2024-01-26,"Atlantic Hockey","Canisius",1,"Air Force",5,FALSE,FALSE,4,1
+2024-01-26,"Atlantic Hockey","Bentley",0,"RIT",3,FALSE,FALSE,3,1
+2024-01-26,"Non-Conference","Alaska",7,"Long Island",3,FALSE,FALSE,-4,0
+2024-01-26,"Non-Conference","Ferris State",5,"Augustana",2,FALSE,FALSE,-3,0
+2024-01-26,"Non-Conference","Stonehill",1,"Lindenwood",7,FALSE,FALSE,6,1
+2024-01-26,"Non-Conference","Sacred Heart",2,"Connecticut",6,FALSE,FALSE,4,1
+2024-01-26,"Non-Conference","Quinnipiac",1,"Yale",0,FALSE,TRUE,-1,0
+2024-01-26,"Big Ten","Minnesota",2,"Michigan State",3,FALSE,FALSE,1,1
+2024-01-26,"Big Ten","Wisconsin",1,"Michigan",5,FALSE,FALSE,4,1
+2024-01-26,"Big Ten","Ohio State",3,"Penn State",4,FALSE,FALSE,1,1
+2024-01-26,"ECAC","St. Lawrence",1,"Clarkson",4,FALSE,FALSE,3,1
+2024-01-26,"ECAC","Colgate",4,"Dartmouth",3,TRUE,FALSE,-1,0
+2024-01-26,"ECAC","Cornell",2,"Harvard",0,FALSE,FALSE,-2,0
+2024-01-26,"Hockey East","Merrimack",3,"Northeastern",5,FALSE,FALSE,2,1
+2024-01-26,"Hockey East","New Hampshire",1,"Vermont",2,FALSE,FALSE,1,1
+2024-01-26,"Hockey East","Boston University",1,"Boston College",4,FALSE,FALSE,3,1
+2024-01-26,"Hockey East","Providence",7,"Mass.-Lowell",2,FALSE,FALSE,-5,0
+2024-01-26,"NCHC","Colorado College",2,"Western Michigan",1,TRUE,FALSE,-1,0
+2024-01-26,"NCHC","Miami",2,"Minnesota-Duluth",6,FALSE,FALSE,4,1
+2024-01-26,"NCHC","Denver",2,"North Dakota",5,FALSE,FALSE,3,1
+2024-01-26,"NCHC","Omaha",7,"St. Cloud State",6,TRUE,FALSE,-1,0
+2024-01-26,"CCHA","Michigan Tech",1,"Lake Superior",3,FALSE,FALSE,2,1
+2024-01-26,"CCHA","Northern Michigan",2,"Minnesota State",2,TRUE,FALSE,0,0.5
+2024-01-27,"Atlantic Hockey","Robert Morris",2,"American Int'l",5,FALSE,FALSE,3,1
+2024-01-27,"Atlantic Hockey","Holy Cross",5,"Mercyhurst",3,FALSE,FALSE,-2,0
+2024-01-27,"Atlantic Hockey","Bentley",1,"RIT",2,TRUE,FALSE,1,1
+2024-01-27,"Atlantic Hockey","Canisius",5,"Air Force",3,FALSE,FALSE,-2,0
+2024-01-27,"Non-Conference","Stonehill",5,"Lindenwood",6,TRUE,FALSE,1,1
+2024-01-27,"Non-Conference","Alaska",3,"Long Island",1,FALSE,FALSE,-2,0
+2024-01-27,"Non-Conference","Rensselaer",3,"Union",5,FALSE,TRUE,2,1
+2024-01-27,"Non-Conference","Ferris State",4,"Augustana",3,TRUE,FALSE,-1,0
+2024-01-27,"Big Ten","Minnesota",5,"Michigan State",1,FALSE,FALSE,-4,0
+2024-01-27,"Big Ten","Ohio State",3,"Penn State",4,FALSE,FALSE,1,1
+2024-01-27,"Big Ten","Wisconsin",6,"Michigan",5,TRUE,FALSE,-1,0
+2024-01-27,"Big Ten","Yale",3,"Sacred Heart",2,FALSE,TRUE,-1,0
+2024-01-27,"Big Ten","Quinnipiac",4,"Connecticut",3,FALSE,FALSE,-1,0
+2024-01-27,"NCHC","Denver",2,"North Dakota",4,FALSE,FALSE,2,1
+2024-01-27,"NCHC","Omaha",1,"St. Cloud State",1,TRUE,FALSE,0,0.5
+2024-01-27,"NCHC","Colorado College",2,"Western Michigan",1,TRUE,FALSE,-1,0
+2024-01-27,"NCHC","Miami",2,"Minnesota-Duluth",3,TRUE,FALSE,1,1
+2024-01-27,"CCHA","Michigan Tech",1,"Lake Superior",0,FALSE,FALSE,-1,0
+2024-01-27,"CCHA","Northern Michigan",0,"Minnesota State",4,FALSE,FALSE,4,1
+2024-01-27,"ECAC","Cornell",2,"Dartmouth",2,TRUE,FALSE,0,0.5
+2024-01-27,"ECAC","Colgate",3,"Harvard",6,FALSE,FALSE,3,1
+2024-01-27,"ECAC","Clarkson",1,"St. Lawrence",2,FALSE,FALSE,1,1
+2024-01-27,"Hockey East","Boston College",4,"Boston University",3,FALSE,FALSE,-1,0
+2024-01-27,"Hockey East","Northeastern",4,"Merrimack",1,FALSE,FALSE,-3,0
+2024-01-27,"Hockey East","Mass.-Lowell",3,"Providence",4,TRUE,FALSE,1,1
+2024-01-27,"Hockey East","New Hampshire",6,"Vermont",3,FALSE,FALSE,-3,0
+2024-01-30,"Hockey East","Boston University",3,"Northeastern",4,TRUE,FALSE,1,1
+2024-01-30,"Non-Conference","Army",3,"Princeton",4,TRUE,FALSE,1,1
+2024-02-01,"Atlantic Hockey","RIT",4,"Niagara",4,TRUE,FALSE,0,0.5
+2024-02-02,"Atlantic Hockey","Robert Morris",5,"Mercyhurst",2,FALSE,FALSE,-3,0
+2024-02-02,"Atlantic Hockey","American Int'l",3,"Sacred Heart",4,TRUE,FALSE,1,1
+2024-02-02,"Atlantic Hockey","Army",2,"Bentley",4,FALSE,FALSE,2,1
+2024-02-02,"Atlantic Hockey","Air Force",3,"Holy Cross",6,FALSE,FALSE,3,1
+2024-02-02,"ECAC","Rensselaer",3,"Brown",1,FALSE,FALSE,-2,0
+2024-02-02,"ECAC","Clarkson",2,"Colgate",4,FALSE,FALSE,2,1
+2024-02-02,"ECAC","St. Lawrence",1,"Cornell",5,FALSE,FALSE,4,1
+2024-02-02,"ECAC","Dartmouth",5,"Princeton",1,FALSE,FALSE,-4,0
+2024-02-02,"ECAC","Harvard",1,"Quinnipiac",2,FALSE,FALSE,1,1
+2024-02-02,"ECAC","Union",1,"Yale",3,FALSE,FALSE,2,1
+2024-02-02,"Hockey East","Providence",5,"Connecticut",0,FALSE,FALSE,-5,0
+2024-02-02,"Hockey East","Massachusetts",3,"Merrimack",2,FALSE,FALSE,-1,0
+2024-02-02,"Hockey East","Boston University",6,"New Hampshire",3,FALSE,FALSE,-3,0
+2024-02-02,"Hockey East","Maine",3,"Northeastern",6,FALSE,FALSE,3,1
+2024-02-02,"Hockey East","Boston College",6,"Mass.-Lowell",1,FALSE,FALSE,-5,0
+2024-02-02,"NCHC","St. Cloud State",2,"Colorado College",1,TRUE,FALSE,-1,0
+2024-02-02,"NCHC","Western Michigan",2,"Denver",3,FALSE,FALSE,1,1
+2024-02-02,"NCHC","North Dakota",5,"Miami",4,TRUE,FALSE,-1,0
+2024-02-02,"NCHC","Minnesota-Duluth",1,"Omaha",5,FALSE,FALSE,4,1
+2024-02-02,"Big Ten","Michigan",4,"Ohio State",2,FALSE,FALSE,-2,0
+2024-02-02,"Big Ten","Minnesota",2,"Wisconsin",1,TRUE,FALSE,-1,0
+2024-02-02,"Big Ten","Michigan State",1,"Notre Dame",4,FALSE,FALSE,3,1
+2024-02-02,"Non-Conference","Long Island",3,"Stonehill",1,FALSE,FALSE,-2,0
+2024-02-02,"Non-Conference","Lindenwood",4,"Arizona State",4,TRUE,FALSE,0,0.5
+2024-02-02,"Non-Conference","Augustana",0,"Bemidji State",5,FALSE,FALSE,5,1
+2024-02-02,"CCHA","Bowling Green",4,"Ferris State",3,FALSE,FALSE,-1,0
+2024-02-02,"CCHA","Michigan Tech",1,"Northern Michigan",4,FALSE,FALSE,3,1
+2024-02-02,"CCHA","Minnesota State",4,"St. Thomas",3,TRUE,FALSE,-1,0
+2024-02-03,"Atlantic Hockey","Army",2,"Bentley",1,FALSE,FALSE,-1,0
+2024-02-03,"Atlantic Hockey","Niagara",2,"RIT",4,FALSE,FALSE,2,1
+2024-02-03,"Atlantic Hockey","Mercyhurst",3,"Robert Morris",4,FALSE,FALSE,1,1
+2024-02-03,"Atlantic Hockey","American Int'l",1,"Sacred Heart",3,FALSE,FALSE,2,1
+2024-02-03,"Atlantic Hockey","Air Force",2,"Holy Cross",5,FALSE,FALSE,3,1
+2024-02-03,"Non-Conference","Long Island",5,"Stonehill",0,FALSE,FALSE,-5,0
+2024-02-03,"Non-Conference","Lindenwood",1,"Arizona State",5,FALSE,FALSE,4,1
+2024-02-03,"Non-Conference","Alaska",2,"Alaska-Anchorage",4,FALSE,FALSE,2,1
+2024-02-03,"Non-Conference","Augustana",5,"Bemidji State",2,FALSE,FALSE,-3,0
+2024-02-03,"NCHC","St. Cloud State",3,"Colorado College",5,FALSE,FALSE,2,1
+2024-02-03,"NCHC","Western Michigan",7,"Denver",2,FALSE,FALSE,-5,0
+2024-02-03,"NCHC","North Dakota",4,"Miami",1,FALSE,FALSE,-3,0
+2024-02-03,"NCHC","Minnesota-Duluth",3,"Omaha",4,FALSE,FALSE,1,1
+2024-02-03,"Big Ten","Michigan State",4,"Notre Dame",0,FALSE,FALSE,-4,0
+2024-02-03,"Big Ten","Minnesota",1,"Wisconsin",1,TRUE,FALSE,0,0.5
+2024-02-03,"Big Ten","Michigan",4,"Ohio State",1,FALSE,FALSE,-3,0
+2024-02-03,"CCHA","Bowling Green",3,"Ferris State",1,FALSE,FALSE,-2,0
+2024-02-03,"CCHA","Northern Michigan",3,"Michigan Tech",3,TRUE,FALSE,0,0.5
+2024-02-03,"CCHA","St. Thomas",4,"Minnesota State",2,FALSE,FALSE,-2,0
+2024-02-03,"ECAC","Union",4,"Brown",4,TRUE,FALSE,0,0.5
+2024-02-03,"ECAC","St. Lawrence",2,"Colgate",3,FALSE,FALSE,1,1
+2024-02-03,"ECAC","Clarkson",2,"Cornell",7,FALSE,FALSE,5,1
+2024-02-03,"ECAC","Dartmouth",1,"Quinnipiac",5,FALSE,FALSE,4,1
+2024-02-03,"ECAC","Rensselaer",1,"Yale",1,TRUE,FALSE,0,0.5
+2024-02-03,"Hockey East","Maine",1,"Massachusetts",0,FALSE,FALSE,-1,0
+2024-02-03,"Hockey East","Merrimack",1,"New Hampshire",3,FALSE,FALSE,2,1
+2024-02-03,"Hockey East","Connecticut",2,"Providence",1,FALSE,FALSE,-1,0
+2024-02-05,"Hockey East","Harvard",2,"Northeastern",3,TRUE,TRUE,1,1
+2024-02-05,"Hockey East","Boston College",3,"Boston University",4,FALSE,TRUE,1,1
+2024-02-06,"Atlantic Hockey","Niagara",3,"Canisius",2,TRUE,FALSE,-1,0
+2024-02-09,"Big Ten","Penn State",0,"Minnesota",3,FALSE,FALSE,3,1
+2024-02-09,"Big Ten","Michigan State",5,"Michigan",1,FALSE,FALSE,-4,0
+2024-02-09,"Big Ten","Notre Dame",2,"Wisconsin",4,FALSE,FALSE,2,1
+2024-02-09,"Atlantic Hockey","Bentley",3,"Canisius",0,FALSE,FALSE,-3,0
+2024-02-09,"Atlantic Hockey","RIT",7,"Mercyhurst",6,TRUE,FALSE,-1,0
+2024-02-09,"Atlantic Hockey","American Int'l",2,"Niagara",4,FALSE,FALSE,2,1
+2024-02-09,"Atlantic Hockey","Robert Morris",1,"Army",3,FALSE,FALSE,2,1
+2024-02-09,"Atlantic Hockey","Sacred Heart",3,"Air Force",2,FALSE,FALSE,-1,0
+2024-02-09,"ECAC","Princeton",2,"Clarkson",4,FALSE,FALSE,2,1
+2024-02-09,"ECAC","Dartmouth",5,"Harvard",5,TRUE,FALSE,0,0.5
+2024-02-09,"ECAC","Cornell",4,"Rensselaer",1,FALSE,FALSE,-3,0
+2024-02-09,"ECAC","Quinnipiac",1,"St. Lawrence",3,FALSE,FALSE,2,1
+2024-02-09,"ECAC","Colgate",3,"Union",5,FALSE,FALSE,2,1
+2024-02-09,"ECAC","Brown",1,"Yale",3,FALSE,FALSE,2,1
+2024-02-09,"Hockey East","Merrimack",1,"Boston University",7,FALSE,FALSE,6,1
+2024-02-09,"Hockey East","Massachusetts",2,"Connecticut",0,FALSE,FALSE,-2,0
+2024-02-09,"Hockey East","Providence",1,"Maine",2,FALSE,FALSE,1,1
+2024-02-09,"Hockey East","New Hampshire",1,"Boston College",6,FALSE,FALSE,5,1
+2024-02-09,"Hockey East","Vermont",1,"Mass.-Lowell",1,TRUE,FALSE,0,0.5
+2024-02-09,"NCHC","Omaha",1,"Western Michigan",6,FALSE,FALSE,5,1
+2024-02-09,"NCHC","St. Cloud State",5,"Miami",2,FALSE,FALSE,-3,0
+2024-02-09,"Non-Conference","Alaska",0,"Arizona State",2,FALSE,FALSE,2,1
+2024-02-09,"Non-Conference","Lindenwood",10,"Stonehill",1,FALSE,FALSE,-9,0
+2024-02-09,"Non-Conference","St. Thomas",2,"Augustana",4,FALSE,FALSE,2,1
+2024-02-09,"CCHA","Lake Superior",3,"Bowling Green",6,FALSE,FALSE,3,1
+2024-02-09,"CCHA","Minnesota State",1,"Michigan Tech",3,FALSE,FALSE,2,1
+2024-02-09,"CCHA","Bemidji State",4,"Northern Michigan",2,FALSE,FALSE,-2,0
+2024-02-10,"Big Ten","Penn State",0,"Minnesota",3,FALSE,FALSE,3,1
+2024-02-10,"Big Ten","Notre Dame",2,"Wisconsin",3,FALSE,FALSE,1,1
+2024-02-10,"Big Ten","Michigan",2,"Michigan State",3,FALSE,TRUE,1,1
+2024-02-10,"Atlantic Hockey","RIT",2,"Mercyhurst",3,FALSE,FALSE,1,1
+2024-02-10,"Atlantic Hockey","American Int'l",4,"Niagara",4,TRUE,FALSE,0,0.5
+2024-02-10,"Atlantic Hockey","Sacred Heart",0,"Air Force",2,FALSE,FALSE,2,1
+2024-02-10,"Atlantic Hockey","Bentley",2,"Canisius",2,TRUE,FALSE,0,0.5
+2024-02-10,"Atlantic Hockey","Robert Morris",4,"Army",3,FALSE,FALSE,-1,0
+2024-02-10,"Non-Conference","Alaska",2,"Arizona State",4,FALSE,FALSE,2,1
+2024-02-10,"Non-Conference","Lindenwood",2,"Stonehill",4,FALSE,FALSE,2,1
+2024-02-10,"Non-Conference","Long Island",2,"Alaska-Anchorage",1,FALSE,FALSE,-1,0
+2024-02-10,"Non-Conference","St. Thomas",1,"Augustana",2,TRUE,FALSE,1,1
+2024-02-10,"CCHA","Minnesota State",4,"Michigan Tech",2,FALSE,FALSE,-2,0
+2024-02-10,"CCHA","Bemidji State",3,"Northern Michigan",3,TRUE,FALSE,0,0.5
+2024-02-10,"CCHA","Lake Superior",2,"Bowling Green",4,FALSE,FALSE,2,1
+2024-02-10,"Hockey East","Vermont",3,"Mass.-Lowell",3,TRUE,FALSE,0,0.5
+2024-02-10,"Hockey East","Providence",4,"Maine",3,TRUE,FALSE,-1,0
+2024-02-10,"Hockey East","Connecticut",1,"Massachusetts",3,FALSE,FALSE,2,1
+2024-02-10,"Hockey East","New Hampshire",1,"Merrimack",3,FALSE,FALSE,2,1
+2024-02-10,"NCHC","Omaha",3,"Western Michigan",2,TRUE,FALSE,-1,0
+2024-02-10,"NCHC","St. Cloud State",3,"Miami",1,FALSE,FALSE,-2,0
+2024-02-10,"ECAC","Quinnipiac",4,"Clarkson",2,FALSE,FALSE,-2,0
+2024-02-10,"ECAC","Colgate",5,"Rensselaer",5,TRUE,FALSE,0,0.5
+2024-02-10,"ECAC","Princeton",5,"St. Lawrence",4,TRUE,FALSE,-1,0
+2024-02-10,"ECAC","Cornell",6,"Union",1,FALSE,FALSE,-5,0
+2024-02-11,"Non-Conference","Long Island",1,"Alaska-Anchorage",3,FALSE,FALSE,2,1
+2024-02-12,"Non-Conference","Boston College",5,"Harvard",0,FALSE,TRUE,-5,0
+2024-02-12,"Non-Conference","Boston University",3,"Northeastern",4,TRUE,TRUE,1,1
+2024-02-15,"CCHA","Ferris State",2,"Bemidji State",3,TRUE,FALSE,1,1
+2024-02-16,"Atlantic Hockey","Mercyhurst",1,"American Int'l",4,FALSE,FALSE,3,1
+2024-02-16,"Atlantic Hockey","Sacred Heart",1,"Holy Cross",5,FALSE,FALSE,4,1
+2024-02-16,"Atlantic Hockey","Army",3,"Niagara",6,FALSE,FALSE,3,1
+2024-02-16,"Atlantic Hockey","Canisius",5,"Robert Morris",3,FALSE,FALSE,-2,0
+2024-02-16,"Atlantic Hockey","Air Force",3,"RIT",7,FALSE,FALSE,4,1
+2024-02-16,"Big Ten","Wisconsin",2,"Ohio State",3,TRUE,FALSE,1,1
+2024-02-16,"Big Ten","Michigan",5,"Penn State",3,FALSE,FALSE,-2,0
+2024-02-16,"Big Ten","Minnesota",1,"Notre Dame",6,FALSE,FALSE,5,1
+2024-02-16,"ECAC","Yale",2,"Colgate",5,FALSE,FALSE,3,1
+2024-02-16,"ECAC","Brown",0,"Cornell",3,FALSE,FALSE,3,1
+2024-02-16,"ECAC","Clarkson",0,"Dartmouth",3,FALSE,FALSE,3,1
+2024-02-16,"ECAC","St. Lawrence",1,"Harvard",2,FALSE,FALSE,1,1
+2024-02-16,"ECAC","Rensselaer",4,"Princeton",3,FALSE,FALSE,-1,0
+2024-02-16,"ECAC","Union",2,"Quinnipiac",6,FALSE,FALSE,4,1
+2024-02-16,"Hockey East","Boston College",5,"Massachusetts",1,FALSE,FALSE,-4,0
+2024-02-16,"Hockey East","Maine",2,"New Hampshire",6,FALSE,FALSE,4,1
+2024-02-16,"Hockey East","Boston University",2,"Providence",2,TRUE,FALSE,0,0.5
+2024-02-16,"Hockey East","Merrimack",5,"Vermont",2,FALSE,FALSE,-3,0
+2024-02-16,"Hockey East","Northeastern",2,"Mass.-Lowell",4,FALSE,FALSE,2,1
+2024-02-16,"NCHC","North Dakota",1,"Colorado College",7,FALSE,FALSE,6,1
+2024-02-16,"NCHC","Denver",5,"Minnesota-Duluth",4,TRUE,FALSE,-1,0
+2024-02-16,"CCHA","Bowling Green",3,"St. Thomas",3,TRUE,FALSE,0,0.5
+2024-02-16,"CCHA","Ferris State",1,"Bemidji State",4,FALSE,FALSE,3,1
+2024-02-16,"Non-Conference","Augustana",0,"Lake Superior",3,FALSE,FALSE,3,1
+2024-02-16,"Non-Conference","Long Island",4,"Alaska",0,FALSE,FALSE,-4,0
+2024-02-16,"Non-Conference","Alaska-Anchorage",5,"Lindenwood",3,FALSE,FALSE,-2,0
+2024-02-17,"Big Ten","Wisconsin",1,"Ohio State",3,FALSE,FALSE,2,1
+2024-02-17,"Big Ten","Minnesota",3,"Notre Dame",2,TRUE,FALSE,-1,0
+2024-02-17,"Big Ten","Michigan",2,"Penn State",4,FALSE,FALSE,2,1
+2024-02-17,"Atlantic Hockey","Army",3,"Niagara",0,FALSE,FALSE,-3,0
+2024-02-17,"Atlantic Hockey","Canisius",5,"Robert Morris",4,TRUE,FALSE,-1,0
+2024-02-17,"Atlantic Hockey","Air Force",3,"RIT",2,FALSE,FALSE,-1,0
+2024-02-17,"Atlantic Hockey","Holy Cross",2,"Sacred Heart",1,FALSE,FALSE,-1,0
+2024-02-17,"Atlantic Hockey","Mercyhurst",2,"American Int'l",2,TRUE,FALSE,0,0.5
+2024-02-17,"Hockey East","Providence",2,"Boston University",5,FALSE,FALSE,3,1
+2024-02-17,"Hockey East","Maine",2,"New Hampshire",5,FALSE,FALSE,3,1
+2024-02-17,"Hockey East","Mass.-Lowell",0,"Northeastern",4,FALSE,FALSE,4,1
+2024-02-17,"Hockey East","Merrimack",1,"Vermont",4,FALSE,FALSE,3,1
+2024-02-17,"NCHC","North Dakota",2,"Colorado College",6,FALSE,FALSE,4,1
+2024-02-17,"NCHC","Denver",5,"Minnesota-Duluth",2,FALSE,FALSE,-3,0
+2024-02-17,"Non-Conference","Alaska-Anchorage",3,"Lindenwood",0,FALSE,FALSE,-3,0
+2024-02-17,"Non-Conference","Augustana",3,"Lake Superior",0,FALSE,FALSE,-3,0
+2024-02-17,"Non-Conference","Long Island",0,"Alaska",4,FALSE,FALSE,4,1
+2024-02-17,"CCHA","Bowling Green",3,"St. Thomas",1,FALSE,FALSE,-2,0
+2024-02-17,"ECAC","Brown",2,"Colgate",4,FALSE,FALSE,2,1
+2024-02-17,"ECAC","Yale",1,"Cornell",1,TRUE,FALSE,0,0.5
+2024-02-17,"ECAC","St. Lawrence",4,"Dartmouth",4,TRUE,FALSE,0,0.5
+2024-02-17,"ECAC","Clarkson",3,"Harvard",2,TRUE,FALSE,-1,0
+2024-02-17,"ECAC","Union",2,"Princeton",2,TRUE,FALSE,0,0.5
+2024-02-17,"ECAC","Rensselaer",2,"Quinnipiac",7,FALSE,FALSE,5,1
+2024-02-18,"Hockey East","Massachusetts",4,"Boston College",6,FALSE,FALSE,2,1
+2024-02-20,"Atlantic Hockey","Niagara",4,"Mercyhurst",1,FALSE,FALSE,-3,0
+2024-02-22,"Atlantic Hockey","Bentley",5,"Holy Cross",1,FALSE,FALSE,-4,0
+2024-02-22,"Atlantic Hockey","Mercyhurst",6,"Niagara",1,FALSE,FALSE,-5,0
+2024-02-23,"Non-Conference","Stonehill",2,"Long Island",7,FALSE,FALSE,5,1
+2024-02-23,"Non-Conference","Arizona State",1,"Alaska",3,FALSE,FALSE,2,1
+2024-02-23,"Non-Conference","Alaska-Anchorage",6,"Augustana",5,TRUE,FALSE,-1,0
+2024-02-23,"Atlantic Hockey","American Int'l",2,"Army",2,TRUE,FALSE,0,0.5
+2024-02-23,"Atlantic Hockey","Robert Morris",2,"Air Force",5,FALSE,FALSE,3,1
+2024-02-23,"Atlantic Hockey","Canisius",2,"RIT",9,FALSE,FALSE,7,1
+2024-02-23,"ECAC","Quinnipiac",5,"Brown",2,FALSE,FALSE,-3,0
+2024-02-23,"ECAC","Cornell",3,"Clarkson",4,TRUE,FALSE,1,1
+2024-02-23,"ECAC","Dartmouth",5,"Rensselaer",1,FALSE,FALSE,-4,0
+2024-02-23,"ECAC","Colgate",3,"St. Lawrence",4,TRUE,FALSE,1,1
+2024-02-23,"ECAC","Harvard",2,"Union",6,FALSE,FALSE,4,1
+2024-02-23,"ECAC","Princeton",4,"Yale",1,FALSE,FALSE,-3,0
+2024-02-23,"Hockey East","Boston University",6,"Connecticut",1,FALSE,FALSE,-5,0
+2024-02-23,"Hockey East","Northeastern",1,"Maine",5,FALSE,FALSE,4,1
+2024-02-23,"Hockey East","New Hampshire",2,"Massachusetts",3,FALSE,FALSE,1,1
+2024-02-23,"Hockey East","Vermont",1,"Boston College",7,FALSE,FALSE,6,1
+2024-02-23,"NCHC","Miami",3,"Denver",3,TRUE,FALSE,0,0.5
+2024-02-23,"NCHC","Minnesota-Duluth",0,"North Dakota",6,FALSE,FALSE,6,1
+2024-02-23,"NCHC","Colorado College",0,"Omaha",3,FALSE,FALSE,3,1
+2024-02-23,"NCHC","Western Michigan",4,"St. Cloud State",3,TRUE,FALSE,-1,0
+2024-02-23,"Big Ten","Ohio State",6,"Michigan State",2,FALSE,FALSE,-4,0
+2024-02-23,"Big Ten","Wisconsin",6,"Penn State",0,FALSE,FALSE,-6,0
+2024-02-23,"Big Ten","Notre Dame",0,"Michigan",4,FALSE,FALSE,4,1
+2024-02-23,"CCHA","Northern Michigan",3,"Ferris State",2,FALSE,FALSE,-1,0
+2024-02-23,"CCHA","Lake Superior",4,"Minnesota State",3,FALSE,FALSE,-1,0
+2024-02-23,"CCHA","Bemidji State",6,"St. Thomas",5,TRUE,FALSE,-1,0
+2024-02-23,"CCHA","Michigan Tech",7,"Bowling Green",0,FALSE,FALSE,-7,0
+2024-02-24,"Non-Conference","Stonehill",2,"Long Island",4,FALSE,FALSE,2,1
+2024-02-24,"Non-Conference","Alaska-Anchorage",0,"Augustana",3,FALSE,FALSE,3,1
+2024-02-24,"Non-Conference","Arizona State",4,"Alaska",3,TRUE,FALSE,-1,0
+2024-02-24,"Atlantic Hockey","American Int'l",5,"Army",1,FALSE,FALSE,-4,0
+2024-02-24,"Atlantic Hockey","Robert Morris",1,"Air Force",2,FALSE,FALSE,1,1
+2024-02-24,"Atlantic Hockey","Niagara",4,"Mercyhurst",3,FALSE,FALSE,-1,0
+2024-02-24,"Atlantic Hockey","Sacred Heart",2,"Bentley",2,TRUE,FALSE,0,0.5
+2024-02-24,"Atlantic Hockey","RIT",3,"Canisius",2,FALSE,FALSE,-1,0
+2024-02-24,"ECAC","Dartmouth",5,"Union",4,FALSE,FALSE,-1,0
+2024-02-24,"ECAC","Princeton",5,"Brown",1,FALSE,FALSE,-4,0
+2024-02-24,"ECAC","Colgate",4,"Clarkson",3,TRUE,FALSE,-1,0
+2024-02-24,"ECAC","Harvard",2,"Rensselaer",2,TRUE,FALSE,0,0.5
+2024-02-24,"ECAC","Cornell",2,"St. Lawrence",2,TRUE,FALSE,0,0.5
+2024-02-24,"CCHA","Northern Michigan",1,"Ferris State",1,TRUE,FALSE,0,0.5
+2024-02-24,"CCHA","Lake Superior",3,"Minnesota State",4,FALSE,FALSE,1,1
+2024-02-24,"CCHA","Bemidji State",3,"St. Thomas",1,FALSE,FALSE,-2,0
+2024-02-24,"CCHA","Michigan Tech",3,"Bowling Green",1,FALSE,FALSE,-2,0
+2024-02-24,"NCHC","Miami",1,"Denver",8,FALSE,FALSE,7,1
+2024-02-24,"NCHC","Minnesota-Duluth",2,"North Dakota",4,FALSE,FALSE,2,1
+2024-02-24,"NCHC","Western Michigan",0,"St. Cloud State",3,FALSE,FALSE,3,1
+2024-02-24,"NCHC","Colorado College",1,"Omaha",1,TRUE,FALSE,0,0.5
+2024-02-24,"Big Ten","Ohio State",2,"Michigan State",5,FALSE,FALSE,3,1
+2024-02-24,"Big Ten","Wisconsin",3,"Penn State",2,TRUE,FALSE,-1,0
+2024-02-24,"Big Ten","Notre Dame",1,"Michigan",2,FALSE,FALSE,1,1
+2024-02-24,"Hockey East","Providence",2,"Mass.-Lowell",1,FALSE,FALSE,-1,0
+2024-02-24,"Hockey East","Connecticut",0,"Boston University",6,FALSE,FALSE,6,1
+2024-02-24,"Hockey East","Northeastern",4,"Maine",0,FALSE,FALSE,-4,0
+2024-02-24,"Hockey East","Massachusetts",2,"New Hampshire",3,TRUE,FALSE,1,1
+2024-02-24,"Hockey East","Vermont",2,"Boston College",4,FALSE,FALSE,2,1
+2024-02-29,"Hockey East","Merrimack",2,"Providence",4,FALSE,FALSE,2,1
+2024-03-01,"Big Ten","Penn State",5,"Ohio State",2,FALSE,FALSE,-3,0
+2024-03-01,"Big Ten","Michigan",2,"Minnesota",6,FALSE,FALSE,4,1
+2024-03-01,"Big Ten","Michigan State",5,"Wisconsin",2,FALSE,FALSE,-3,0
+2024-03-01,"ECAC","Rensselaer",2,"Colgate",6,FALSE,FALSE,4,1
+2024-03-01,"ECAC","Brown",3,"Dartmouth",5,FALSE,FALSE,2,1
+2024-03-01,"ECAC","Yale",1,"Harvard",2,TRUE,FALSE,1,1
+2024-03-01,"ECAC","St. Lawrence",4,"Princeton",4,TRUE,FALSE,0,0.5
+2024-03-01,"ECAC","Clarkson",3,"Quinnipiac",2,TRUE,FALSE,-1,0
+2024-03-01,"ECAC","Union",3,"Cornell",2,FALSE,FALSE,-1,0
+2024-03-01,"Hockey East","Providence",1,"Merrimack",2,FALSE,FALSE,1,1
+2024-03-01,"Hockey East","Boston College",5,"New Hampshire",3,FALSE,FALSE,-2,0
+2024-03-01,"Hockey East","Connecticut",4,"Northeastern",3,FALSE,FALSE,-1,0
+2024-03-01,"Hockey East","Maine",1,"Vermont",2,FALSE,FALSE,1,1
+2024-03-01,"Hockey East","Massachusetts",2,"Mass.-Lowell",1,TRUE,FALSE,-1,0
+2024-03-01,"NCHC","Minnesota-Duluth",2,"Colorado College",2,TRUE,FALSE,0,0.5
+2024-03-01,"NCHC","Western Michigan",3,"North Dakota",5,FALSE,FALSE,2,1
+2024-03-01,"NCHC","Omaha",4,"Miami",3,FALSE,FALSE,-1,0
+2024-03-01,"NCHC","Denver",6,"St. Cloud State",2,FALSE,FALSE,-4,0
+2024-03-01,"Non-Conference","Long Island",2,"Arizona State",4,FALSE,FALSE,2,1
+2024-03-01,"Non-Conference","Stonehill",3,"Alaska-Anchorage",9,FALSE,FALSE,6,1
+2024-03-01,"Non-Conference","Alaska",2,"Augustana",2,TRUE,FALSE,0,0.5
+2024-03-01,"CCHA","Ferris State",1,"Lake Superior",4,FALSE,FALSE,3,1
+2024-03-01,"CCHA","St. Thomas",2,"Michigan Tech",0,FALSE,FALSE,-2,0
+2024-03-01,"CCHA","Bowling Green",1,"Northern Michigan",4,FALSE,FALSE,3,1
+2024-03-01,"CCHA","Minnesota State",0,"Bemidji State",6,FALSE,FALSE,6,1
+2024-03-02,"Non-Conference","Stonehill",2,"Alaska-Anchorage",12,FALSE,FALSE,10,1
+2024-03-02,"Non-Conference","Long Island",3,"Arizona State",4,FALSE,FALSE,1,1
+2024-03-02,"Non-Conference","Alaska",2,"Augustana",0,FALSE,FALSE,-2,0
+2024-03-02,"Hockey East","Northeastern",4,"Connecticut",2,FALSE,FALSE,-2,0
+2024-03-02,"Hockey East","Mass.-Lowell",3,"Massachusetts",4,TRUE,FALSE,1,1
+2024-03-02,"Hockey East","Maine",3,"Vermont",2,FALSE,FALSE,-1,0
+2024-03-02,"Big Ten","Penn State",2,"Ohio State",1,FALSE,FALSE,-1,0
+2024-03-02,"Big Ten","Michigan",6,"Minnesota",5,TRUE,FALSE,-1,0
+2024-03-02,"Big Ten","Michigan State",1,"Wisconsin",4,FALSE,FALSE,3,1
+2024-03-02,"NCHC","Minnesota-Duluth",1,"Colorado College",4,FALSE,FALSE,3,1
+2024-03-02,"NCHC","Western Michigan",0,"North Dakota",3,FALSE,FALSE,3,1
+2024-03-02,"NCHC","Denver",7,"St. Cloud State",2,FALSE,FALSE,-5,0
+2024-03-02,"NCHC","Omaha",2,"Miami",1,FALSE,FALSE,-1,0
+2024-03-02,"CCHA","St. Thomas",0,"Michigan Tech",6,FALSE,FALSE,6,1
+2024-03-02,"CCHA","Bowling Green",0,"Northern Michigan",1,FALSE,FALSE,1,1
+2024-03-02,"CCHA","Minnesota State",0,"Bemidji State",2,FALSE,FALSE,2,1
+2024-03-02,"ECAC","Union",3,"Colgate",4,FALSE,FALSE,1,1
+2024-03-02,"ECAC","Rensselaer",1,"Cornell",3,FALSE,FALSE,2,1
+2024-03-02,"ECAC","Yale",1,"Dartmouth",4,FALSE,FALSE,3,1
+2024-03-02,"ECAC","Brown",1,"Harvard",1,TRUE,FALSE,0,0.5
+2024-03-02,"ECAC","Clarkson",6,"Princeton",2,FALSE,FALSE,-4,0
+2024-03-02,"ECAC","St. Lawrence",1,"Quinnipiac",8,FALSE,FALSE,7,1
+2024-03-02,"ECAC","Mercyhurst",2,"Canisius",5,FALSE,FALSE,3,1
+2024-03-02,"ECAC","Army",1,"Niagara",4,FALSE,FALSE,3,1
+2024-03-02,"ECAC","Robert Morris",4,"Bentley",3,TRUE,FALSE,-1,0
+2024-03-03,"Hockey East","New Hampshire",0,"Boston College",1,FALSE,FALSE,1,1
+2024-03-06,"Non-Conference","Stonehill",1,"Alaska",9,FALSE,FALSE,8,1
+2024-03-07,"Hockey East","Vermont",1,"Connecticut",5,FALSE,FALSE,4,1
+2024-03-07,"Hockey East","Boston University",4,"Providence",2,FALSE,FALSE,-2,0
+2024-03-07,"Non-Conference","Stonehill",1,"Alaska",4,FALSE,FALSE,3,1
+2024-03-08,"Big Ten Tournament","Penn State",1,"Minnesota",5,FALSE,FALSE,4,1
+2024-03-08,"Big Ten Tournament","Notre Dame",4,"Michigan",5,FALSE,FALSE,1,1
+2024-03-08,"Big Ten Tournament","Ohio State",3,"Wisconsin",1,FALSE,FALSE,-2,0
+2024-03-08,"Hockey East","New Hampshire",4,"Mass.-Lowell",0,FALSE,FALSE,-4,0
+2024-03-08,"Hockey East","Massachusetts",1,"Maine",2,FALSE,FALSE,1,1
+2024-03-08,"NCHC","Denver",3,"Colorado College",4,FALSE,FALSE,1,1
+2024-03-08,"NCHC","St. Cloud State",5,"Minnesota-Duluth",6,TRUE,FALSE,1,1
+2024-03-08,"NCHC","Miami",2,"Western Michigan",3,FALSE,FALSE,1,1
+2024-03-08,"NCHC","North Dakota",2,"Omaha",3,FALSE,FALSE,1,1
+2024-03-08,"ECAC Tournament","Princeton",0,"Harvard",1,FALSE,FALSE,1,1
+2024-03-08,"ECAC Tournament","Yale",2,"St. Lawrence",4,FALSE,FALSE,2,1
+2024-03-08,"CCHA Tournament","Ferris State",4,"Bemidji State",5,TRUE,FALSE,1,1
+2024-03-08,"CCHA Tournament","Bowling Green",0,"Michigan Tech",5,FALSE,FALSE,5,1
+2024-03-08,"CCHA Tournament","Northern Michigan",1,"Minnesota State",2,FALSE,FALSE,1,1
+2024-03-08,"CCHA Tournament","Lake Superior",4,"St. Thomas",1,FALSE,FALSE,-3,0
+2024-03-08,"CCHA Tournament","American Int'l",3,"Air Force",1,FALSE,FALSE,-2,0
+2024-03-08,"CCHA Tournament","Canisius",3,"Holy Cross",4,FALSE,FALSE,1,1
+2024-03-08,"CCHA Tournament","Robert Morris",0,"RIT",7,FALSE,FALSE,7,1
+2024-03-08,"CCHA Tournament","Niagara",6,"Sacred Heart",3,FALSE,FALSE,-3,0
+2024-03-08,"Non-Conference","Arizona State",3,"Alaska-Anchorage",4,FALSE,FALSE,1,1
+2024-03-09,"Big Ten Tournament","Penn State",2,"Minnesota",3,FALSE,FALSE,1,1
+2024-03-09,"Big Ten Tournament","Ohio State",2,"Wisconsin",4,FALSE,FALSE,2,1
+2024-03-09,"Big Ten Tournament","Notre Dame",3,"Michigan",4,FALSE,FALSE,1,1
+2024-03-09,"Hockey East","Vermont",1,"Boston University",6,FALSE,FALSE,5,1
+2024-03-09,"Hockey East","Northeastern",3,"Providence",3,TRUE,FALSE,0,0.5
+2024-03-09,"Hockey East","Massachusetts",3,"Maine",4,FALSE,FALSE,1,1
+2024-03-09,"Hockey East","Boston College",6,"Merrimack",4,FALSE,FALSE,-2,0
+2024-03-09,"Hockey East","Mass.-Lowell",0,"New Hampshire",4,FALSE,FALSE,4,1
+2024-03-09,"ECAC Tournament","Brown",0,"Union",6,FALSE,FALSE,6,1
+2024-03-09,"ECAC Tournament","Rensselaer",3,"Clarkson",2,FALSE,FALSE,-1,0
+2024-03-09,"Non-Conference","Arizona State",5,"Alaska-Anchorage",2,FALSE,FALSE,-3,0
+2024-03-09,"NCHC","St. Cloud State",2,"Minnesota-Duluth",4,FALSE,FALSE,2,1
+2024-03-09,"NCHC","Miami",1,"Western Michigan",6,FALSE,FALSE,5,1
+2024-03-09,"NCHC","North Dakota",1,"Omaha",4,FALSE,FALSE,3,1
+2024-03-09,"NCHC","Colorado College",3,"Denver",4,FALSE,FALSE,1,1
+2024-03-09,"CCHA Tournament","Bowling Green",5,"Michigan Tech",6,FALSE,FALSE,1,1
+2024-03-09,"CCHA Tournament","Northern Michigan",1,"Minnesota State",6,FALSE,FALSE,5,1
+2024-03-09,"CCHA Tournament","Lake Superior",2,"St. Thomas",4,FALSE,FALSE,2,1
+2024-03-09,"CCHA Tournament","Ferris State",0,"Bemidji State",4,FALSE,FALSE,4,1
+2024-03-10,"Big Ten Tournament","Ohio State",3,"Wisconsin",1,FALSE,FALSE,-2,0
+2024-03-10,"CCHA Tournament","Lake Superior",3,"St. Thomas",2,FALSE,FALSE,-1,0
+2024-03-13,"CCHA Tournament","Vermont",1,"Connecticut",4,FALSE,FALSE,3,1
+2024-03-13,"CCHA Tournament","Mass.-Lowell",0,"New Hampshire",1,FALSE,FALSE,1,1
+2024-03-13,"CCHA Tournament","Merrimack",0,"Northeastern",4,FALSE,FALSE,4,1
+2024-03-15,"ECAC Tournament","St. Lawrence",3,"Colgate",2,TRUE,FALSE,-1,0
+2024-03-15,"ECAC Tournament","Harvard",3,"Cornell",4,FALSE,FALSE,1,1
+2024-03-15,"ECAC Tournament","Union",1,"Dartmouth",3,FALSE,FALSE,2,1
+2024-03-15,"ECAC Tournament","Rensselaer",1,"Quinnipiac",5,FALSE,FALSE,4,1
+2024-03-15,"ECAC Tournament","American Int'l",2,"Holy Cross",5,FALSE,FALSE,3,1
+2024-03-15,"ECAC Tournament","Niagara",1,"RIT",4,FALSE,FALSE,3,1
+2024-03-15,"NCHC Tournament","Omaha",3,"Colorado College",4,TRUE,FALSE,1,1
+2024-03-15,"NCHC Tournament","Minnesota-Duluth",0,"Denver",4,FALSE,FALSE,4,1
+2024-03-15,"NCHC Tournament","Miami",1,"North Dakota",5,FALSE,FALSE,4,1
+2024-03-15,"NCHC Tournament","Western Michigan",2,"St. Cloud State",5,FALSE,FALSE,3,1
+2024-03-16,"NCHC Tournament","Massachusetts",3,"Providence",1,FALSE,FALSE,-2,0
+2024-03-16,"NCHC Tournament","Northeastern",2,"Boston University",4,FALSE,FALSE,2,1
+2024-03-16,"NCHC Tournament","New Hampshire",0,"Maine",5,FALSE,FALSE,5,1
+2024-03-16,"NCHC Tournament","Connecticut",4,"Boston College",5,FALSE,FALSE,1,1
+2024-03-16,"CCHA Tournament","Minnesota State",3,"Michigan Tech",4,FALSE,FALSE,1,1
+2024-03-16,"CCHA Tournament","Lake Superior",1,"Bemidji State",4,FALSE,FALSE,3,1
+2024-03-16,"NCHC Tournament","Omaha",3,"Colorado College",1,FALSE,FALSE,-2,0
+2024-03-16,"NCHC Tournament","Minnesota-Duluth",2,"Denver",5,FALSE,FALSE,3,1
+2024-03-16,"NCHC Tournament","Miami",1,"North Dakota",7,FALSE,FALSE,6,1
+2024-03-16,"NCHC Tournament","Western Michigan",6,"St. Cloud State",1,FALSE,FALSE,-5,0
+2024-03-16,"Big Ten Tournament","Ohio State",1,"Michigan State",2,FALSE,FALSE,1,1
+2024-03-16,"Big Ten Tournament","Michigan",2,"Minnesota",1,FALSE,FALSE,-1,0
+2024-03-16,"ECAC Tournament","St. Lawrence",3,"Colgate",2,FALSE,FALSE,-1,0
+2024-03-16,"ECAC Tournament","Harvard",1,"Cornell",4,FALSE,FALSE,3,1
+2024-03-16,"ECAC Tournament","Union",2,"Dartmouth",4,FALSE,FALSE,2,1
+2024-03-16,"ECAC Tournament","Rensselaer",2,"Quinnipiac",5,FALSE,FALSE,3,1
+2024-03-16,"ECAC Tournament","American Int'l",3,"Holy Cross",0,FALSE,FALSE,-3,0
+2024-03-16,"ECAC Tournament","Niagara",2,"RIT",5,FALSE,FALSE,3,1
+2024-03-17,"ECAC Tournament","American Int'l",3,"Holy Cross",1,FALSE,FALSE,-2,0
+2024-03-17,"NCHC Tournament","Omaha",2,"Colorado College",1,FALSE,FALSE,-1,0
+2024-03-17,"NCHC Tournament","Western Michigan",1,"St. Cloud State",5,FALSE,FALSE,4,1
+2024-03-22,"NCHC Tournament (at Xcel Energy Center, St. Paul, Minn.)","Omaha",6,"North Dakota",3,FALSE,TRUE,-3,0
+2024-03-22,"NCHC Tournament (at Xcel Energy Center, St. Paul, Minn.)","St. Cloud State",4,"Denver",5,TRUE,TRUE,1,1
+2024-03-22,"NCHC Tournament (at Xcel Energy Center, St. Paul, Minn.)","Massachusetts",1,"Boston College",8,FALSE,TRUE,7,1
+2024-03-22,"NCHC Tournament (at Xcel Energy Center, St. Paul, Minn.)","Maine",1,"Boston University",4,FALSE,TRUE,3,1
+2024-03-22,"ECAC Tournament (at 1980 Rink Herb Brooks Arena, Lake Placid, N.Y.)","St. Lawrence",3,"Quinnipiac",0,FALSE,TRUE,-3,0
+2024-03-22,"ECAC Tournament (at 1980 Rink Herb Brooks Arena, Lake Placid, N.Y.)","Dartmouth",3,"Cornell",6,FALSE,TRUE,3,1
+2024-03-22,"CCHA Tournament","Michigan Tech",2,"Bemidji State",1,FALSE,FALSE,-1,0
+2024-03-23,"ECAC Tournament (at 1980 Rink Herb Brooks Arena, Lake Placid, N.Y.)","St. Lawrence",1,"Cornell",3,FALSE,TRUE,2,1
+2024-03-23,"ECAC Tournament (at 1980 Rink Herb Brooks Arena, Lake Placid, N.Y.)","American Int'l",2,"RIT",5,FALSE,FALSE,3,1
+2024-03-23,"NCHC Tournament (at Xcel Energy Center, St. Paul, Minn.)","Omaha",1,"Denver",4,FALSE,TRUE,3,1
+2024-03-23,"NCHC Tournament (at Xcel Energy Center, St. Paul, Minn.)","Boston University",2,"Boston College",6,FALSE,TRUE,4,1
+2024-03-23,"Big Ten Tournament","Michigan",4,"Michigan State",5,TRUE,FALSE,1,1
+2024-03-28,"Big Ten Tournament","Massachusetts",1,"Denver",2,TRUE,TRUE,1,1
+2024-03-28,"Big Ten Tournament","Cornell",3,"Maine",1,FALSE,TRUE,-2,0
+2024-03-28,"Big Ten Tournament","RIT",3,"Boston University",6,FALSE,TRUE,3,1
+2024-03-28,"Big Ten Tournament","Omaha",2,"Minnesota",3,FALSE,TRUE,1,1
+2024-03-29,"Big Ten Tournament","Michigan Tech",1,"Boston College",6,FALSE,TRUE,5,1
+2024-03-29,"Big Ten Tournament","Quinnipiac",3,"Wisconsin",2,TRUE,TRUE,-1,0
+2024-03-29,"Big Ten Tournament","Western Michigan",4,"Michigan State",5,TRUE,TRUE,1,1
+2024-03-29,"Big Ten Tournament","Michigan",4,"North Dakota",3,FALSE,TRUE,-1,0
+2024-03-30,"Big Ten Tournament","Cornell",1,"Denver",2,FALSE,TRUE,1,1
+2024-03-30,"Big Ten Tournament","Minnesota",3,"Boston University",6,FALSE,TRUE,3,1
+2024-03-31,"Big Ten Tournament","Quinnipiac",4,"Boston College",5,TRUE,TRUE,1,1
+2024-03-31,"Big Ten Tournament","Michigan",5,"Michigan State",2,FALSE,TRUE,-3,0
+2024-04-11,"Big Ten Tournament","Denver",2,"Boston University",1,TRUE,TRUE,-1,0
+2024-04-11,"Big Ten Tournament","Michigan",0,"Boston College",4,FALSE,TRUE,4,1
+2024-04-13,"Big Ten Tournament","Denver",2,"Boston College",0,FALSE,TRUE,-2,0
