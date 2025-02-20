@@ -1,5 +1,13 @@
 ## Task List
 
+## For February 27
+
+1. organize the ratings_update_function.R file so that upon restarting R, everything runs.
+
+2. Continue to mess around with k, home ice advantage, and goal differential.
+
+3. Start computing probability minus win/loss, and the plot of probability and proportion of times the home team won.
+
 
 ## For December 12
 
