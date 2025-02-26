@@ -167,20 +167,35 @@ for (i in dates_vec) {
 # k = 100
 
 ## Iteration of update function, using a date filter. Old loop can't deal with NA Values
+
+## initialize an empty list
+
+
 update_rankings_iter <- function(season, end_date, ratings, k){
+  
+  new_rankings <- list()
+  
   season_cut <- season |> 
     ## Filter by a specified end date to deal with NA values (gmaes that have yet to be played)
     filter(date <= ymd(end_date))
   ## Creating a vector for unique dates in a season
   dates_vector <- unique(season_cut$date)
   ## Defining our rankings within the function
-  new_rankings <- ratings
+  new_rankings[[1]] <- ratings
   ## Creating a for loop for the function to generate new ratings with the updtae_rankings function
-  for (i in dates_vector) {
-    new_rankings <- update_rankings(season = season_cut, game_date = i, ratings = new_rankings, k = k)
+  for (i in 1:length(dates_vector)) {
+    new_rankings[[i + 1]] <- update_rankings(season = season_cut, game_date = dates_vector[i], ratings = new_rankings[[i]], k = k)
   }
   return(new_rankings)
 }
+## go back to the update_rankings function and have it return the date as 
+## a variable in the output
+
+## read more about lists and the structure of them in r
+
+## use bind_rows at try_rankings to bind all of the iterative updates together
+
+## can then join with the schedule data set again by team-home_team and date and then again by team-away_team and date and keep only the necessary columns
 
 try_rankings = update_rankings_iter(season = schedule, end_date = "2025-02-25", ratings = X22Rankings, k = 100)
 try_rankings24 = update_rankings_iter(schedule2425, "2024-10-06", try_rankings, 100)
