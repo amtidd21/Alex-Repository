@@ -26,7 +26,7 @@ scrape_men <- function(season = "20232024"){
     html_nodes("table")
   
   ## The website likes to switch which table it uses. If function doesn't work try changing which table number you select
-  stats_dirty <- tab_hockey[[2]] |> html_table()
+  stats_dirty <- tab_hockey[[1]] |> html_table()
   
   ## Creating regex for date, and conference to make date and conference columns in dataframe
   regex_date <- "October|November|December|January|February|March|April"
@@ -132,20 +132,18 @@ update_rankings <- function(season, game_date, ratings, k = 20){
     mutate(rating = if_else(!is.na(elo_new_home),
                             true = elo_new_home,
                             false = rating)) |>
-    select(Team, rating)
+    select(Team, rating, date)
   
   ratings <- left_join(ranked_home, elo_ratings_update, by = join_by(Team == away_team)) |>
     relocate(elo_new_away) |>
     mutate(rating = if_else(!is.na(elo_new_away),
                             true = elo_new_away,
                             false = rating)) |>
-    select(Team, rating)
-  
-  ## Puts updated Elo ratings into our ratings file for home team
-  ##ratings$rating = replace(ratings$rating, ratings$Team %in% elo_ratings_update$home_team, elo_ratings_update$elo_new_home)
-  
-  ## Puts updated Elo ratings into our ratings file for away team
-  ##ratings$rating = replace(ratings$rating, ratings$Team %in% elo_ratings_update$away_team, elo_ratings_update$elo_new_away)
+    select(Team, rating, date.y) |>
+    select(Team, rating, date.y) |>
+    fill(date.y, .direction = c("down")) |>
+    fill(date.y, .direction = c("up")) |>
+    rename(date = date.y)
   
   return(ratings)
 }
@@ -161,10 +159,6 @@ for (i in dates_vec) {
   
 }
 
-# season = schedule
-# end_date = "2024-01-07"
-# ratings = rankings
-# k = 100
 
 ## Iteration of update function, using a date filter. Old loop can't deal with NA Values
 
@@ -197,5 +191,5 @@ update_rankings_iter <- function(season, end_date, ratings, k){
 
 ## can then join with the schedule data set again by team-home_team and date and then again by team-away_team and date and keep only the necessary columns
 
-try_rankings = update_rankings_iter(season = schedule, end_date = "2025-02-25", ratings = X22Rankings, k = 100)
-try_rankings24 = update_rankings_iter(schedule2425, "2024-10-06", try_rankings, 100)
+try_rankings = update_rankings(season = schedule, game_date = "2025-02-25", ratings = X22Rankings, k = 100)
+try_rankings24 = update_rankings_iter(schedule, "2025-02-25", X22Rankings, 100)
