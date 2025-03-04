@@ -175,10 +175,10 @@ for (i in dates_vec) {
 
 ## initialize an empty list
 
-season = schedule
-end_date = "2025-02-25"
-ratings = X22Rankings
-k = 100
+#season = schedule
+#end_date = "2025-02-25"
+#ratings = X22Rankings
+#k = 100
 
 update_rankings_iter <- function(season, end_date, ratings, k){
   
@@ -209,4 +209,108 @@ update_rankings_iter <- function(season, end_date, ratings, k){
 try_rankings = update_rankings(season = schedule, game_date = "2025-02-25", ratings = X22Rankings, k = 100)
 try_rankings24 = update_rankings_iter(schedule, "2025-02-25", X22Rankings, 100)
 
+##Merging my iter function into a master schedule:
+schedule_filling_Oct4 = schedule |>
+  mutate(home_elo = NA) |>
+  mutate(away_elo = NA) |>
+  filter(date == "2024-10-04")
   
+merged_sched_home = left_join(schedule_filling_Oct4, try_rankings24[[1]], 
+                         by = join_by(home_team == Team)) |>
+  mutate(home_elo = rating) |>
+  select(-rating)
+
+merged_sched = left_join(merged_sched_home, try_rankings24[[1]],
+                         by = join_by(away_team == Team)) |>
+  mutate(away_elo = rating) |>
+  select(-rating)
+
+merged_sched_date_full = merged_sched |>
+  mutate(outcome_away = abs(outcome - 1)) |> 
+  ## Calculating expected outcome variable for home and away team
+  mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+  mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+  mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+
+## Now filling for oct5
+schedule_filling_Oct5 = schedule |>
+  mutate(home_elo = NA) |>
+  mutate(away_elo = NA) |>
+  filter(date == "2024-10-05")
+
+merged_sched_home_oct5 = left_join(schedule_filling_Oct5, try_rankings24[[2]], 
+                              by = join_by(home_team == Team)) |>
+  mutate(home_elo = rating) |>
+  select(-rating)
+
+merged_sched_oct5 = left_join(merged_sched_home_oct5, try_rankings24[[2]],
+                         by = join_by(away_team == Team)) |>
+  mutate(away_elo = rating) |>
+  select(-rating, -date.y, -date)
+
+merged_sched_date_full_oct5 = merged_sched_oct5 |>
+  mutate(outcome_away = abs(outcome - 1)) |> 
+  ## Calculating expected outcome variable for home and away team
+  mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+  mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+  mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away)) |>
+  rename(date = date.x)
+
+## now trying to bind together
+
+bound_sched = bind_rows(merged_sched_date_full, merged_sched_date_full_oct5)
+
+## attempting to create a for loop for this so i can automate this for every date
+
+#season = schedule
+#game_date = "2024-10-05"
+#ratings = try_rankings24[[2]]
+
+bind_sched = function(season, game_date, ratings){
+  season_date <- season |>
+    mutate(home_elo = NA) |>
+    mutate(away_elo = NA) |>
+    filter(date == game_date)
+  
+  joined_home <- left_join(season_date, ratings, by = join_by(home_team == Team)) |>
+    mutate(home_elo = rating) |>
+    select(-rating)
+  
+  joined_both <- left_join(joined_home, ratings, by = join_by(away_team == Team)) |>
+    mutate(away_elo = rating) |>
+    select(-rating)
+  
+if ("date.y" %in% names(joined_both)) {
+  joined_both <- joined_both |>
+    select(-all_of("date.y"))
+}
+  
+if("date.x" %in% names(joined_both)) {
+  joined_both <- joined_both |>
+    select(-all_of("date"))
+}
+  
+  joined_full <- joined_both |>
+    mutate(outcome_away = abs(outcome - 1)) |>
+    mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+    mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+    mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+    mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+  
+if("date.x" %in% names(joined_full)) {
+  joined_full <- joined_full |>
+    rename(date = date.x)
+}
+  
+  return(joined_full)
+    
+}
+  
+attempt_joined = bind_sched(schedule, "2024-10-04", try_rankings24[[1]])
+
+
+## attempting the for loop
