@@ -17,6 +17,8 @@ rankings <- NCAA_teams |>
   ## Taking out the Conference variable to leave 2 columns, Team and Rating
   select(Team, rating)
 
+#season = "20242025"
+
 ##Function to load in schedule
 scrape_men <- function(season = "20232024"){
   ## URL for schedule data frame
@@ -107,6 +109,11 @@ X22Rankings <- read_csv(here("datasets_dataframes/22Rankings.csv"))
 
 ##schedule = schedule2324
 
+#season = schedule
+#game_date = "2024-10-04"
+#ratings = X22Rankings
+#k = 100
+
 ##Function to update rankings
 ##rating is the variable, ratings is the df.
 update_rankings <- function(season, game_date, ratings, k = 20){
@@ -125,28 +132,32 @@ update_rankings <- function(season, game_date, ratings, k = 20){
     mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
     ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
     mutate(elo_new_home = home_elo + k*(outcome - exp_home)) |>
-    mutate(elo_new_away = away_elo + k*(outcome_away - exp_away))
+    mutate(elo_new_away = away_elo + k*(outcome_away - exp_away)) |>
+    rename(date_update_rankings = date)
   
+  ## Find out which is the right date, select() and relocate(), **DO THIS FIRST**: try renaming date in one of the df to make less confusing (at start).
   ranked_home <- left_join(ratings, elo_ratings_update, by = join_by(Team == home_team)) |>
     relocate(elo_new_home) |>
     mutate(rating = if_else(!is.na(elo_new_home),
                             true = elo_new_home,
                             false = rating)) |>
-    select(Team, rating, date)
+    select(Team, rating, date_update_rankings)
   
-  ratings <- left_join(ranked_home, elo_ratings_update, by = join_by(Team == away_team)) |>
+  ratings_new <- left_join(ranked_home, elo_ratings_update, by = join_by(Team == away_team)) |>
     relocate(elo_new_away) |>
     mutate(rating = if_else(!is.na(elo_new_away),
                             true = elo_new_away,
                             false = rating)) |>
-    select(Team, rating, date.y) |>
-    select(Team, rating, date.y) |>
-    fill(date.y, .direction = c("down")) |>
-    fill(date.y, .direction = c("up")) |>
-    rename(date = date.y)
+    select(Team, rating, date_update_rankings.x) |>
+    mutate(date_update_rankings.x = game_date) |>
+    rename(date = date_update_rankings.x)
+    #fill(date_update_rankings.x, .direction = c("down")) |>
+    #fill(date_update_rankings.x, .direction = c("up"))
   
-  return(ratings)
+  return(ratings_new)
 }
+
+#attempt = update_rankings(schedule, "2025-10-04", X22Rankings, 100)
 
 ##loop to get updated weekly ratings
 ## creating a vector for unique dates in a schedule dataframe
@@ -164,6 +175,10 @@ for (i in dates_vec) {
 
 ## initialize an empty list
 
+season = schedule
+end_date = "2025-02-25"
+ratings = X22Rankings
+k = 100
 
 update_rankings_iter <- function(season, end_date, ratings, k){
   
@@ -193,3 +208,5 @@ update_rankings_iter <- function(season, end_date, ratings, k){
 
 try_rankings = update_rankings(season = schedule, game_date = "2025-02-25", ratings = X22Rankings, k = 100)
 try_rankings24 = update_rankings_iter(schedule, "2025-02-25", X22Rankings, 100)
+
+  
