@@ -1,5 +1,13 @@
 ## Task List
 
+## For March 13
+
+1. Construct initial ratings from 2023-2024 season. Shrink them according to what five thirty eight did.
+
+2. Weight points with more games more in the model and also make the point size of these points larger.
+
+3. Adjust endpoints of bins so that they are centered at the midpoint. And use fewer bins! (Try 15-20).
+
 ## For March 6
 
 1. Work on function to fix the remaining bugs.
