@@ -1,0 +1,356 @@
+---
+title: "K Exploration"
+author: "Alex Tidd"
+format: html
+---
+
+```{r}
+library(elo)
+library(dplyr)
+library(tidyverse)
+library(cowplot)
+library(ggrepel)
+library(lubridate)
+library(rvest)
+library(here)
+library(forcats)
+```
+
+
+Loading in my data:
+```{r}
+schedule <- scrape_men(20242025)
+X22Rankings <- read_csv(here("datasets_dataframes/22Rankings.csv"))
+rankings2425 <- update_rankings_iter(schedule, "2025-03-05", X22Rankings, 100)
+```
+
+
+binding my rankings and making a master schedule:
+```{r}
+rankings2425 = rankings2425 |> bind_rows()
+
+lagged_df <- rankings2425 |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+rankings_lagged <- left_join(rankings2425, lagged_df, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+##Joining rankings into a master schedule
+
+schedule_elo = schedule |>
+  mutate(home_elo = NA) |>
+  mutate(away_elo = NA)
+  
+merged_sched_home = left_join(schedule_elo, rankings_lagged, 
+                         by = join_by(date == date, home_team == Team)) |>
+  mutate(home_elo = rating) |>
+  select(-rating)
+
+merged_sched = left_join(merged_sched_home, rankings_lagged,
+                         by = join_by(date == date, away_team == Team)) |>
+  mutate(away_elo = rating) |>
+  select(-rating)
+
+schedule2425 = merged_sched |>
+  mutate(outcome_away = abs(outcome - 1)) |> 
+  ## Calculating expected outcome variable for home and away team
+  mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+  mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+  mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+```
+
+
+Making a "residual" column of outcome - exp_home. Sees how well the ratings function predicts outcome. Can help maximize k. This will help us also see if the function is predicting high or low
+```{r}
+schedule2425 <- schedule2425 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual))
+
+schedule2425 |> summarise(k_100_resid = sum(abs_residual, na.rm = TRUE))
+
+ggplot(data = schedule2425, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule2425, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+```
+
+
+Now lets see what happens if we remove first half of season games to see how the residuals look after the ratings method has had some time to settle:
+```{r}
+schedule25 <- schedule2425 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual)) |>
+  filter(date >= "2025-01-01")
+
+schedule25 |> summarise(k_100_resid = sum(abs_residual, na.rm = TRUE))
+
+ggplot(data = schedule25, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule25, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+```
+We see that the plots follow the same general pattern so that may indicate that the function does take long to settle. But to be sure, lets see what the first half predictions look like:
+```{r}
+schedule24 <- schedule2425 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual)) |>
+  filter(date < "2025-01-01")
+
+schedule24 |> summarise(k_100_resid = sum(abs_residual, na.rm = TRUE))
+## notice that first half residual is 210 compared to second half being 198
+
+ggplot(data = schedule24, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule24, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+```
+We notice that the first half residuals appear to be a little more left skewed than second half, so it may appear that early on the prediction puts a lot more focus on favored team. Although this is not that far off from second half.
+
+
+Now lets make a chart comparing expected home outcome to proportion of wins. We should want to see a graph that looks like a first degree function of F(x) = x
+```{r}
+prop_wins <- schedule2425 |>
+  mutate(binned_exp = floor(exp_home / 0.025) * 0.025) |>
+  group_by(binned_exp) |>
+  summarise(win_prop = mean(outcome, na.rm = TRUE))
+
+mod100 = lm(win_prop ~ binned_exp, data = prop_wins)
+summary(mod100)
+
+ggplot(data = prop_wins, aes(x = binned_exp, 
+                             y = win_prop)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "gold") +
+  theme_minimal()
+```
+We see that when k = 100, we can fit a regression line of win_prop_hat = 0.60781 * binned_exp + 0.21567. Let's see how close to 1 we can get this binned_exp estimate by adjusting k.
+
+
+Let's now try 2 more values of k, k = 50, and k = 250 and see how are results look:
+
+
+k = 50:
+```{r}
+rankings2425_k50 <- update_rankings_iter(schedule, "2025-03-05", X22Rankings, 50)
+
+rankings2425_k50 = rankings2425_k50 |> bind_rows()
+
+lagged_df_50 <- rankings2425_k50 |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+rankings_lagged_50 <- left_join(rankings2425_k50, lagged_df_50, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+##Joining rankings into a master schedule
+
+schedule_elo_50 = schedule |>
+  mutate(home_elo = NA) |>
+  mutate(away_elo = NA)
+  
+merged_sched_home_50 = left_join(schedule_elo_50, rankings_lagged_50, 
+                         by = join_by(date == date, home_team == Team)) |>
+  mutate(home_elo = rating) |>
+  select(-rating)
+
+merged_sched_50 = left_join(merged_sched_home_50, rankings_lagged_50,
+                         by = join_by(date == date, away_team == Team)) |>
+  mutate(away_elo = rating) |>
+  select(-rating)
+
+schedule2425_50 = merged_sched_50 |>
+  mutate(outcome_away = abs(outcome - 1)) |> 
+  ## Calculating expected outcome variable for home and away team
+  mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+  mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+  mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+```
+
+Now lets do the same thing as before and look into some "residuals"
+```{r}
+schedule2425_50 <- schedule2425_50 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual))
+
+schedule2425_50 |> summarise(k_50_resid = sum(abs_residual, na.rm = TRUE))
+
+ggplot(data = schedule2425_50, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule2425_50, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+```
+We see a similar shape as the k = 100. But lets look at the early season to see if we still see a left skew. We also see a residual of 412
+
+```{r}
+schedule24_50 <- schedule2425_50 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual)) |>
+  filter(date < "2025-01-01")
+
+schedule24_50 |> summarise(k_50_resid = sum(abs_residual, na.rm = TRUE))
+
+ggplot(data = schedule24_50, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule24_50, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+```
+still looks to have a slight left skew
+
+
+now lets do the same thing as last time and plot this with some regression
+```{r}
+prop_wins_50 <- schedule2425_50 |>
+  mutate(binned_exp = floor(exp_home / 0.025) * 0.025) |>
+  group_by(binned_exp) |>
+  summarise(win_prop = mean(outcome, na.rm = TRUE))
+
+mod50 = lm(win_prop ~ binned_exp, data = prop_wins_50)
+summary(mod50)
+
+ggplot(data = prop_wins_50, aes(x = binned_exp, 
+                             y = win_prop)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "gold") +
+  theme_minimal()
+```
+Here we see a slightly improved slope for our lm at 0.65201 * binned_exp with an intercept of 0.18955. Now lets see what happens when we set k = 250
+
+```{r}
+rankings2425_k250 <- update_rankings_iter(schedule, "2025-03-05", X22Rankings, 250)
+
+rankings2425_k250 = rankings2425_k250 |> bind_rows()
+
+lagged_df_250 <- rankings2425_k250 |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+rankings_lagged_250 <- left_join(rankings2425_k250, lagged_df_250, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+##Joining rankings into a master schedule
+
+schedule_elo_250 = schedule |>
+  mutate(home_elo = NA) |>
+  mutate(away_elo = NA)
+  
+merged_sched_home_250 = left_join(schedule_elo_250, rankings_lagged_250, 
+                         by = join_by(date == date, home_team == Team)) |>
+  mutate(home_elo = rating) |>
+  select(-rating)
+
+merged_sched_250 = left_join(merged_sched_home_250, rankings_lagged_250,
+                         by = join_by(date == date, away_team == Team)) |>
+  mutate(away_elo = rating) |>
+  select(-rating)
+
+schedule2425_250 = merged_sched_250 |>
+  mutate(outcome_away = abs(outcome - 1)) |> 
+  ## Calculating expected outcome variable for home and away team
+  mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+  mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+  mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+```
+
+
+looking at some "residuals"
+```{r}
+schedule2425_250 <- schedule2425_250 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual))
+
+schedule2425_250 |> summarise(k_250_resid = sum(abs_residual, na.rm = TRUE))
+
+ggplot(data = schedule2425_250, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule2425_250, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+```
+Wowzers this residuals plot shows almost an exact opposite shape as k = 50 and k = 100. Lots of close to 0 residuals but also a decent amount of close to -1 and 1 residuals. Its looking like its either right on the nose or far off. Showing large emphasis on favorites. lets look at the start of the season to see this.
+
+
+```{r}
+schedule24_250 <- schedule2425_250 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual)) |>
+  filter(date < "2025-01-01")
+
+schedule24_250 |> summarise(k_250_resid = sum(abs_residual, na.rm = TRUE))
+## notice that first half residual is 210 compared to second half being 198
+
+ggplot(data = schedule24_250, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule24_250, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+```
+to my surprise it actually isint favoring favorites that much at the start of the season. Lets take a look at the second half of the season to see whats going on.
+
+```{r}
+schedule25_50 <- schedule2425_50 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual)) |>
+  filter(date >= "2025-01-01")
+
+schedule25_50 |> summarise(k_50_resid = sum(abs_residual, na.rm = TRUE))
+## notice that first half residual is 210 compared to second half being 198
+
+ggplot(data = schedule25_50, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule25_50, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+```
+Again we are seeing any skew, but they are not normal. but we do see that later in the season we tend to see greater residuals occur more frequently. lets plot and make a regression to see how this k value stacks up. It should be noted that our abs_residual calculation is 415, which is pretty much the same for k = 50, abs_residual = 412 and k = 100, abs_residual = 409.
+
+
+```{r}
+prop_wins_250 <- schedule2425_250 |>
+  mutate(binned_exp = floor(exp_home / 0.025) * 0.025) |>
+  group_by(binned_exp) |>
+  summarise(win_prop = mean(outcome, na.rm = TRUE))
+
+mod250 = lm(win_prop ~ binned_exp, data = prop_wins_250)
+summary(mod250)
+
+ggplot(data = prop_wins_250, aes(x = binned_exp, 
+                             y = win_prop)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "gold") +
+  theme_minimal()
+```
+not only does this value of k show us the highest abs_resid so far, it also has a slope of 0.41184 * binned_exp. So, were looking for a k of below 250 most likely.

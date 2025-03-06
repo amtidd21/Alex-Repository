@@ -206,26 +206,38 @@ update_rankings_iter <- function(season, end_date, ratings, k){
 
 ## can then join with the schedule data set again by team-home_team and date and then again by team-away_team and date and keep only the necessary columns
 
-try_rankings = update_rankings(season = schedule, game_date = "2025-02-25", ratings = X22Rankings, k = 100)
-try_rankings24 = update_rankings_iter(schedule, "2025-02-25", X22Rankings, 100)
+try_rankings = update_rankings(season = schedule, game_date = "2025-03-05", ratings = X22Rankings, k = 100)
+try_rankings24 = update_rankings_iter(schedule, "2025-03-05", X22Rankings, 100)
 
-##Merging my iter function into a master schedule:
-schedule_filling_Oct4 = schedule |>
+## Binding rows of rankings to make a master rankings file and lagging date to get correct date since the function does i + 1 do the date
+try_rankings24 = try_rankings24 |> bind_rows()
+
+lagged_df <- try_rankings24 |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+rankings_lagged <- left_join(try_rankings24, lagged_df, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+##Joining rankings into a master schedule
+
+schedule = schedule |>
   mutate(home_elo = NA) |>
-  mutate(away_elo = NA) |>
-  filter(date == "2024-10-04")
+  mutate(away_elo = NA)
   
-merged_sched_home = left_join(schedule_filling_Oct4, try_rankings24[[1]], 
-                         by = join_by(home_team == Team)) |>
+merged_sched_home = left_join(schedule, rankings_lagged, 
+                         by = join_by(date == date, home_team == Team)) |>
   mutate(home_elo = rating) |>
   select(-rating)
 
-merged_sched = left_join(merged_sched_home, try_rankings24[[1]],
-                         by = join_by(away_team == Team)) |>
+merged_sched = left_join(merged_sched_home, rankings_lagged,
+                         by = join_by(date == date, away_team == Team)) |>
   mutate(away_elo = rating) |>
   select(-rating)
 
-merged_sched_date_full = merged_sched |>
+schedule2425 = merged_sched |>
   mutate(outcome_away = abs(outcome - 1)) |> 
   ## Calculating expected outcome variable for home and away team
   mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
@@ -233,84 +245,5 @@ merged_sched_date_full = merged_sched |>
   ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
   mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
   mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+print("BOOM TIME TO DO SOME ANALYSIS!!!")
 
-## Now filling for oct5
-schedule_filling_Oct5 = schedule |>
-  mutate(home_elo = NA) |>
-  mutate(away_elo = NA) |>
-  filter(date == "2024-10-05")
-
-merged_sched_home_oct5 = left_join(schedule_filling_Oct5, try_rankings24[[2]], 
-                              by = join_by(home_team == Team)) |>
-  mutate(home_elo = rating) |>
-  select(-rating)
-
-merged_sched_oct5 = left_join(merged_sched_home_oct5, try_rankings24[[2]],
-                         by = join_by(away_team == Team)) |>
-  mutate(away_elo = rating) |>
-  select(-rating, -date.y, -date)
-
-merged_sched_date_full_oct5 = merged_sched_oct5 |>
-  mutate(outcome_away = abs(outcome - 1)) |> 
-  ## Calculating expected outcome variable for home and away team
-  mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
-  mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
-  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
-  mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
-  mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away)) |>
-  rename(date = date.x)
-
-## now trying to bind together
-
-bound_sched = bind_rows(merged_sched_date_full, merged_sched_date_full_oct5)
-
-## attempting to create a for loop for this so i can automate this for every date
-
-#season = schedule
-#game_date = "2024-10-05"
-#ratings = try_rankings24[[2]]
-
-bind_sched = function(season, game_date, ratings){
-  season_date <- season |>
-    mutate(home_elo = NA) |>
-    mutate(away_elo = NA) |>
-    filter(date == game_date)
-  
-  joined_home <- left_join(season_date, ratings, by = join_by(home_team == Team)) |>
-    mutate(home_elo = rating) |>
-    select(-rating)
-  
-  joined_both <- left_join(joined_home, ratings, by = join_by(away_team == Team)) |>
-    mutate(away_elo = rating) |>
-    select(-rating)
-  
-if ("date.y" %in% names(joined_both)) {
-  joined_both <- joined_both |>
-    select(-all_of("date.y"))
-}
-  
-if("date.x" %in% names(joined_both)) {
-  joined_both <- joined_both |>
-    select(-all_of("date"))
-}
-  
-  joined_full <- joined_both |>
-    mutate(outcome_away = abs(outcome - 1)) |>
-    mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
-    mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
-    mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
-    mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
-  
-if("date.x" %in% names(joined_full)) {
-  joined_full <- joined_full |>
-    rename(date = date.x)
-}
-  
-  return(joined_full)
-    
-}
-  
-attempt_joined = bind_sched(schedule, "2024-10-04", try_rankings24[[1]])
-
-
-## attempting the for loop
