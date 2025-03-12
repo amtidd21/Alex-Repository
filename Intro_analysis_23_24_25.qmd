@@ -1,0 +1,316 @@
+---
+title: "Intro_analysis_23_24_25"
+author: "Alex Tidd"
+format: html
+---
+```{r}
+library(elo)
+library(tidyverse)
+library(cowplot)
+library(ggrepel)
+library(lubridate)
+library(rvest)
+library(here)
+```
+
+
+Restarting the analysis but using a ratings file from the entire 2023-24 season to plug into the 24-25 season
+
+```{r}
+## loading in the 2324 season
+schedule2324 = scrape_men("20232024")
+
+## running the 2023-24 season through the update_rankings_iter() function
+rankings2324 = update_rankings_iter(schedule2324, "2024-04-13", X22Rankings, 100)[[105]]
+
+## adjusting the rankings for preseason rankings using the same method as fivethirtyeight.com
+
+rankings2324 = rankings2324 |>
+  mutate(rating = rating * 0.7 + (0.3 * 1500)) |>
+  select(-date)
+```
+
+```{r}
+## using the 2324 rankings as our initial rankings for 2025
+
+rankings_current = update_rankings_iter(schedule, "2025-03-09", rankings2324, 100)
+
+## putting into a master schedule
+
+rankings2425 = rankings_current |> bind_rows()
+
+lagged_df <- rankings2425 |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+rankings_lagged <- left_join(rankings2425, lagged_df, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+##Joining rankings into a master schedule
+
+schedule_elo = schedule |>
+  mutate(home_elo = NA) |>
+  mutate(away_elo = NA)
+  
+merged_sched_home = left_join(schedule_elo, rankings_lagged, 
+                         by = join_by(date == date, home_team == Team)) |>
+  mutate(home_elo = rating) |>
+  select(-rating)
+
+merged_sched = left_join(merged_sched_home, rankings_lagged,
+                         by = join_by(date == date, away_team == Team)) |>
+  mutate(away_elo = rating) |>
+  select(-rating)
+
+schedule2425 = merged_sched |>
+  mutate(outcome_away = abs(outcome - 1)) |> 
+  ## Calculating expected outcome variable for home and away team
+  mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+  mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+  mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+
+## Making a residual column
+schedule2425 <- schedule2425 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual))
+```
+
+
+Plot party!!!!!!
+```{r}
+## residual plots
+
+schedule2425 |> summarise(k_100_resid = sum(abs_residual, na.rm = TRUE))
+## hmm redidual pretty large :(
+
+ggplot(data = schedule2425, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule2425, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+prop_wins <- schedule2425 |>
+  mutate(binned_exp = floor(exp_home / 0.05) * 0.05) |>
+  group_by(binned_exp) |>
+  summarise(win_prop = mean(outcome, na.rm = TRUE), 
+            totalgames = n()) |> 
+  filter(!is.na(binned_exp)) |>
+  mutate(weights = 
+           case_when(totalgames <= 10 ~ 0.1,
+                     totalgames > 10 & totalgames <= 25 ~ 0.25,
+                     totalgames > 25 & totalgames <= 50 ~ 0.5,
+                     totalgames > 50 & totalgames <= 80 ~ 0.75,
+                     totalgames > 80 ~ 1))
+
+mod100 = lm(win_prop ~ binned_exp, data = prop_wins, weights = prop_wins$weights)
+summary(mod100)
+
+ggplot(data = prop_wins, aes(x = binned_exp, 
+                             y = win_prop,
+                             size = weights)) +
+  geom_point() +
+  geom_smooth(method = "lm", aes(weight = weights), se = FALSE, color = "gold") +
+  theme_minimal()
+```
+Look at how cool this slope its 0.69740 with intercept 0.18590 and rsq 0.9186
+
+
+lets try this with other values of k:
+
+k = 80
+```{r}
+rankings2324_80 = update_rankings_iter(schedule2324, "2024-04-13", X22Rankings, 80)[[105]]
+
+rankings2324_80 = rankings2324_80 |>
+  mutate(rating = rating * 0.7 + (0.3 * 1500)) |>
+  select(-date)
+```
+
+```{r}
+rankings_current_80 = update_rankings_iter(schedule, "2025-03-09", rankings2324_80, 80)
+
+## putting into a master schedule
+
+rankings2425_80 = rankings_current_80 |> bind_rows()
+
+lagged_df_80 <- rankings2425_80 |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+rankings_lagged_80 <- left_join(rankings2425_80, lagged_df_80, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+##Joining rankings into a master schedule
+
+schedule_elo_80 = schedule |>
+  mutate(home_elo = NA) |>
+  mutate(away_elo = NA)
+  
+merged_sched_home_80 = left_join(schedule_elo_80, rankings_lagged_80, 
+                         by = join_by(date == date, home_team == Team)) |>
+  mutate(home_elo = rating) |>
+  select(-rating)
+
+merged_sched_80 = left_join(merged_sched_home_80, rankings_lagged_80,
+                         by = join_by(date == date, away_team == Team)) |>
+  mutate(away_elo = rating) |>
+  select(-rating)
+
+schedule2425_80 = merged_sched_80 |>
+  mutate(outcome_away = abs(outcome - 1)) |> 
+  ## Calculating expected outcome variable for home and away team
+  mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+  mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+  mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+
+## Making a residual column
+schedule2425_80 <- schedule2425_80 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual))
+```
+
+```{r}
+## residual plots
+
+schedule2425_80 |> summarise(k_80_resid = sum(abs_residual, na.rm = TRUE))
+## hmm redidual pretty large :(
+
+ggplot(data = schedule2425_80, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule2425_80, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+prop_wins_80 <- schedule2425_80 |>
+  mutate(binned_exp = floor(exp_home / 0.05) * 0.05) |>
+  group_by(binned_exp) |>
+  summarise(win_prop = mean(outcome, na.rm = TRUE), 
+            totalgames = n()) |> 
+  filter(!is.na(binned_exp)) |>
+  mutate(weights = 
+           case_when(totalgames <= 10 ~ 0.1,
+                     totalgames > 10 & totalgames <= 25 ~ 0.25,
+                     totalgames > 25 & totalgames <= 50 ~ 0.5,
+                     totalgames > 50 & totalgames <= 80 ~ 0.75,
+                     totalgames > 80 ~ 1))
+
+mod80 = lm(win_prop ~ binned_exp, data = prop_wins_80, weights = prop_wins_80$weights)
+summary(mod80)
+
+ggplot(data = prop_wins_80, aes(x = binned_exp, 
+                             y = win_prop,
+                             size = weights)) +
+  geom_point() +
+  geom_smooth(method = "lm", aes(weight = weights), se = FALSE, color = "gold") +
+  theme_minimal()
+```
+Residuals with k = 80 are 9 points better, Slope and Intercept is wayyy better. same rsq. intercept: 0.15913, slope: 0.74438, 0.9133
+
+lets try with a larger k, k = 120
+
+```{r}
+rankings2324_120 = update_rankings_iter(schedule2324, "2024-04-13", X22Rankings, 120)[[105]]
+
+rankings2324_120 = rankings2324_120 |>
+  mutate(rating = rating * 0.7 + (0.3 * 1500)) |>
+  select(-date)
+```
+
+```{r}
+rankings_current_120 = update_rankings_iter(schedule, "2025-03-09", rankings2324_120, 120)
+
+## putting into a master schedule
+
+rankings2425_120 = rankings_current_120 |> bind_rows()
+
+lagged_df_120 <- rankings2425_120 |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+rankings_lagged_120 <- left_join(rankings2425_120, lagged_df_120, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+##Joining rankings into a master schedule
+
+schedule_elo_120 = schedule |>
+  mutate(home_elo = NA) |>
+  mutate(away_elo = NA)
+  
+merged_sched_home_120 = left_join(schedule_elo_120, rankings_lagged_120, 
+                         by = join_by(date == date, home_team == Team)) |>
+  mutate(home_elo = rating) |>
+  select(-rating)
+
+merged_sched_120 = left_join(merged_sched_home_120, rankings_lagged_120,
+                         by = join_by(date == date, away_team == Team)) |>
+  mutate(away_elo = rating) |>
+  select(-rating)
+
+schedule2425_120 = merged_sched_120 |>
+  mutate(outcome_away = abs(outcome - 1)) |> 
+  ## Calculating expected outcome variable for home and away team
+  mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+  mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+  mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+
+## Making a residual column
+schedule2425_120 <- schedule2425_120 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual))
+```
+
+```{r}
+## residual plots
+
+schedule2425_120 |> summarise(k_120_resid = sum(abs_residual, na.rm = TRUE))
+
+ggplot(data = schedule2425_120, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule2425_120, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+prop_wins_120 <- schedule2425_120 |>
+  mutate(binned_exp = floor(exp_home / 0.05) * 0.05) |>
+  group_by(binned_exp) |>
+  summarise(win_prop = mean(outcome, na.rm = TRUE), 
+            totalgames = n()) |> 
+  filter(!is.na(binned_exp)) |>
+  mutate(weights = 
+           case_when(totalgames <= 10 ~ 0.1,
+                     totalgames > 10 & totalgames <= 25 ~ 0.25,
+                     totalgames > 25 & totalgames <= 50 ~ 0.5,
+                     totalgames > 50 & totalgames <= 80 ~ 0.75,
+                     totalgames > 80 ~ 1))
+
+mod120 = lm(win_prop ~ binned_exp, data = prop_wins_120, weights = prop_wins_120$weights)
+summary(mod120)
+
+ggplot(data = prop_wins_120, aes(x = binned_exp, 
+                             y = win_prop,
+                             size = weights)) +
+  geom_point() +
+  geom_smooth(method = "lm", aes(weight = weights), se = FALSE, color = "gold") +
+  theme_minimal()
+```
+Worst slope and intercept and rsq but best abs residual.
+
+So now we are at an impasse, do we optimize parameters based on our abs(reiduals) calculation are optimze to slope = 1 and intercept  = 0???

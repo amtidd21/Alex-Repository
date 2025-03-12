@@ -28,7 +28,7 @@ scrape_men <- function(season = "20232024"){
     html_nodes("table")
   
   ## The website likes to switch which table it uses. If function doesn't work try changing which table number you select
-  stats_dirty <- tab_hockey[[1]] |> html_table()
+  stats_dirty <- tab_hockey[[4]] |> html_table()
   
   ## Creating regex for date, and conference to make date and conference columns in dataframe
   regex_date <- "October|November|December|January|February|March|April"
