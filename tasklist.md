@@ -1,5 +1,17 @@
 ## Task List
 
+## For March 27
+
+1. Adjust endpoints of bins so that they are centered at the midpoint. And use fewer bins! (Try 10-15).
+
+2. Weight points number of games.
+
+3. Add home ice advantage to model (look at fivethirtyeight for their starting point).
+
+4. Add goal differential to the model.
+
+5. Expand goal differential to goal for and goals against if you have time.
+
 ## For March 13
 
 1. Construct initial ratings from 2023-2024 season. Shrink them according to what five thirty eight did.
