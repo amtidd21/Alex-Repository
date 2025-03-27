@@ -1,5 +1,13 @@
 ## Task List
 
+## For April 3
+
+1. Change the plots to histograms.
+
+2. Mess around with the home ice and goal differential parameters (do home ice: set `d` to `0` at first). Adjust `k`. 
+
+3. See 326 notes. Create a data frame of possible d, k, home_ice combinations. use `map()` or `pmap()` to map the function through your data frame of values, recording just a single metric. Use AI (purrr) to help figure out through the mapping.
+
 ## For March 27
 
 1. Adjust endpoints of bins so that they are centered at the midpoint. And use fewer bins! (Try 10-15).
