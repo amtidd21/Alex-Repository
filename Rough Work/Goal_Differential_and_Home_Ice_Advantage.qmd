@@ -1,0 +1,194 @@
+---
+title: "Goal Differential and Home Ice Advantage"
+author: "Alex Tidd"
+format: html
+---
+
+```{r}
+library(elo)
+library(tidyverse)
+library(cowplot)
+library(ggrepel)
+library(lubridate)
+library(rvest)
+library(here)
+```
+
+Using what we found in our k exploration, k = 100 gave us the lowest mean absolute value of residuals. So for goal differential and home ice exploration, we will hold k = 100, but now we will alter our function to add a goal differential multiplier in the update elo and a home ice multiplier in the expected value (much like fivethirtyeight.com did).
+
+updating our function:
+```{r}
+##Function to update rankings
+##rating is the variable, ratings is the df.
+update_rankings_gd_ha <- function(season, game_date, ratings, k = 100, home_ice = 50, d = 0.5){
+  ## Filters schedule to a specific date
+  elo_ratings_update <- season |> filter(date == game_date) |>
+    ## Joins the Elo ratings from our rating file to the schedule file. Puts updated ratings in the schedule
+    left_join(ratings, by = join_by(away_team == Team)) |>
+    rename(away_elo = rating) |>  
+    ## Updates ratings for home team in the schedule file
+    left_join(ratings, by = join_by(home_team == Team)) |>
+    rename(home_elo = rating) |>
+    ## Creating an away team outcome variable. Opposite of home team or same if tie.
+    mutate(outcome_away = abs(outcome - 1)) |> 
+    ## Calculating expected outcome variable for home and away team
+    mutate(exp_home = 1/(1 + 10^((away_elo - (home_elo + home_ice))/400))) |>
+    mutate(exp_away = 1/(1 + 10^(((home_elo + home_ice) - away_elo)/400))) |>
+    ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+    mutate(elo_new_home = home_elo + k*(outcome - exp_home) + d * score_diff) |>
+    mutate(elo_new_away = away_elo + k*(outcome_away - exp_away) + d * -1 * (score_diff)) |>
+    rename(date_update_rankings = date)
+  
+  ## Find out which is the right date, select() and relocate(), **DO THIS FIRST**: try renaming date in one of the df to make less confusing (at start).
+  ranked_home_gd_ha <- left_join(ratings, elo_ratings_update, by = join_by(Team == home_team)) |>
+    relocate(elo_new_home) |>
+    mutate(rating = if_else(!is.na(elo_new_home),
+                            true = elo_new_home,
+                            false = rating)) |>
+    select(Team, rating, date_update_rankings)
+  
+  ratings_new_gd_ha <- left_join(ranked_home_gd_ha, elo_ratings_update, by = join_by(Team == away_team)) |>
+    relocate(elo_new_away) |>
+    mutate(rating = if_else(!is.na(elo_new_away),
+                            true = elo_new_away,
+                            false = rating)) |>
+    select(Team, rating, date_update_rankings.x) |>
+    mutate(date_update_rankings.x = game_date) |>
+    rename(date = date_update_rankings.x)
+    #fill(date_update_rankings.x, .direction = c("down")) |>
+    #fill(date_update_rankings.x, .direction = c("up"))
+  
+  return(ratings_new_gd_ha)
+}
+
+#attempt = update_rankings(schedule, "2025-10-04", X22Rankings, 100)
+
+##loop to get updated weekly ratings
+## creating a vector for unique dates in a schedule dataframe
+dates_vec <- unique(schedule$date)
+## defining what new_rankings is going to be
+new_rankings = rankings
+## Creating a for loop with the update_rankings function to update rankings up to a specified date
+for (i in dates_vec) {
+  new_rankings <- update_rankings_gd_ha(season = schedule, game_date = i, ratings = new_rankings, k = 100, home_ice = 50, d = 0.5)
+  
+}
+
+
+## Iteration of update function, using a date filter. Old loop can't deal with NA Values
+
+## initialize an empty list
+
+#season = schedule
+#end_date = "2025-02-25"
+#ratings = X22Rankings
+#k = 100
+
+update_rankings_iter_gd_ha <- function(season, end_date, ratings, k, home_ice, d){
+  
+  new_rankings <- list()
+  
+  season_cut <- season |> 
+    ## Filter by a specified end date to deal with NA values (gmaes that have yet to be played)
+    filter(date <= ymd(end_date))
+  ## Creating a vector for unique dates in a season
+  dates_vector <- unique(season_cut$date)
+  ## Defining our rankings within the function
+  new_rankings[[1]] <- ratings
+  ## Creating a for loop for the function to generate new ratings with the updtae_rankings function
+  for (i in 1:length(dates_vector)) {
+    new_rankings[[i + 1]] <- update_rankings_gd_ha(season = season_cut, game_date = dates_vector[i], ratings = new_rankings[[i]], k = k, home_ice = 50, d = 0.5)
+  }
+  return(new_rankings)
+}
+```
+
+```{r}
+try_gdha = update_rankings_iter_gd_ha(schedule, "2025-03-25", rankings2324, 100, home_ice = 50, d = 2)
+```
+
+ok so boom. ranking gathered. lets try to do the same thing with goal diff and home ice. 
+
+```{r}
+rankings_gdha = try_gdha |> bind_rows()
+
+lagged_gdha <- rankings_gdha |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+rankings_lagged_gdha <- left_join(rankings_gdha, lagged_gdha, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+##Joining rankings into a master schedule
+
+schedule_elo_gdha = schedule |>
+  mutate(home_elo = NA) |>
+  mutate(away_elo = NA)
+  
+merged_sched_home_gdha = left_join(schedule_elo_gdha, rankings_lagged_gdha, 
+                         by = join_by(date == date, home_team == Team)) |>
+  mutate(home_elo = rating) |>
+  select(-rating)
+
+merged_sched_gdha = left_join(merged_sched_home_gdha, rankings_lagged_gdha,
+                         by = join_by(date == date, away_team == Team)) |>
+  mutate(away_elo = rating) |>
+  select(-rating)
+
+home_ice = 50
+d = 2
+k = 100
+
+schedule2425_gdha = merged_sched_gdha |>
+  mutate(outcome_away = abs(outcome - 1)) |> 
+  ## Calculating expected outcome variable for home and away team
+  mutate(exp_home = 1/(1 + 10^((away_elo - (home_elo + home_ice))/400))) |>
+  mutate(exp_away = 1/(1 + 10^(((home_elo + home_ice) - away_elo)/400))) |>
+    ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+  mutate(elo_new_home = home_elo + k*(outcome - exp_home) + d * score_diff) |>
+  mutate(elo_new_away = away_elo + k*(outcome_away - exp_away) + d * -1 * (score_diff))
+
+## Making a residual column
+schedule2425_gdha <- schedule2425_gdha |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual))
+```
+
+PLOT TIME
+```{r}
+## residual plots
+
+schedule2425_gdha |> summarise(k_gdha_resid = mean(abs_residual, na.rm = TRUE))
+## mean residual is now lower
+
+ggplot(data = schedule2425_gdha, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule2425_gdha, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+prop_wins_gdha <- schedule2425_gdha |>
+  mutate(binned_exp = floor(exp_home / 0.1) * 0.1 + 0.05) |>
+  group_by(binned_exp) |>
+  summarise(win_prop = mean(outcome, na.rm = TRUE), 
+            totalgames = n()) |> 
+  filter(!is.na(binned_exp))
+
+modgdha = lm(win_prop ~ binned_exp, data = prop_wins_gdha, weights = totalgames)
+summary(modgdha)
+
+ggplot(data = prop_wins_gdha, aes(x = binned_exp, 
+                             y = win_prop,
+                             size = totalgames)) +
+  geom_point() +
+  geom_smooth(method = "lm", aes(weight = totalgames), se = FALSE, color = "gold") +
+  theme_minimal()
+```
+mean abs resid for ha = 50 and gd = 0.5: 0.390
+when ha is held at 50 and d = ln(score_diff) we see similar results
+
+
