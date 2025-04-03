@@ -1,5 +1,15 @@
 ## Task List
 
+## For April 10
+
+1. Write rough draft of abstract.
+
+2. Start working on poster. <https://github.com/brentthorne/posterdown>, <https://github.com/hquin20/SYE/blob/main/poster/poster.Rmd>.
+
+3. Continue optimizing the three parameters.
+
+4. Start making some plots for the poster.
+
 ## For April 3
 
 1. Change the plots to histograms.
