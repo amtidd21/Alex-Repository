@@ -160,15 +160,26 @@ plan(multisession)
 handlers("progress")
 options(progressr.enable = TRUE)
 
-k = seq(80, 110, length.out = 30)
-home_ice = seq(40, 70, length.out = 30)
-d = seq(0, 1, length.out = 10)
+k = seq(51, 52, length.out = 10)
+home_ice = seq(64, 65, length.out = 10)
+d = seq(51, 52, length.out = 10)
 
-grid = expand.grid(k = seq(80, 110, length.out = 30), home_ice = seq(40, 70, length.out = 30), d = seq(0, 1, length.out = 10))
+grid = expand.grid(k = seq(51, 52, length.out = 10), home_ice = seq(64, 65, length.out = 10), d = seq(51, 52, length.out = 10))
 
 mean_residuals = with_progress({future_pmap_dbl(grid, \ (k, home_ice, d) update_rankings_residuals(season = schedule, end_date = "2025-03-25", ratings = rankings2324, k = k, home_ice = home_ice, d = d), .progress = TRUE)})
 
 residual_df <- grid |> mutate(mean_residual = mean_residuals)
 residual_df
+```
+
+```{r}
+optimal = residual_df |> filter(mean_residual == min(mean_residual))
+## Going to adjust some parameters. Current best is k = 80, hi = 65, d = 1.5
+## k = 51 hi = 64 and d = 12.5 gives a 0.364 mean residual
+## BOOM our model is optimized with k = 51, home_ice = 64, d = 51.556, mean_residual = 0.3515844
+```
+
+```{r}
+apr_5_ranking = update_rankings_iter_gd_ha(schedule, "2025-04-05", rankings2324, 51, 64, 0.3515844)[[108]]
 ```
 
