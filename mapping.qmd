@@ -160,11 +160,11 @@ plan(multisession)
 handlers("progress")
 options(progressr.enable = TRUE)
 
-k = seq(51, 52, length.out = 10)
-home_ice = seq(64, 65, length.out = 10)
-d = seq(51, 52, length.out = 10)
+k = seq(45, 55, length.out = 10)
+home_ice = seq(60, 70, length.out = 10)
+d = seq(45, 55, length.out = 10)
 
-grid = expand.grid(k = seq(51, 52, length.out = 10), home_ice = seq(64, 65, length.out = 10), d = seq(51, 52, length.out = 10))
+grid = expand.grid(k = seq(45, 55, length.out = 10), home_ice = seq(60, 70, length.out = 10), d = seq(45, 55, length.out = 10))
 
 mean_residuals = with_progress({future_pmap_dbl(grid, \ (k, home_ice, d) update_rankings_residuals(season = schedule, end_date = "2025-03-25", ratings = rankings2324, k = k, home_ice = home_ice, d = d), .progress = TRUE)})
 
@@ -180,6 +180,27 @@ optimal = residual_df |> filter(mean_residual == min(mean_residual))
 ```
 
 ```{r}
-apr_5_ranking = update_rankings_iter_gd_ha(schedule, "2025-04-05", rankings2324, 51, 64, 0.3515844)[[108]]
+apr_5_ranking = update_rankings_iter_gd_ha(schedule, "2025-04-05", rankings2324, 51, 64, 0.3515844)
 ```
+
+```{r}
+apr5_slu = apr_5_ranking |> bind_rows() |>
+  filter(Team == "St. Lawrence")
+
+apr5_slu_lagged =  apr5_slu |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+apr5_slu_full = left_join(apr5_slu, apr5_slu_lagged, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+ggplot(data = apr5_slu_full, aes(x = date,
+                                 y = rating)) +
+  geom_line()
+  
+```
+
+
 

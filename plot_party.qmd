@@ -1,0 +1,147 @@
+---
+title: "Chart Party"
+author: "Alex Tidd"
+format: html
+---
+
+```{r}
+library(ggplot2)
+library(tidyverse)
+```
+
+```{r}
+## SLU
+apr5_slu = apr_5_ranking |> bind_rows() |>
+  filter(Team == "St. Lawrence")
+
+apr5_slu_lagged =  apr5_slu |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+apr5_slu_full = left_join(apr5_slu, apr5_slu_lagged, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+ggplot(data = apr5_slu_full, aes(x = date,
+                                 y = rating)) +
+  geom_line()
+```
+
+```{r}
+apr5 = apr_5_ranking |> bind_rows()
+
+apr5_lagged =  apr5 |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+apr5_full = left_join(apr5, apr5_lagged, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+highlight = c("St. Lawrence", "Western Michigan", "Clarkson", "Bentley", "RIT", "Cornell")
+
+highlighted_color = c(
+  "St. Lawrence" = "firebrick",
+  "Western Michigan" = "goldenrod",
+  "Clarkson" = "forestgreen",
+  "Bentley" = "royalblue",
+  "RIT" = "darkorange",
+  "Cornell" = "red")
+
+apr5_color = apr5_full |> mutate(highlight = if_else(Team %in% highlight, Team, "Other"))
+
+ggplot(data = apr5_color, aes(x = date,
+                            y = rating,
+                            group = Team)) +
+  geom_line(aes(color = highlight, 
+                alpha = highlight, 
+                linewidth = highlight)) +
+  scale_color_manual(values = c("Other" = "grey80", 
+                                highlighted_color)) +
+  scale_alpha_manual(values = c("Other" = 0.5, 
+                                setNames(rep(1, length(highlighted_color)),
+                                         names(highlighted_color)))) +
+  scale_linewidth_manual(values = c("Other" = 0.2, 
+                                    setNames(rep(1, length(highlighted_color)),
+                                             names(highlighted_color)))) +
+  theme_minimal() +
+  labs(color = "Team") +
+  theme(legend.position = "right")
+```
+
+
+Grid search plots
+```{r}
+library(furrr)
+library(progressr)
+plan(multisession)
+handlers("progress")
+options(progressr.enable = TRUE)
+
+
+##d and k
+ggplot(data = residual_df, aes(x = k,
+                               y = d)) +
+  geom_tile(aes(fill = mean_residual)) +
+  scale_fill_viridis_c() +
+  theme_minimal()
+
+## d and home_ice
+ggplot(data = residual_df, aes(x = home_ice,
+                               y = d)) +
+  geom_tile(aes(fill = mean_residual)) +
+  scale_fill_viridis_c() +
+  theme_minimal()
+
+## k and home_ice
+ggplot(data = residual_df, aes(x = k,
+                               y = home_ice)) +
+  geom_tile(aes(fill = mean_residual)) +
+  scale_fill_viridis_c() +
+  theme_minimal()
+```
+
+
+
+```{r}
+schedule_apr5 = left_join(schedule_elo, apr5, 
+                         by = join_by(date == date, home_team == Team)) |>
+  mutate(home_elo = rating) |>
+  select(-rating)
+
+merged_sched_apr5 = left_join(schedule_apr5, apr5,
+                         by = join_by(date == date, away_team == Team)) |>
+  mutate(away_elo = rating) |>
+  select(-rating)
+
+schedule_full_apr5 = merged_sched_apr5 |>
+  mutate(outcome_away = abs(outcome - 1)) |> 
+  ## Calculating expected outcome variable for home and away team
+  mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+  mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+  mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+
+## Making a residual column
+schedule_full_apr5 <- schedule_full_apr5 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual))
+
+ggplot(data = schedule_full_apr5, aes(x = abs_residual)) +
+  geom_histogram(fill = "purple2", color = "turquoise") +
+  theme_minimal()
+
+ggplot(data = schedule_full_apr5, aes(x = residual)) +
+  geom_histogram(fill = "purple2", color = "turquoise") +
+  labs(caption = "Positive residual past 0.5 indicates model predicting a home loss when actual result is a home win. Negative residual beyond -0.5 indicate a predicted home wins with an observed home loss")
+  theme_minimal()
+```
+
+```{r}
+apr_5_ranking[[108]] |> arrange(desc(rating))
+apr_5_ranking[[108]] |> arrange(rating)
+```
+
