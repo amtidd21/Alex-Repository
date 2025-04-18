@@ -36,7 +36,13 @@ update_rankings_gd_ha <- function(season, game_date, ratings, k = 100, home_ice 
     mutate(exp_away = 1/(1 + 10^(((home_elo + home_ice) - away_elo)/400))) |>
     ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
     mutate(elo_new_home = home_elo + k*(outcome - exp_home) + d * score_diff) |>
+    mutate(elo_new_home = if_else(elo_new_home < 100,
+                                  true = 100,
+                                  false = elo_new_home)) |>
     mutate(elo_new_away = away_elo + k*(outcome_away - exp_away) + d * -1 * (score_diff)) |>
+    mutate(elo_new_away = if_else(elo_new_away < 100,
+                                  true = 100,
+                                  false = elo_new_away)) |>
     rename(date_update_rankings = date)
   
   ## Find out which is the right date, select() and relocate(), **DO THIS FIRST**: try renaming date in one of the df to make less confusing (at start).
@@ -138,7 +144,13 @@ full_season = merged_season |>
   mutate(exp_away = 1/(1 + 10^(((home_elo + home_ice) - away_elo)/400))) |>
     ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
   mutate(elo_new_home = home_elo + k*(outcome - exp_home) + d * score_diff) |>
-  mutate(elo_new_away = away_elo + k*(outcome_away - exp_away) + d * -1 * (score_diff))|>
+    mutate(elo_new_home = if_else(elo_new_home < 100,
+                                  true = 100,
+                                  false = elo_new_home)) |>
+    mutate(elo_new_away = away_elo + k*(outcome_away - exp_away) + d * -1 * (score_diff)) |>
+    mutate(elo_new_away = if_else(elo_new_away < 100,
+                                  true = 100,
+                                  false = elo_new_away)) |>
   mutate(residual = outcome - exp_home) |>
   mutate(abs_residual = abs(residual))
 
@@ -153,6 +165,17 @@ update_rankings_residuals(schedule, "2025-03-25", rankings2324, 10, home_ice = 4
 ```
 boom the function works. Lets map this to get a bunch of different combinations.
 
+Lets optimize with regular season games only.
+```{r}
+schedule_reg = schedule |> filter(game_type != "Big Ten Tournament") |>
+  filter(game_type != "ECAC Tournament") |>
+  filter(game_type != "CCHA Tournament") |>
+  filter(game_type != "CCHA Tournament") |>
+  filter(date < "2025-03-08")
+  
+```
+
+
 Mapping
 ```{r}
 ## setting up grid of potential k, d, and home ice values
@@ -160,13 +183,13 @@ plan(multisession)
 handlers("progress")
 options(progressr.enable = TRUE)
 
-k = seq(45, 55, length.out = 10)
-home_ice = seq(60, 70, length.out = 10)
-d = seq(45, 55, length.out = 10)
+#k = seq(40, 50, length.out = 10)
+#home_ice = seq(60, 70, length.out = 10)
+#d = seq(45, 55, length.out = 10)
 
-grid = expand.grid(k = seq(45, 55, length.out = 10), home_ice = seq(60, 70, length.out = 10), d = seq(45, 55, length.out = 10))
+grid = expand.grid(k = seq(35, 45, length.out = 10), home_ice = seq(50, 60, length.out = 10), d = seq(40, 50, length.out = 10))
 
-mean_residuals = with_progress({future_pmap_dbl(grid, \ (k, home_ice, d) update_rankings_residuals(season = schedule, end_date = "2025-03-25", ratings = rankings2324, k = k, home_ice = home_ice, d = d), .progress = TRUE)})
+mean_residuals = with_progress({future_pmap_dbl(grid, \ (k, home_ice, d) update_rankings_residuals(season = schedule_reg, end_date = "2025-03-25", ratings = rankings2324, k = k, home_ice = home_ice, d = d), .progress = TRUE)})
 
 residual_df <- grid |> mutate(mean_residual = mean_residuals)
 residual_df
@@ -176,27 +199,27 @@ residual_df
 optimal = residual_df |> filter(mean_residual == min(mean_residual))
 ## Going to adjust some parameters. Current best is k = 80, hi = 65, d = 1.5
 ## k = 51 hi = 64 and d = 12.5 gives a 0.364 mean residual
-## BOOM our model is optimized with k = 51, home_ice = 64, d = 51.556, mean_residual = 0.3515844
+## BOOM our model is optimized with k = 37.22222, home_ice = 53.33333, d = 40.55556, mean_residual = 0.3515844
 ```
 
 ```{r}
-apr_5_ranking = update_rankings_iter_gd_ha(schedule, "2025-04-05", rankings2324, 51, 64, 0.3515844)
+apr_15_ranking = update_rankings_iter_gd_ha(schedule, "2025-04-15", rankings2324, 38.33333, 53.33333, 43.33333)
 ```
 
 ```{r}
-apr5_slu = apr_5_ranking |> bind_rows() |>
+apr15_slu = apr_15_ranking |> bind_rows() |>
   filter(Team == "St. Lawrence")
 
-apr5_slu_lagged =  apr5_slu |> group_by(date) |>
+apr15_slu_lagged =  apr15_slu |> group_by(date) |>
   summarise(last_date = last(date)) |>
   mutate(lag_date = lag(last_date)) |>
   select(-last_date)
 
-apr5_slu_full = left_join(apr5_slu, apr5_slu_lagged, join_by(date == lag_date)) |>
+apr15_slu_full = left_join(apr15_slu, apr15_slu_lagged, join_by(date == lag_date)) |>
   select(-date) |>
   rename(date = date.y)
 
-ggplot(data = apr5_slu_full, aes(x = date,
+ggplot(data = apr15_slu_full, aes(x = date,
                                  y = rating)) +
   geom_line()
   
