@@ -89,7 +89,7 @@ plan(multisession)
 handlers("progress")
 options(progressr.enable = TRUE)
 
-grid_100 = expand.grid(k = seq(0, 100, length.out = 10), home_ice = seq(0, 100, length.out = 10), d = seq(0, 100, length.out = 10))
+grid_100 = expand.grid(k = seq(60, 120, length.out = 20), home_ice = seq(30, 50, length.out = 20), d = seq(0, 100, length.out = 1))
 
 mean_residuals_100 = with_progress({future_pmap_dbl(grid_100, \ (k, home_ice, d) update_rankings_residuals(season = schedule_reg, end_date = "2025-03-25", ratings = rankings2324, k = k, home_ice = home_ice, d = d), .progress = TRUE)})
 
@@ -124,13 +124,21 @@ ggplot(data = residual_100_df, aes(x = home_ice,
 ggplot(data = residual_100_df, aes(x = k,
                                y = home_ice)) +
    geom_tile(aes(fill = mean_residual)) +
-  geom_point(aes(x = 38.33333, y = 53.33333), color = "black", fill = "black") +
+  geom_point(aes(x = 88, y = 40), color = "black", fill = "black") +
   scale_fill_viridis_c(option = "D", 
-                       limits = c(0.36, 0.41), 
+                       ##limits = c(0.36, 0.41), 
                        oob = scales::squish, 
                        name = "Mean residual",
                        direction = -1) +
-  theme_minimal()
+  labs(x = "k",
+       y = "Home Ice Advantage",
+       title = "Optimization of k and Home Ice Advantage",
+       caption = "k is optimized at 88, home ice advantage at 40, \nand goal differential factor \nof  0.6686 * log(abs(score_diff)) + 0.8048") +
+  theme_minimal(base_size = 16) +
+  theme(legend.position = "right",
+        plot.title = element_text(hjust = 0.5),
+        plot.caption = element_text(hjust = 0.5),
+        plot.margin = margin(t = 40, b = 20, l = 60, r = 60))
 ```
 
 
@@ -180,7 +188,7 @@ ggplot(data = schedule_full_apr15, aes(x = residual)) +
 
 ```{r}
 print(n = 64, apr_15_ranking[[110]] |> arrange(desc(rating)))
-apr_15_ranking[[110]] |> arrange(rating)
+apr_15_ranking[[110]] |> arrange(desc(rating))
 ```
 
 
@@ -208,8 +216,30 @@ summary(modgdha)
 ggplot(data = prop_wins15, aes(x = binned_exp, 
                              y = win_prop,
                              size = totalgames)) +
-  geom_point() +
-  geom_smooth(method = "lm", aes(weight = totalgames), se = FALSE, color = "gold") +
-  theme_minimal()
+  geom_point(color = "black", shape = 16) +
+  geom_smooth(aes(color = "Fitted Model",
+                  weight = totalgames), method = "lm", se = FALSE, size = 1.2) +
+  geom_abline(data = data.frame(1), 
+              aes(color = "Expected Linear Model",
+                  linetype = "Expected Linear Model"), 
+              slope = 1, intercept = 0, linetype = 2, size = 1) +
+  scale_color_manual(name = "Model",
+                     values = c("Fitted Model" = "gold", 
+                                "Expected Linear Model" = "black")) +
+  labs(title = "Proportion of Home Team Wins \nfrom Home Expected Outcome",
+       x = "Expected Outcome",
+       y = "Proportion of \nGames Won",
+       caption = "Size of points indicate more games played. \nModel weighs point based off of amount of games played") +
+  guides(size = "none") +
+  theme_minimal(base_size = 16) +
+  theme(legend.position = "right",
+        legend.background = element_rect(fill = "white", color = NA),
+        legend.title = element_text(size = 12),
+        legend.text = element_text(size = 10),
+        plot.title = element_text(hjust = 0.5),
+        plot.caption = element_text(hjust = 0.5),
+        plot.margin = margin(t = 40, b = 20, l = 40, r = 40)) +
+  xlim(c(0, 1)) +
+  ylim(c(0, 1))
 ```
 

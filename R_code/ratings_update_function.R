@@ -15,11 +15,11 @@ library(purrr)
 
 ## Initial Rankings of all NCAA D1 Hockey teams
 ## NCAA_teams <- read_csv("datasets_dataframes/NCAA_teams.csv")
- ## rankings <- NCAA_teams |>
-  ## Setting initial Elo rating to 1500 for all teams
-  ## mutate(rating = 1500) |>
-  ## Taking out the Conference variable to leave 2 columns, Team and Rating
-  ## select(Team, rating)
+## rankings <- NCAA_teams |>
+## Setting initial Elo rating to 1500 for all teams
+## mutate(rating = 1500) |>
+## Taking out the Conference variable to leave 2 columns, Team and Rating
+## select(Team, rating)
 
 #season = "20242025"
 
@@ -155,8 +155,8 @@ update_rankings <- function(season, game_date, ratings, k = 20){
     select(Team, rating, date_update_rankings.x) |>
     mutate(date_update_rankings.x = game_date) |>
     rename(date = date_update_rankings.x)
-    #fill(date_update_rankings.x, .direction = c("down")) |>
-    #fill(date_update_rankings.x, .direction = c("up"))
+  #fill(date_update_rankings.x, .direction = c("down")) |>
+  #fill(date_update_rankings.x, .direction = c("up"))
   
   return(ratings_new)
 }
@@ -217,38 +217,38 @@ update_rankings_iter <- function(season, end_date, ratings, k){
 #try_rankings24 = try_rankings24 |> bind_rows()
 
 #lagged_df <- try_rankings24 |> group_by(date) |>
-  #summarise(last_date = last(date)) |>
-  #mutate(lag_date = lag(last_date)) |>
-  #select(-last_date)
+#summarise(last_date = last(date)) |>
+#mutate(lag_date = lag(last_date)) |>
+#select(-last_date)
 
 #rankings_lagged <- left_join(try_rankings24, lagged_df, join_by(date == lag_date)) |>
-  #select(-date) |>
-  #rename(date = date.y)
+#select(-date) |>
+#rename(date = date.y)
 
 ##Joining rankings into a master schedule
 
 #schedule = schedule |>
-  #mutate(home_elo = NA) |>
-  #mutate(away_elo = NA)
-  
+#mutate(home_elo = NA) |>
+#mutate(away_elo = NA)
+
 #merged_sched_home = left_join(schedule, rankings_lagged, 
-                        # by = join_by(date == date, home_team == Team)) |>
-  #mutate(home_elo = rating) |>
-  #select(-rating)
+# by = join_by(date == date, home_team == Team)) |>
+#mutate(home_elo = rating) |>
+#select(-rating)
 
 #merged_sched = left_join(merged_sched_home, rankings_lagged,
-                         #by = join_by(date == date, away_team == Team)) |>
- # mutate(away_elo = rating) |>
-  #select(-rating)
+#by = join_by(date == date, away_team == Team)) |>
+# mutate(away_elo = rating) |>
+#select(-rating)
 
 #schedule2425 = merged_sched |>
-  #mutate(outcome_away = abs(outcome - 1)) |> 
-  ## Calculating expected outcome variable for home and away team
-  #mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
-  #mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
-  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
- # mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
- # mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+#mutate(outcome_away = abs(outcome - 1)) |> 
+## Calculating expected outcome variable for home and away team
+#mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+#mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+# mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+# mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
 #print("BOOM TIME TO DO SOME ANALYSIS!!!")
 
 
@@ -274,8 +274,13 @@ update_rankings_gd_ha <- function(season, game_date, ratings, k = 100, home_ice 
     mutate(exp_home = 1/(1 + 10^((away_elo - (home_elo + home_ice))/400))) |>
     mutate(exp_away = 1/(1 + 10^(((home_elo + home_ice) - away_elo)/400))) |>
     ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
-    mutate(elo_new_home = home_elo + k*(outcome - exp_home) + d * score_diff) |>
-    mutate(elo_new_away = away_elo + k*(outcome_away - exp_away) + d * -1 * (score_diff)) |>
+    ## fivethirtyeights parameters
+    ## 0.6686 * log(abs(score_diff)) + 0.8048
+    mutate(score_mult = if_else(score_diff == 0,
+                                true = 0.8048,
+                                false = 0.6686 * log(abs(score_diff)) + 0.8048)) |>
+    mutate(elo_new_home = home_elo + k * score_mult * (outcome - exp_home)) |>
+    mutate(elo_new_away = away_elo + k * score_mult * (outcome_away - exp_away)) |>
     rename(date_update_rankings = date)
   
   ## Find out which is the right date, select() and relocate(), **DO THIS FIRST**: try renaming date in one of the df to make less confusing (at start).
@@ -325,11 +330,17 @@ update_rankings_gd_ha <- function(season, game_date, ratings, k = 100, home_ice 
     mutate(exp_home = 1/(1 + 10^((away_elo - (home_elo + home_ice))/400))) |>
     mutate(exp_away = 1/(1 + 10^(((home_elo + home_ice) - away_elo)/400))) |>
     ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
-    mutate(elo_new_home = home_elo + k*(outcome - exp_home) + d * score_diff) |>
+    ## 0.6686 * log(abs(score_diff)) + 0.8048
+    mutate(score_mult = if_else(score_diff == 0,
+                                true = 0.8048,
+                                false = 0.6686 * log(abs(score_diff)) + 0.8048)) |>
+    mutate(elo_new_home = home_elo + k * score_mult * (outcome - exp_home)) |>
+    mutate(elo_new_away = away_elo + k * score_mult * (outcome_away - exp_away)) |>
+    ##mutate(elo_new_home = home_elo + k*(outcome - exp_home) + d * score_diff) |>
     mutate(elo_new_home = if_else(elo_new_home < 100,
                                   true = 100,
                                   false = elo_new_home)) |>
-    mutate(elo_new_away = away_elo + k*(outcome_away - exp_away) + d * -1 * (score_diff)) |>
+    ##mutate(elo_new_away = away_elo + k*(outcome_away - exp_away) + d * -1 * (score_diff)) |>
     mutate(elo_new_away = if_else(elo_new_away < 100,
                                   true = 100,
                                   false = elo_new_away)) |>
@@ -433,11 +444,17 @@ update_rankings_residuals = function(season, end_date, ratings, k, home_ice, d){
     mutate(exp_home = 1/(1 + 10^((away_elo - (home_elo + home_ice))/400))) |>
     mutate(exp_away = 1/(1 + 10^(((home_elo + home_ice) - away_elo)/400))) |>
     ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
-    mutate(elo_new_home = home_elo + k*(outcome - exp_home) + d * score_diff) |>
+    ## 
+    mutate(score_mult = if_else(score_diff == 0,
+                                true = 0.8048,
+                                false = 0.6686 * log(abs(score_diff)) + 0.8048)) |>
+    mutate(elo_new_home = home_elo + k * score_mult * (outcome - exp_home)) |>
+    mutate(elo_new_away = away_elo + k * score_mult * (outcome_away - exp_away)) |>
+    ## mutate(elo_new_home = home_elo + k*(outcome - exp_home) + d * score_diff) |>
     mutate(elo_new_home = if_else(elo_new_home < 100,
                                   true = 100,
                                   false = elo_new_home)) |>
-    mutate(elo_new_away = away_elo + k*(outcome_away - exp_away) + d * -1 * (score_diff)) |>
+    ##  mutate(elo_new_away = away_elo + k*(outcome_away - exp_away) + d * -1 * (score_diff)) |>
     mutate(elo_new_away = if_else(elo_new_away < 100,
                                   true = 100,
                                   false = elo_new_away)) |>
@@ -462,6 +479,7 @@ rankings2324 = update_rankings_iter(schedule2324, "2024-04-13", X22Rankings, 100
 rankings2324 = rankings2324 |>
   mutate(rating = rating * 0.7 + (0.3 * 1500)) |>
   select(-date)
+rankings2324 |> arrange(desc(rating))
 
 ## Optimizing with regular season gamees only:
 schedule_reg = schedule |> filter(game_type != "Big Ten Tournament") |>
@@ -482,13 +500,15 @@ options(progressr.enable = TRUE)
 #home_ice = seq(60, 70, length.out = 10)
 #d = seq(45, 55, length.out = 10)
 
-grid = expand.grid(k = seq(35, 45, length.out = 10), home_ice = seq(50, 60, length.out = 10), d = seq(40, 50, length.out = 10))
+grid = expand.grid(k = seq(75, 105, length.out = 10), home_ice = seq(35, 45, length.out = 3), d = seq(40, 50, length.out = 1))
 
 mean_residuals = with_progress({future_pmap_dbl(grid, \ (k, home_ice, d) update_rankings_residuals(season = schedule_reg, end_date = "2025-03-25", ratings = rankings2324, k = k, home_ice = home_ice, d = d), .progress = TRUE)})
 
 residual_df <- grid |> mutate(mean_residual = mean_residuals)
-residual_df
+residual_df |> arrange(mean_residual)
 
 optimal = residual_df |> filter(mean_residual == min(mean_residual))
 
-apr_15_ranking = update_rankings_iter_gd_ha(schedule, "2025-04-15", rankings2324, 38.33333, 53.33333, 43.33333)
+apr_15_ranking = update_rankings_iter_gd_ha(schedule, "2025-04-15",
+                                            rankings2324, optimal$k, optimal$home_ice,
+                                            0)
