@@ -152,31 +152,14 @@ below. Teams are highlighted based off of performance during the season
 
 ![](README_files/figure-commonmark/unnamed-chunk-5-1.png)
 
-    # A tibble: 1 × 1
-      mean_resid
-           <dbl>
-    1      0.294
-
-
-    Call:
-    lm(formula = win_prop ~ binned_exp, data = prop_wins15, weights = totalgames)
-
-    Weighted Residuals:
-         Min       1Q   Median       3Q      Max 
-    -1.03772 -0.41495  0.01982  0.49843  0.79635 
-
-    Coefficients:
-                Estimate Std. Error t value Pr(>|t|)    
-    (Intercept) -0.11495    0.04086  -2.813   0.0227 *  
-    binned_exp   1.24411    0.06996  17.782 1.02e-07 ***
-    ---
-    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-    Residual standard error: 0.6344 on 8 degrees of freedom
-    Multiple R-squared:  0.9753,    Adjusted R-squared:  0.9722 
-    F-statistic: 316.2 on 1 and 8 DF,  p-value: 1.024e-07
-
 ![](README_files/figure-commonmark/unnamed-chunk-6-1.png)
+
+The above plot bins every game of the 2024-2025 season into $E_{home}$
+of every 0.1. The binned $E_{home}$ is then plotted against the
+proportion of games won in every bin. We expect to see a slope of 1,
+meaning that for example: for all games where $E_{home}$ was between 0.9
+and 1, the home team won 90% of the games. The fitted model is:
+$\hat{p}_{win} = 1.24411\hat{expected}_{binned} - 1.24411$.
 
 ## Interpretation
 
