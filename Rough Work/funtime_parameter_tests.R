@@ -1,6 +1,4 @@
-##Function to update rankings
-##rating is the variable, ratings is the df.
-update_rankings_addins <- function(season, game_date, ratings, k = 20){
+update_rankings_add <- function(season, game_date, ratings, k = 20){
   ## Filters schedule to a specific date
   elo_ratings_update <- season |> filter(date == game_date) |>
     ## Joins the Elo ratings from our rating file to the schedule file. Puts updated ratings in the schedule
@@ -12,8 +10,8 @@ update_rankings_addins <- function(season, game_date, ratings, k = 20){
     ## Creating an away team outcome variable. Opposite of home team or same if tie.
     mutate(outcome_away = abs(outcome - 1)) |> 
     ## Calculating expected outcome variable for home and away team
-    mutate(exp_home = 1/(1 + 10^((away_elo - (home_elo + 50))/400))) |>
-    mutate(exp_away = 1/(1 + 10^(((home_elo + 50) - away_elo)/400)) |>
+    mutate(exp_home = 1/(1 + 10^((away_elo - (home_elo + 50)/400))) |>
+    mutate(exp_away = 1/(1 + 10^(((home_elo + 50) - away_elo)/400))) |>
     ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
     mutate(elo_new_home = home_elo + k*(outcome - exp_home)) |>
     mutate(elo_new_away = away_elo + k*(outcome_away - exp_away))

@@ -6,20 +6,20 @@ author:
 institute: "St. Lawrence University"
 number-sections: true
 date: "5/7/25"
-format:
-  pdf:
-    toc: true
-    embed-resources: true
-    include-in-header:
-      text: |
-        \usepackage{lipsum}
-        \usepackage{setspace}
-        \onehalfspacing
-        \linespread{1.5}
 #format:
-#  html:
-#    embed-resources: true
+#  pdf:
 #    toc: true
+#    embed-resources: true
+#    include-in-header:
+#      text: |
+#        \usepackage{lipsum}
+#        \usepackage{setspace}
+#        \onehalfspacing
+#        \linespread{1.5}
+format:
+  html:
+    embed-resources: true
+    toc: true
 ---
 
 
@@ -576,7 +576,7 @@ $$E_a = \frac{1}{1 + 10^{\frac{R_b - R_a}{400}}}$$
 
 Where:
 
--   $E_a$ is the player's expected outcome.
+-   $E_a$ is the player's expected outcome (Palyer A's win probability).
 
 -   $R_a$ is the player's pregame rating.
 
@@ -725,14 +725,14 @@ grid_100 = expand.grid(k = seq(60, 120, length.out = 20),
                        d = seq(0, 100, length.out = 1))
 
 mean_residuals_100 = 
-  with_progress({future_pmap_dbl(grid_100,
-                                 \ (k, home_ice, d) 
-                                 update_rankings_residuals(season = schedule_reg,
-                                                                                                 end_date = "2025-03-25", 
-                                                                                                 ratings = rankings2324, 
-                                                                                                 k = k, 
-                                                                                                 home_ice = home_ice, 
-                                                                                                 d = d), .progress = TRUE)})
+  with_progress(
+    {future_pmap_dbl(grid_100, \ 
+                     (k, home_ice, d) update_rankings_residuals(season = schedule_reg,
+                                                                end_date = "2025-03-25", 
+                                                                ratings = rankings2324, 
+                                                                k = k, 
+                                                                home_ice = home_ice, 
+                                                                d = d), .progress = TRUE)})
 
 residual_100_df <- grid_100 |> mutate(mean_residual = mean_residuals_100)
 
@@ -837,7 +837,7 @@ ggplot(data = prop_wins15, aes(x = binned_exp,
   ylim(c(0, 1))
 ```
 
-This plot bins every game played in the 2024-2025 season by every 0.1. Then uses the amount of games played in each bin to weigh each point. The y-axis is the proportion of wins for each binned proportion. We expect a slope of 1. This means that for example, at expected outcome of 0.9 we expect 90% of the games are won. In this case the fitted model is $\hat{p}_{win} = 1.24411\hat{expected}_{binned} - 1.24411$. This further shows the accuracy of the model.
+This plot bins every game played in the 2024-2025 season by every 0.1. Then uses the amount of games played in each bin to weigh each point. The y-axis is the proportion of wins for each binned proportion. We expect a slope of 1. This means that for example, at expected outcome of 0.9 we expect 90% of the games are won. In this case the fitted model is $\hat{p}_{win} = 1.24411\hat{expected}_{binned} - 0.11495$. This further shows the accuracy of the model.
 
 Finally, we looked at the final rankings using the update_rankings_iter_gd_ha() function. This function runs the entire season and gathers ratings for each day and stores the rankings in a list. To see what the final rankings were, we pulled from the final day of the 2024-2025 post-season. To investigate the accuracy of the model, the rankings were compared to conference standings and the results of the NCAA Men's Division 1 Hockey National Championship Tournament. Final rankings are shown below with plot showing the progress of each team throughout the entire season.
 
@@ -962,7 +962,8 @@ scrape_men <- function(season = "20232024"){
   ## Creating regex for date, and conference to make date and 
   ##conference columns in dataframe
   regex_date <- "October|November|December|January|February|March|April"
-  regex_conference <- "Atlantic Hockey|Big Ten|CCHA|ECAC|Hockey East|NCHC|Ind|Exhibition|Non-Conference"
+  regex_conference <- 
+    "Atlantic Hockey|Big Ten|CCHA|ECAC|Hockey East|NCHC|Ind|Exhibition|Non-Conference"
   ## Combining regexs with original table so that the original 
   ## scraped dataframe has date and conference as variables
   stats_regex <- stats_dirty |> 
@@ -1467,12 +1468,14 @@ grid = expand.grid(k = seq(75, 105, length.out = 10),
 mean_residuals = with_progress(
   {future_pmap_dbl(grid,
                    \ 
-                   (k,home_ice,d)update_rankings_residuals(season = schedule_reg, 
-                                                                                                   end_date = "2025-03-25", 
-                                                                                                   ratings = rankings2324, 
-                                                                                                   k = k, 
-                                                                                                   home_ice = home_ice, 
-                                                                                                   d = d), .progress = TRUE)})
+                   (k,home_ice,d)update_rankings_residuals(
+                     season = schedule_reg,
+                     end_date = "2025-03-25",
+                     ratings = rankings2324,
+                     k = k,
+                     home_ice = home_ice, 
+                     d = d), 
+                   .progress = TRUE)})
 
 residual_df <- grid |> mutate(mean_residual = mean_residuals)
 residual_df |> arrange(mean_residual)
@@ -1501,22 +1504,23 @@ grid_100 = expand.grid(k = seq(60, 120, length.out = 20),
                        home_ice = seq(30, 50, length.out = 20), 
                        d = seq(0, 100, length.out = 1))
 
-mean_residuals_100 = with_progress({future_pmap_dbl(grid_100, \ (k, home_ice, d)
-                                                    update_rankings_residuals(season = schedule_reg, 
-                                                                                                 end_date = "2025-03-25", 
-                                                                                                 ratings = rankings2324, 
-                                                                                                 k = k, 
-                                                                                                 home_ice = home_ice, 
-                                                                                                 d = d), .progress = TRUE)})
+mean_residuals_100 = with_progress(
+  {future_pmap_dbl(grid_100, \
+                   (k,home_ice,d)update_rankings_residuals(season = schedule_reg, 
+                                                           end_date = "2025-03-25", 
+                                                           ratings = rankings2324, 
+                                                           k = k, 
+                                                           home_ice = home_ice, 
+                                                           d = d), .progress = TRUE)})
 
 residual_100_df <- grid_100 |> mutate(mean_residual = mean_residuals_100)
 ```
 
 ## Works Cited
 
-College Hockey News. (2024). *Men’s Division I Hockey Schedule* – 2023–2024 Season. https://www.collegehockeynews.com/schedules/
+College Hockey News. (2024). *Men’s Division I Hockey Schedule* – 2023–2024 Season. <https://www.collegehockeynews.com/schedules/>
 
-College Hockey News. (2025). *Men’s Division I Hockey Schedule* – 2024–2025 Season. https://www.collegehockeynews.com/schedules/
+College Hockey News. (2025). *Men’s Division I Hockey Schedule* – 2024–2025 Season. <https://www.collegehockeynews.com/schedules/>
 
 **Silver, N.** (n.d.). *How our NHL predictions work*. FiveThirtyEight. <https://fivethirtyeight.com/methodology/how-our-nhl-predictions-work/>
 

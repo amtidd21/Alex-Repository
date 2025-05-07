@@ -97,14 +97,14 @@ update_rankings_iter_gd_ha <- function(season, end_date, ratings, k, home_ice, d
   new_rankings[[1]] <- ratings
   ## Creating a for loop for the function to generate new ratings with the updtae_rankings function
   for (i in 1:length(dates_vector)) {
-    new_rankings[[i + 1]] <- update_rankings_gd_ha(season = season_cut, game_date = dates_vector[i], ratings = new_rankings[[i]], k = k, home_ice = 50, d = 0.5)
+    new_rankings[[i + 1]] <- update_rankings_gd_ha(season = season_cut, game_date = dates_vector[i], ratings = new_rankings[[i]], k = k, home_ice = home_ice, d = d)
   }
   return(new_rankings)
 }
 ```
 
 ```{r}
-try_gdha = update_rankings_iter_gd_ha(schedule, "2025-03-25", rankings2324, 100, home_ice = 50, d = 2)
+try_gdha = update_rankings_iter_gd_ha(schedule, "2025-03-25", rankings2324, 100, home_ice = 45, d = 0)
 ```
 
 ok so boom. ranking gathered. lets try to do the same thing with goal diff and home ice. 
@@ -137,8 +137,8 @@ merged_sched_gdha = left_join(merged_sched_home_gdha, rankings_lagged_gdha,
   mutate(away_elo = rating) |>
   select(-rating)
 
-home_ice = 50
-d = 2
+home_ice = 45
+d = 0
 k = 100
 
 schedule2425_gdha = merged_sched_gdha |>
@@ -188,7 +188,12 @@ ggplot(data = prop_wins_gdha, aes(x = binned_exp,
   geom_smooth(method = "lm", aes(weight = totalgames), se = FALSE, color = "gold") +
   theme_minimal()
 ```
-mean abs resid for ha = 50 and gd = 0.5: 0.390
-when ha is held at 50 and d = ln(score_diff) we see similar results
+mean abs resid for ha = 50 and gd = 0 and k = 100: 0.391
+mean abs resid for ha = 100 and gd = 0 and k = 100: 0.392
+mean abs resid for ha = 500 and gd = 0 and k = 100: 0.425
+mean abs resid for ha = 20 and gd = 0 and k = 100: 0.392
+mean abs resid for ha = 40, gd = 0, and k = 100: 0.391
+mean abs resid for ha = 45 and gd = 0 and k = 100: 0.391
 
+so it looks like our home ice advantage value should be around 40 - 50
 

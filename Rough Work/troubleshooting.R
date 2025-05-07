@@ -5,7 +5,7 @@ library(mosaic)
 ##update_rankings <- function(season, game_date, ratings, k = 20){
   
 ## Filters schedule to a specific date
-  elo_ratings_update <- schedule2324 |> 
+  elo_ratings_update_test <- schedule |> 
     ## Joins the Elo ratings from our rating file to the schedule file. Puts updated ratings in the schedule
     left_join(X22Rankings, by = join_by(away_team == Team)) |>
     rename(away_elo = rating) |>  
@@ -20,21 +20,21 @@ library(mosaic)
     ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
     mutate(elo_new_home = home_elo + 100*(outcome - exp_home)) |>
     mutate(elo_new_away = away_elo + 100*(outcome_away - exp_away)) |>
-    filter(date == "2023-10-07")
+    filter(date == "2024-10-04")
   
- ranked_home <- left_join(X22Rankings, elo_ratings_update, by = join_by(Team == home_team)) |>
+ ranked_home <- left_join(X22Rankings, elo_ratings_update_test, by = join_by(Team == home_team)) |>
    relocate(elo_new_home) |>
     mutate(rating = if_else(!is.na(elo_new_home),
                             true = elo_new_home,
                             false = rating)) |>
-   select(Team, rating)
+   select(Team, rating, date)
  
- ranked <- left_join(ranked_home, elo_ratings_update, by = join_by(Team == away_team)) |>
+ ranked <- left_join(ranked_home, elo_ratings_update_test, by = join_by(Team == away_team)) |>
    relocate(elo_new_away) |>
    mutate(rating = if_else(!is.na(elo_new_away),
                            true = elo_new_away,
                            false = rating)) |>
-   select(Team, rating)
+   select(Team, rating, date.y)
  
   ## ERROR OCCURS IN THE REPLACE FUNCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    

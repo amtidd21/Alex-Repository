@@ -512,3 +512,6 @@ optimal = residual_df |> filter(mean_residual == min(mean_residual))
 apr_15_ranking = update_rankings_iter_gd_ha(schedule, "2025-04-15",
                                             rankings2324, optimal$k, optimal$home_ice,
                                             0)
+optimal_resid = update_rankings_residuals(schedule, "2025-04-15", rankings2324, optimal$k, optimal$home_ice, 0)
+
+

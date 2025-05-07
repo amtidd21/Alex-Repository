@@ -6,14 +6,12 @@ format: html
 
 ```{r}
 library(elo)
-library(dplyr)
 library(tidyverse)
 library(cowplot)
 library(ggrepel)
 library(lubridate)
 library(rvest)
 library(here)
-library(forcats)
 ```
 
 
@@ -342,6 +340,8 @@ Again we are seeing any skew, but they are not normal. but we do see that later 
 prop_wins_250 <- schedule2425_250 |>
   mutate(binned_exp = floor(exp_home / 0.025) * 0.025) |>
   group_by(binned_exp) |>
+  summarise(n = n()) |>
+  print(n = Inf)
   summarise(win_prop = mean(outcome, na.rm = TRUE))
 
 mod250 = lm(win_prop ~ binned_exp, data = prop_wins_250)

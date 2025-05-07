@@ -150,16 +150,15 @@ below. Teams are highlighted based off of performance during the season
 (Clarskon University and Cornell University), and personal connection
 (RIT, and Bentley University).
 
-![](README_files/figure-commonmark/unnamed-chunk-5-1.png)
+![Full Season Elo Ratings](plots/full_season_ratings.png)
 
-![](README_files/figure-commonmark/unnamed-chunk-6-1.png)
+![Expected Outcome vs Actual Win Proportion](plots/expected_vs_actual.png)
 
 The above plot bins every game of the 2024-2025 season into $E_{home}$
 of every 0.1. The binned $E_{home}$ is then plotted against the
 proportion of games won in every bin. We expect to see a slope of 1,
 meaning that for example: for all games where $E_{home}$ was between 0.9
-and 1, the home team won 90% of the games. The fitted model is:
-$\hat{p}_{win} = 1.24411\hat{expected}_{binned} - 1.24411$.
+and 1, the home team won 90% of the games. The fitted model has a slope of 1.24411 and an intercept of -0.11495.
 
 ## Interpretation
 

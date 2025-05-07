@@ -29,9 +29,11 @@ schedule_current = schedule2025 |>
 ```
 
 ```{r}
-schedule_update <- function(season, game_date, ratings, k = 20){
+##Function to update rankings
+##rating is the variable, ratings is the df.
+update_rankings_test <- function(season, game_date, ratings, k = 20){
   ## Filters schedule to a specific date
-  elo_ratings_update <- season |> filter(date == game_date) |>
+  elo_ratings_update_test <- season |> filter(date == game_date) |>
     ## Joins the Elo ratings from our rating file to the schedule file. Puts updated ratings in the schedule
     left_join(ratings, by = join_by(away_team == Team)) |>
     rename(away_elo = rating) |>  
@@ -47,19 +49,24 @@ schedule_update <- function(season, game_date, ratings, k = 20){
     mutate(elo_new_home = home_elo + k*(outcome - exp_home)) |>
     mutate(elo_new_away = away_elo + k*(outcome_away - exp_away))
   
-  ranked_home <- left_join(ratings, elo_ratings_update, by = join_by(Team == home_team)) |>
+  ranked_home <- left_join(ratings, elo_ratings_update_test, by = join_by(Team == home_team)) |>
     relocate(elo_new_home) |>
     mutate(rating = if_else(!is.na(elo_new_home),
                             true = elo_new_home,
                             false = rating)) |>
-    select(Team, rating)
+    select(Team, rating, date)
   
-  ratings <- left_join(ranked_home, elo_ratings_update, by = join_by(Team == away_team)) |>
+  ratings <- left_join(ranked_home, elo_ratings_update_test, by = join_by(Team == away_team)) |>
     relocate(elo_new_away) |>
     mutate(rating = if_else(!is.na(elo_new_away),
                             true = elo_new_away,
                             false = rating)) |>
-    select(Team, rating)
+    select(Team, rating, date.y) |>
+    fill(date.y, .direction = c("down")) |>
+    fill(date.y, .direction = c("up")) |>
+    rename(date = date.y)
+  
+  #ratings_date = left_join(ratings, elo_ratings_update_test, by = join_by(date.y == #date))
   
   ## Puts updated Elo ratings into our ratings file for home team
   ##ratings$rating = replace(ratings$rating, ratings$Team %in% elo_ratings_update$home_team, elo_ratings_update$elo_new_home)
@@ -72,8 +79,41 @@ schedule_update <- function(season, game_date, ratings, k = 20){
 ```
 
 ```{r}
-try2 = schedule_update(schedule2025, "2025-02-21", X22Rankings, k = 100)
+testysched2 <- update_rankings_test(schedule, "2024-10-04", X22Rankings, 100)
 ```
+
+
+```{r}
+## initialize an empty list
+
+
+update_rankings_iter_test <- function(season, end_date, ratings, k){
+  
+  new_rankings <- list()
+  
+  season_cut <- season |> 
+    ## Filter by a specified end date to deal with NA values (gmaes that have yet to be played)
+    filter(date <= ymd(end_date))
+  ## Creating a vector for unique dates in a season
+  dates_vector <- unique(season_cut$date)
+  ## Defining our rankings within the function
+  new_rankings[[1]] <- ratings
+  ## Creating a for loop for the function to generate new ratings with the updtae_rankings function
+  for (i in 1:length(dates_vector)) {
+    new_rankings[[i + 1]] <- update_rankings(season = season_cut, game_date = dates_vector[i], ratings = new_rankings[[i]], k = k)
+  }
+  return(new_rankings)
+}
+## go back to the update_rankings function and have it return the date as 
+## a variable in the output
+
+## read more about lists and the structure of them in r
+
+## use bind_rows at try_rankings to bind all of the iterative updates together
+
+## can then join with the schedule data set again by team-home_team and date and then again by team-away_team and date and keep only the necessary columns
+```
+
 
 
 ```{r}

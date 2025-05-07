@@ -1,0 +1,245 @@
+---
+title: "Chart Party"
+author: "Alex Tidd"
+format: html
+---
+
+```{r}
+library(ggplot2)
+library(tidyverse)
+```
+
+```{r}
+## SLU
+apr15_slu = apr_15_ranking |> bind_rows() |>
+  filter(Team == "St. Lawrence")
+
+apr15_slu_lagged =  apr15_slu |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+apr15_slu_full = left_join(apr15_slu, apr15_slu_lagged, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+ggplot(data = apr15_slu_full, aes(x = date,
+                                 y = rating)) +
+  geom_line() +
+  theme_minimal()
+```
+
+```{r}
+apr15 = apr_15_ranking |> bind_rows()
+
+apr15_lagged = apr15 |> group_by(date) |>
+  summarise(last_date = last(date)) |>
+  mutate(lag_date = lag(last_date)) |>
+  select(-last_date)
+
+apr15_full = left_join(apr15, apr15_lagged, join_by(date == lag_date)) |>
+  select(-date) |>
+  rename(date = date.y)
+
+highlight = c("St. Lawrence", "Western Michigan", "Clarkson", "Bentley", "RIT", "Cornell")
+
+highlighted_color = c(
+  "St. Lawrence" = "firebrick",
+  "Western Michigan" = "goldenrod",
+  "Clarkson" = "forestgreen",
+  "Bentley" = "royalblue",
+  "RIT" = "darkorange",
+  "Cornell" = "red")
+
+apr15_color = apr15_full |> mutate(highlight = if_else(Team %in% highlight, Team, "Other"))
+
+ggplot(data = apr15_color, aes(x = date,
+                            y = rating,
+                            group = Team)) +
+  geom_line(aes(color = highlight, 
+                alpha = highlight, 
+                linewidth = highlight)) +
+  scale_color_manual(values = c("Other" = "grey80", 
+                                highlighted_color),
+                     name = "Team") +
+  scale_alpha_manual(values = c("Other" = 0.5, 
+                                setNames(rep(1, length(highlighted_color)),
+                                         names(highlighted_color))),
+                     guide = "none") +
+  scale_linewidth_manual(values = c("Other" = 0.2, 
+                                    setNames(rep(1, length(highlighted_color)),
+                                             names(highlighted_color))),
+                         guide = "none") +
+  theme_minimal() +
+  labs(color = "Team",
+       title = "Full Season Rankings",
+       x = "Date",
+       y = "Rating") +
+  theme(legend.position = "right",
+        plot.title = element_text(hjust = 0.5))
+```
+
+
+Grid search plots
+```{r}
+library(furrr)
+library(progressr)
+library(scico)
+plan(multisession)
+handlers("progress")
+options(progressr.enable = TRUE)
+
+grid_100 = expand.grid(k = seq(60, 120, length.out = 20), home_ice = seq(30, 50, length.out = 20), d = seq(0, 100, length.out = 1))
+
+mean_residuals_100 = with_progress({future_pmap_dbl(grid_100, \ (k, home_ice, d) update_rankings_residuals(season = schedule_reg, end_date = "2025-03-25", ratings = rankings2324, k = k, home_ice = home_ice, d = d), .progress = TRUE)})
+
+residual_100_df <- grid_100 |> mutate(mean_residual = mean_residuals_100)
+
+##d and k
+ggplot(data = residual_100_df, aes(x = k,
+                               y = d)) +
+  geom_tile(aes(fill = mean_residual)) +
+  geom_point(aes(x = 38.33333, y = 43.33333), color = "black", fill = "black") +
+  scale_fill_viridis_c(option = "D", 
+                       limits = c(0.36, 0.41), 
+                       oob = scales::squish, 
+                       name = "Mean residual",
+                       direction = -1) + 
+  labs(title = "Grid Search Mapping of K and Goal Differential Factor") +
+  theme_minimal()
+
+## d and home_ice
+ggplot(data = residual_100_df, aes(x = home_ice,
+                               y = d)) +
+    geom_tile(aes(fill = mean_residual)) +
+  geom_point(aes(x = 53.33333, y = 43.33333), color = "black", fill = "black") +
+  scale_fill_viridis_c(option = "D", 
+                       limits = c(0.36, 0.41), 
+                       oob = scales::squish, 
+                       name = "Mean residual",
+                       direction = -1) +
+  theme_minimal()
+
+## k and home_ice
+ggplot(data = residual_100_df, aes(x = k,
+                               y = home_ice)) +
+   geom_tile(aes(fill = mean_residual)) +
+  geom_point(aes(x = 88, y = 40), color = "black", fill = "black") +
+  scale_fill_viridis_c(option = "D", 
+                       ##limits = c(0.36, 0.41), 
+                       oob = scales::squish, 
+                       name = "Mean residual",
+                       direction = -1) +
+  labs(x = "k",
+       y = "Home Ice Advantage",
+       title = "Optimization of k and Home Ice Advantage",
+       caption = "k is optimized at 88, home ice advantage at 40, \nand goal differential factor \nof  0.6686 * log(abs(score_diff)) + 0.8048") +
+  theme_minimal(base_size = 16) +
+  theme(legend.position = "right",
+        plot.title = element_text(hjust = 0.5),
+        plot.caption = element_text(hjust = 0.5),
+        plot.margin = margin(t = 40, b = 20, l = 60, r = 60))
+```
+
+
+
+```{r}
+schedule_elo = schedule |>
+  mutate(home_elo = NA) |>
+  mutate(away_elo = NA)
+
+schedule_apr15 = left_join(schedule_elo, apr15, 
+                         by = join_by(date == date, home_team == Team)) |>
+  mutate(home_elo = rating) |>
+  select(-rating)
+
+merged_sched_apr15 = left_join(schedule_apr15, apr15,
+                         by = join_by(date == date, away_team == Team)) |>
+  mutate(away_elo = rating) |>
+  select(-rating)
+
+schedule_full_apr15 = merged_sched_apr15 |>
+  mutate(outcome_away = abs(outcome - 1)) |> 
+  ## Calculating expected outcome variable for home and away team
+  mutate(exp_home = 1/(1 + 10^((away_elo - home_elo)/400))) |>
+  mutate(exp_away = 1/(1 + 10^((home_elo - away_elo)/400))) |>
+  ## Using expected outcome variable to generate new Elo ratings based on actual outcome and expected outcome
+  mutate(elo_new_home = home_elo + 100 * (outcome - exp_home)) |>
+  mutate(elo_new_away = away_elo + 100 * (outcome_away - exp_away))
+
+## Making a residual column
+schedule_full_apr15 <- schedule_full_apr15 |>
+  mutate(residual = outcome - exp_home) |>
+  mutate(abs_residual = abs(residual))
+
+ggplot(data = schedule_full_apr15, aes(x = abs_residual)) +
+  geom_histogram(color = "purple4", fill = "seagreen3") +
+  labs(title = "Absolute Differences Between\nExpected and Actual Outcomes",
+       x = "Absolute Residual",
+       y = "Count") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5))
+
+ggplot(data = schedule_full_apr15, aes(x = residual)) +
+  geom_histogram(color = "purple4", fill = "seagreen3") +
+  labs(caption = "Positive residual past 0.5 indicates model predicting a home loss when actual result is a home win. Negative residual beyond -0.5 indicate a predicted home wins with an observed home loss") +
+  theme_minimal()
+```
+
+```{r}
+print(n = 64, apr_15_ranking[[110]] |> arrange(desc(rating)))
+apr_15_ranking[[110]] |> arrange(desc(rating))
+```
+
+
+```{r}
+schedule_full_apr15 |> summarise(mean_resid = mean(abs_residual, na.rm = TRUE))
+
+ggplot(data = schedule_full_apr15, aes(x = residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+ggplot(data = schedule_full_apr15, aes(x = abs_residual)) +
+  geom_dotplot(dotsize = 0.4) +
+  theme_minimal()
+
+prop_wins15 <- schedule_full_apr15 |>
+  mutate(binned_exp = floor(exp_home / 0.1) * 0.1 + 0.05) |>
+  group_by(binned_exp) |>
+  summarise(win_prop = mean(outcome, na.rm = TRUE), 
+            totalgames = n()) |> 
+  filter(!is.na(binned_exp))
+
+modgdha = lm(win_prop ~ binned_exp, data = prop_wins15, weights = totalgames)
+summary(modgdha)
+
+ggplot(data = prop_wins15, aes(x = binned_exp, 
+                             y = win_prop,
+                             size = totalgames)) +
+  geom_point(color = "black", shape = 16) +
+  geom_smooth(aes(color = "Fitted Model",
+                  weight = totalgames), method = "lm", se = FALSE, size = 1.2) +
+  geom_abline(data = data.frame(1), 
+              aes(color = "Expected Linear Model",
+                  linetype = "Expected Linear Model"), 
+              slope = 1, intercept = 0, linetype = 2, size = 1) +
+  scale_color_manual(name = "Model",
+                     values = c("Fitted Model" = "gold", 
+                                "Expected Linear Model" = "black")) +
+  labs(title = "Proportion of Home Team Wins \nfrom Home Expected Outcome",
+       x = "Expected Outcome",
+       y = "Proportion of \nGames Won",
+       caption = "Size of points indicate more games played. \nModel weighs point based off of amount of games played") +
+  guides(size = "none") +
+  theme_minimal(base_size = 16) +
+  theme(legend.position = "right",
+        legend.background = element_rect(fill = "white", color = NA),
+        legend.title = element_text(size = 12),
+        legend.text = element_text(size = 10),
+        plot.title = element_text(hjust = 0.5),
+        plot.caption = element_text(hjust = 0.5),
+        plot.margin = margin(t = 40, b = 20, l = 40, r = 40)) +
+  xlim(c(0, 1)) +
+  ylim(c(0, 1))
+```
+

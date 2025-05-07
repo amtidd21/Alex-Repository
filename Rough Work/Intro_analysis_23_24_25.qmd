@@ -84,8 +84,8 @@ Plot party!!!!!!
 ```{r}
 ## residual plots
 
-schedule2425 |> summarise(k_100_resid = sum(abs_residual, na.rm = TRUE))
-## hmm redidual pretty large :(
+schedule2425 |> summarise(k_100_resid = mean(abs_residual, na.rm = TRUE))
+## hmm residual pretty large :(
 
 ggplot(data = schedule2425, aes(x = residual)) +
   geom_dotplot(dotsize = 0.4) +
@@ -182,7 +182,7 @@ schedule2425_80 <- schedule2425_80 |>
 ```{r}
 ## residual plots
 
-schedule2425_80 |> summarise(k_80_resid = sum(abs_residual, na.rm = TRUE))
+schedule2425_80 |> summarise(k_80_resid = mean(abs_residual, na.rm = TRUE))
 ## hmm redidual pretty large :(
 
 ggplot(data = schedule2425_80, aes(x = residual)) +
@@ -278,7 +278,7 @@ schedule2425_120 <- schedule2425_120 |>
 ```{r}
 ## residual plots
 
-schedule2425_120 |> summarise(k_120_resid = sum(abs_residual, na.rm = TRUE))
+schedule2425_120 |> summarise(k_120_resid = mean(abs_residual, na.rm = TRUE))
 
 ggplot(data = schedule2425_120, aes(x = residual)) +
   geom_dotplot(dotsize = 0.4) +
@@ -289,7 +289,7 @@ ggplot(data = schedule2425_120, aes(x = abs_residual)) +
   theme_minimal()
 
 prop_wins_120 <- schedule2425_120 |>
-  mutate(binned_exp = floor(exp_home / 0.05) * 0.05) |>
+  mutate(binned_exp = floor(exp_home / 0.05) * 0.05 + 0.025) |>
   group_by(binned_exp) |>
   summarise(win_prop = mean(outcome, na.rm = TRUE), 
             totalgames = n()) |> 
@@ -308,7 +308,8 @@ ggplot(data = prop_wins_120, aes(x = binned_exp,
                              y = win_prop,
                              size = weights)) +
   geom_point() +
-  geom_smooth(method = "lm", aes(weight = weights), se = FALSE, color = "gold") +
+  geom_smooth(method = "lm", aes(weight = weights), se = FALSE, color = "gold") + 
+  geom_abline(intercept = 0, slope = 1) +
   theme_minimal()
 ```
 Worst slope and intercept and rsq but best abs residual.
